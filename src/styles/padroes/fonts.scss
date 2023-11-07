@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+$fontFamily: "Montserrat", sans-serif;
+
+@mixin padrao {
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $textblack;
+}
