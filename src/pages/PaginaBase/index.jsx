@@ -6,7 +6,7 @@ export default function PaginaBase() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Outlet />   
       <Footer />
     </>
   );
