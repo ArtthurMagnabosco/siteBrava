@@ -6,7 +6,7 @@ import Menu from './components/Menu'
 import Contato from './pages/Contato'
 import NossosClientes from './pages/NossosClientes'
 import WhatsApp from './components/Whatsapp'
-import OqueFazemos from './pages/OQueFazemos'
+import OQueFazemos from './pages/OQueFazemos'
 import QuemSomos from './pages/QuemSomos'
 
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<PaginaInicial/>}/>
         <Route path="/contato" element={<Contato />}/>
         <Route path="/nossos-clientes" element={<NossosClientes />}/>
-        <Route path="/oque-fazemos" element={<OqueFazemos/>}/>
+        <Route path="/oque-fazemos" element={<OQueFazemos/>}/>
         <Route path="/quem-somos" element={<QuemSomos/>}/>  
       </Routes>
       <WhatsApp />

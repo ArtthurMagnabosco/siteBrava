@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import HeaderMobile from "./Mobile"
 
 const Header = () => {
 
@@ -16,7 +17,7 @@ const Header = () => {
     return (
         <>
         {isMobile ? 
-        <p>Header mobile</p> :
+        <HeaderMobile/> :
         <p>Header desk</p>}
         </>
     )
