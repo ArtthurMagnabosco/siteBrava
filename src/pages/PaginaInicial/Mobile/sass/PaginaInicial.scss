@@ -1,0 +1,9 @@
+@import "../../../../styles/padroes/padroes.scss";
+
+h3 {
+    @include title1
+}
+
+button {
+    @include button1
+}
