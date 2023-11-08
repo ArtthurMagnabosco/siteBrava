@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.maintitle {
+  font-size: 1.875rem;
+  line-height: 150%;
+  font-weight: 300;
+}
+.maintitle .text-highlight {
+  font-weight: 500;
+  color: #21595F;
+}
+
+.mainbutton {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 300;
+  color: #353A42;
+  background: #21595F;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+}
+.mainbutton * {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.8rem 1.25rem 18.38rem 1.25rem;
+}
+
+.background {
+  z-index: -1;
+  background-image: url("../../../../../assets/imagens/banner/banner.png");
+  background-position: cover;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 23rem;
+  position: absolute;
+  top: 14.5rem;
+}

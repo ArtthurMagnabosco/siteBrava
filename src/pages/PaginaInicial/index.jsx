@@ -1,16 +1,23 @@
-import { Link } from "react-router-dom"
-import "./Mobile/sass/PaginaInicial.css"
+import { Link } from "react-router-dom";
+import "./Mobile/sass/PaginaInicial.css";
+import PaginaInicialMobile from "./Mobile";
+import { useEffect, useState } from "react";
 
 const PaginaInicial = () => {
-    return (
-        <>
-            <h3><span className="text-highlight">Consultoria estratégica</span> para estruturar e acelerar sua operação de <span className="text-highlight">e-commerce e marketplace</span></h3>
+  const [isMobile, setIsMobile] = useState();
+  const handleWidth = () => {
+    window.innerWidth >= 1024 ? setIsMobile(false) : setIsMobile(true);
+  };
+  useEffect(() => {
+    handleWidth();
+    window.addEventListener("resize", handleWidth);
+  }, []);
 
+  return (
+    <>
+        {isMobile ? <PaginaInicialMobile /> : <p>Pagina inicial desk</p>}
+    </>
+    );
+};
 
-            <Link to="/quem-somos">
-                <button><p>Saiba Mais</p></button></Link>
-        </>
-    )
-}
-
-export default PaginaInicial
+export default PaginaInicial;

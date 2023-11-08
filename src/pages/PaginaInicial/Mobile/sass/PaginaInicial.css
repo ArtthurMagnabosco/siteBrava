@@ -1,26 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
-h3 {
-  font-size: 1.875rem;
-  line-height: 150%;
-  font-weight: 300;
-}
-h3 .text-highlight {
-  font-weight: 500;
-  color: #21595F;
-}
-
-button {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 300;
-  color: #353A42;
-  background: #21595F;
-  padding: 0.75rem 2rem;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
-  border: 0;
-}
-button p {
-  color: #FFF;
-  font-weight: 500;
+.home {
+  display: flex;
+  flex-direction: column;
 }
