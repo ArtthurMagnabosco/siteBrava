@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import PaginaInicial from './pages/PaginaInicial'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -8,13 +9,21 @@ import NossosClientes from './pages/NossosClientes'
 import WhatsApp from './components/Whatsapp'
 import OQueFazemos from './pages/OQueFazemos'
 import QuemSomos from './pages/QuemSomos'
+import { useState } from 'react'
 
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const openMenu = () => {
+    console.log("OK")
+    setMenuOpen(true)
+  }
+ 
   return (
     <BrowserRouter>
-      <Header />
-      <Menu />
+      <Header openMenu={openMenu} />
+      {menuOpen && <Menu />}
       <Routes>
         <Route path="/" element={<PaginaInicial/>}/>
         <Route path="/contato" element={<Contato />}/>

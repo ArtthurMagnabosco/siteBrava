@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import HeaderMobile from "./Mobile"
 
-const Header = () => {
+const Header = ({openMenu}) => {
 
     const [isMobile, setIsMobile] = useState()
     const handleWidth = () => {
@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <>
         {isMobile ? 
-        <HeaderMobile/> :
+        <HeaderMobile openMenu={() => openMenu()}/> :
         <p>Header desk</p>}
         </>
     )
