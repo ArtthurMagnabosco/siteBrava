@@ -2,7 +2,7 @@
 
 $fontFamily: "Montserrat", sans-serif;
 
-@mixin padrao {
+@mixin padrao() {
   font-family: $fontFamily;
   font-style: normal;
   font-weight: 300;
