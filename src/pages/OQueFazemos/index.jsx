@@ -1,7 +1,7 @@
-const OqueFazemos = () => {
+const OQueFazemos = () => {
     return (
         <p>Pagina Oque Fazemos</p>
     )
 }
 
-export default OqueFazemos
+export default OQueFazemos
