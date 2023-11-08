@@ -1,5 +1,24 @@
-export default function Header() {
+import { useEffect, useState } from "react"
+
+const Header = () => {
+    const [isMobile, setIsMobile] = useState(true)
+    useEffect(() => {
+        const handleWidth = () => {
+            if (window.innerWidth >= 1024) {
+                setIsMobile(false)
+            }
+        }
+    })
+    
+
     return (
-        <p>header</p>
+        <>
+        {isMobile ? 
+        <p>Header mobile</p> :
+        <p>Header desk</p>}
+        </>
     )
+    
 }
+
+export default Header
