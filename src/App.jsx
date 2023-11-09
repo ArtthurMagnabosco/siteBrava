@@ -19,16 +19,19 @@ function App() {
     console.log("OK")
     setMenuOpen(true)
   }
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
  
   return (
     <BrowserRouter>
       <Header openMenu={openMenu} />
-      {menuOpen && <Menu />}
+      {menuOpen && <Menu closeMenu={closeMenu}/>}
       <Routes>
         <Route path="/" element={<PaginaInicial/>}/>
         <Route path="/contato" element={<Contato />}/>
         <Route path="/nossos-clientes" element={<NossosClientes />}/>
-        <Route path="/oque-fazemos" element={<OQueFazemos/>}/>
+        <Route path="/o-que-fazemos" element={<OQueFazemos/>}/>
         <Route path="/quem-somos" element={<QuemSomos/>}/>  
       </Routes>
       <WhatsApp />
