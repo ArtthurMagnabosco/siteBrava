@@ -1,8 +1,15 @@
 .header__container{
     display: flex;
-    width: 23.4375rem;
+    width: 100%;
     padding: 1rem 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    
+
+    .header__menu-button{
+        position: absolute;
+        right: 2.5rem;
+
+    }
 }

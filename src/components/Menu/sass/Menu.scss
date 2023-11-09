@@ -6,50 +6,65 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 10;
    
+    .menu__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4.3rem;
+    }
+
+    .menu__body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 9rem;
+
+        .menu__body__link{
+            color: $white;
+            text-align: center;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+            text-decoration: none;
+            
+        }
+        
+    }
+
+    .menu__footer{
+        .menu__subtitle{
+            @include title2;
+            line-height: 1.125rem;
+            letter-spacing: 0.03125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu__footer__text{
+            color: $white;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.3125rem;
+            letter-spacing: 0.03125rem;
+            margin-bottom: 2.62rem;
+        }
+
+        .redes__sociais{
+            margin-right: 2.5rem;
+            text-decoration: none;
+        }
+        
+    }
+
+
 }
 
-.menu__header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4.3rem;
-}
 
-.menu__body{
-    display: flex;
-    padding: 0rem 1.25rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 9rem;
-    
-}
 
-.menu__body__link{
-    color: $white;
-    text-align: center;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    text-decoration: none;
-    
-}
 
-.menu__subtitle{
-    @include title2;
-    line-height: 1.125rem;
-    letter-spacing: 0.03125rem;
-    margin-bottom: 0.5rem;
-}
 
-.menu__address{
-    color: $white;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3125rem;
-    letter-spacing: 0.03125rem;
-    margin-bottom: 2.62rem;
-}
+
 

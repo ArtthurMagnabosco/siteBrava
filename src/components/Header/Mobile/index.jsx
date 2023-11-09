@@ -8,6 +8,7 @@ const HeaderMobile = ({openMenu}) => {
    return <>
     <header>
         <div className="header__container">
+            <p></p>
             <Link to="/">
                 <img src={LogoBravaVerde} alt="Logo Brava" />
             </Link>
