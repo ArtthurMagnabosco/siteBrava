@@ -1,0 +1,28 @@
+@import "../../../../../styles/padroes/padroes.scss";
+
+.home__clientes {
+    padding: 2rem 1.25rem 0rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+    .clientes__titles {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        .clientes__title2 {
+            @include title2(); 
+            text-transform: uppercase;
+        }
+
+        .clientes__title1 {
+            @include title1() 
+        }
+    }
+
+
+    .clientes__mainbutton {
+        @include button1();
+        margin: 2rem auto 3rem auto;
+    }
+}
