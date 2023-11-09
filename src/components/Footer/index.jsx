@@ -1,6 +1,6 @@
 import { useState } from "react"
-import FooterMobile from "./Mobile"
 import { useEffect } from "react"
+import FooterMobile from "./Mobile"
 
 const Footer = () => {
 
