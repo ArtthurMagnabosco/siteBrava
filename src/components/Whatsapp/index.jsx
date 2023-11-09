@@ -1,6 +1,9 @@
+import "./sass/Whatsapp.css"
+import whatsappImg from "../../../public/images/whatsapp.svg"
+
 const WhatsApp = () => {
     return (
-        <p>WhatsApp</p>
+        <img className="whatsapp" src={whatsappImg}/>
     )
 }
 

@@ -1,23 +1,24 @@
 import "./sass/Banner.scss";
+import bgImage from "../../../../assets/imagens/banner/banner.png";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <>
       <div className="banner">
-        <h3 className="maintitle">
-          <span className="text-highlight">Consultoria estratégica</span> para
-          estruturar e acelerar sua operação de{" "}
-          <span className="text-highlight">e-commerce e marketplace</span>
-        </h3>
+        <div className="banner-content">
+          <h3 className="maintitle">
+            <span className="text-highlight">Consultoria estratégica</span> para
+            estruturar e acelerar sua operação de
+            <span className="text-highlight"> e-commerce e marketplace</span>
+          </h3>
 
-        <Link to="/quem-somos">
-          <button className="mainbutton">
+          <Link to="/quem-somos" className="mainbutton">
             <p>Saiba Mais</p>
-          </button>
-        </Link>
+          </Link>
+        </div>
+        <img src={bgImage} className="background" />
       </div>
-      <div className="background"></div>
     </>
   );
 };
