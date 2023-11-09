@@ -27,7 +27,7 @@ const Menu = ({closeMenu}) => {
                 <div className='menu__redes-sociais'>
                     <a className='menu__footer__text redes__sociais' href="https://www.instagram.com/brava.digital/" target='_blank'>Instagram <img src={IconFlecha} alt="" /></a>
                     <a className='menu__footer__text redes__sociais' href="https://www.linkedin.com/company/brava-consultoria-ecommerce/" target='_blank'>Linkedin <img src={IconFlecha} alt="" /></a>
-                    <a className='menu__footer__text redes__sociais' href="https://www.facebook.com/bravaconsultoria" target='_blank'>Facebook <img src={IconFlecha} alt="" /></a>
+                    <a className='menu__footer__text' href="https://www.facebook.com/bravaconsultoria" target='_blank'>Facebook <img src={IconFlecha} alt="" /></a>
                 </div>
             </div>
         </div>

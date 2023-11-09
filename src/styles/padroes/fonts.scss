@@ -12,7 +12,7 @@ $fontFamily: "Montserrat", sans-serif;
 
 @mixin title1() {
   font-size: 1.875rem;
-  line-height: 150%;
+  line-height: normal;
   font-weight: 300;
 
   .text-highlight {
@@ -29,6 +29,7 @@ $fontFamily: "Montserrat", sans-serif;
 
 @mixin button1() {
   @include padrao();
+  display: inline-block;
   background: $green;
   padding: 0.75rem 2rem;
   box-shadow: 0 0 8px 0 rgba($color: $black, $alpha: 0.15);
