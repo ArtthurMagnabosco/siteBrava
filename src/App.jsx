@@ -25,8 +25,8 @@ function App() {
  
   return (
     <BrowserRouter>
-      <Header openMenu={openMenu} />
       {menuOpen && <Menu closeMenu={closeMenu}/>}
+      <Header openMenu={openMenu} />
       <Routes>
         <Route path="/" element={<PaginaInicial/>}/>
         <Route path="/contato" element={<Contato />}/>
