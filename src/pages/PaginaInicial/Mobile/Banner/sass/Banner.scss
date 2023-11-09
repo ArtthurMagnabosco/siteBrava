@@ -1,26 +1,25 @@
 @import "../../../../../styles/padroes/padroes.scss";
 
-
-
 .banner {
-    .maintitle {
-        @include title1;
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.8rem 1.25rem 0 1.25rem;
+        position: absolute;
+
+        .banner__maintitle {
+            @include title1;
+        }
+        .banner__mainbutton {
+            @include button1;
+        }
     }
-    .mainbutton {
-        @include button1;
+    .banner__bg {
+        width: 100%;
+        padding-top: 11.5rem;
+        z-index: -1;
     }
 }
 
-.banner-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.8rem 1.25rem 0 1.25rem;
-    position: absolute;
-}
 
-.background {
-    width: 100%;
-    padding-top: 11.5rem;
-    z-index: -1;
-}

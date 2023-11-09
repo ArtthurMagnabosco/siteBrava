@@ -1,5 +1,5 @@
 import "./sass/Whatsapp.css"
-import whatsappImg from "../../../public/images/whatsapp.svg"
+import whatsappImg from "../../../src/assets/imagens/logo/whatsapp.svg"
 
 const WhatsApp = () => {
     return (
