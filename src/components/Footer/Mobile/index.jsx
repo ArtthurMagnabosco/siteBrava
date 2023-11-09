@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import "./sass/Footer.css"
-import logoInstagram from "../../../assets/imagens/logo/instagram.svg"
-import logoFacebook from "../../../assets/imagens/logo/facebook.svg"
-import logoLinkedin from "../../../assets/imagens/logo/linkedin.svg"
+import logoInstagram from "../../../assets/imagens/icons/instagram.svg"
+import logoFacebook from "../../../assets/imagens/icons/facebook.svg"
+import logoLinkedin from "../../../assets/imagens/icons/linkedin.svg"
 import LogoBravaBranco from '../../../assets/imagens/logo/logoBravaBranco.svg'
 
 const FooterMobile = () => {

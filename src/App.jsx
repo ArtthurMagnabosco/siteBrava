@@ -9,8 +9,7 @@ import NossosClientes from './pages/NossosClientes'
 import WhatsApp from './components/Whatsapp'
 import OQueFazemos from './pages/OQueFazemos'
 import QuemSomos from './pages/QuemSomos'
-import { useState } from 'react'
-
+import { useCallback, useMemo, useState } from 'react'
 
 function App() {
 
@@ -22,6 +21,11 @@ function App() {
   const closeMenu = () => {
     setMenuOpen(false)
   }
+  
+  // const handleMenuOpen = useCallback(() => {
+  //   setMenuOpen()
+  // },[])
+
  
   return (
     <BrowserRouter>
