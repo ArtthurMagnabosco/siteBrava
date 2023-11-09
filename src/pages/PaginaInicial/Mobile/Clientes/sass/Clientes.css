@@ -1,22 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
-.banner .banner__content {
+.home__clientes {
+  padding: 2rem 1.25rem 0rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.home__clientes .clientes__titles {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1.8rem 1.25rem 0 1.25rem;
-  position: absolute;
 }
-.banner .banner__content .banner__maintitle {
+.home__clientes .clientes__titles .clientes__title2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8A8A8A;
+  text-transform: uppercase;
+}
+.home__clientes .clientes__titles .clientes__title1 {
   font-size: 1.875rem;
   line-height: 150%;
   font-weight: 300;
-  line-height: 150%;
 }
-.banner .banner__content .banner__maintitle .text-highlight {
+.home__clientes .clientes__titles .clientes__title1 .text-highlight {
   font-weight: 500;
   color: #21594F;
 }
-.banner .banner__content .banner__mainbutton {
+.home__clientes .clientes__mainbutton {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   line-height: normal;
@@ -29,13 +37,9 @@
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
+  margin: 2rem auto 3rem auto;
 }
-.banner .banner__content .banner__mainbutton * {
+.home__clientes .clientes__mainbutton * {
   color: #FFF;
   font-weight: 500;
-}
-.banner .banner__bg {
-  width: 100%;
-  padding-top: 11.5rem;
-  z-index: -1;
 }

@@ -10,6 +10,7 @@
 
         .banner__maintitle {
             @include title1;
+            line-height: 150%;
         }
         .banner__mainbutton {
             @include button1;
