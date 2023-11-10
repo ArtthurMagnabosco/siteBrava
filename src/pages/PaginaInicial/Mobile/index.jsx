@@ -1,3 +1,4 @@
+import SessaoOQueFazemos from "../../../components/SessaoOQueFazemos/Mobile";
 import Banner from "./Banner";
 import Clientes from "./Clientes";
 import "./sass/PaginaInicial.css";
@@ -7,6 +8,7 @@ const PaginaInicialMobile = () => {
     <div className="home">
       <Banner />
       <Clientes />
+      <SessaoOQueFazemos />
     </div>
   );
 };

@@ -3,7 +3,7 @@
 .home__clientes {
     display: flex;
     flex-direction: column;
-    
+
     .clientes__titles {
         padding: 2rem 1.25rem 0rem 1.25rem;
         display: flex;
@@ -24,21 +24,40 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 5.1875rem;
         position: relative;
         overflow: hidden;
 
-        .clientes__roller {
+        .clientes__slider {
+            height: 5.1875rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: space-between;
             gap: 4rem;
-            position: absolute;
-            animation: slideshow 15s linear infinite;
+            position: relative;
+            animation: slideshow 30s linear infinite;
 
             @keyframes slideshow {
-                0%    { left: 0; }
-                100%  { left: -200%; }
-              }
+                0% {
+                    left: 10%;
+                }
+                100% {
+                    left: -330%;
+                }
+            }
+        }
+
+        .clientes__slider-reverse {
+            align-self: flex-end;
+            animation: slideshow-reverse 30s linear infinite;
+            
+            @keyframes slideshow-reverse {
+                0% {
+                    right: 10%;
+                }
+                100% {
+                    right: -300%;
+                }
+            }
         }
     }
 
