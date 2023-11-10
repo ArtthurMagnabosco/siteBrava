@@ -14,19 +14,19 @@ const Clientes = () => {
         </h3>
       </div>
       <div className="clientes__brands">
-        <div className="clientes__roller">
+        <div className="clientes__slider">
           {logosClientes.group1.map((logo, index) => (
             <img src={logo} key={index} />
           ))}
         </div>
 
-        <div className="clientes__roller clientes__roller-right">
+        <div className="clientes__slider clientes__slider-reverse">
           {logosClientes.group2.map((logo, index) => (
             <img src={logo} key={index} />
           ))}
         </div>
 
-        <div className="clientes__roller">
+        <div className="clientes__slider">
           {logosClientes.group3.map((logo, index) => (
             <img src={logo} key={index} />
           ))}

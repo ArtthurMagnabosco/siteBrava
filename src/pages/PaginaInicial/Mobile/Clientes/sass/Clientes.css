@@ -28,23 +28,36 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 5.1875rem;
   position: relative;
   overflow: hidden;
 }
-.home__clientes .clientes__brands .clientes__roller {
+.home__clientes .clientes__brands .clientes__slider {
+  height: 5.1875rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
-  position: absolute;
-  animation: slideshow 15s linear infinite;
+  position: relative;
+  animation: slideshow 30s linear infinite;
 }
 @keyframes slideshow {
   0% {
-    left: 0;
+    left: 10%;
   }
   100% {
-    left: -200%;
+    left: -330%;
+  }
+}
+.home__clientes .clientes__brands .clientes__slider-reverse {
+  align-self: flex-end;
+  animation: slideshow-reverse 30s linear infinite;
+}
+@keyframes slideshow-reverse {
+  0% {
+    right: 10%;
+  }
+  100% {
+    right: -300%;
   }
 }
 .home__clientes .clientes__mainbutton {
