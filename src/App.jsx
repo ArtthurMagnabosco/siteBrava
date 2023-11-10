@@ -15,11 +15,12 @@ function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const openMenu = () => {
-    console.log("OK")
     setMenuOpen(true)
+    document.body.style.overflow = "hidden";
   }
   const closeMenu = () => {
     setMenuOpen(false)
+    document.body.style.overflow = "scroll";
   }
   
   // const handleMenuOpen = useCallback(() => {

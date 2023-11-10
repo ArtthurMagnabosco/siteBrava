@@ -1,0 +1,35 @@
+import './sass/Biografia.scss'
+import '../SessaoQuemSomos/sass/SessaoQuemSomos.scss'
+import FotoFelipe from '../../../../assets/imagens/fotos/img-Felipe.png'
+import FotoBernardo from '../../../../assets/imagens/fotos/img-Bernardo.png'
+import FotoAmanda from '../../../../assets/imagens/fotos/img-Amanda.png'
+
+const Biografias = () => {
+    return (
+        <div className='biografias__container'>
+            <div className='biografias__body'>
+                <img src={FotoFelipe} alt="Foto Felipe" />
+                <div className='biografias__body__desc'>
+                    <p className='body__title'>Felipe S. Soares</p>
+                    <p className='body__text'>Graduado em Administração de Empresas, com MBA em Marketing Digital pela ESPM, possui mais de 13 anos de atuação no mercado de negócios digitais, com passagens por Lojas Colombo, Arezzo, ESPM e E-commerce Brasil. Conquistou premiações de Melhor Profissional de E-commerce pelo eBit e ABCOMM e atualmente é sócio da Brava, Converte e Wecode.</p>
+                </div>
+            </div>
+            <div className='biografias__body'>
+                <img src={FotoBernardo} alt="Foto Felipe" />
+                <div className='biografias__body__desc'>
+                    <p className='body__title'>Bernardo Finimundi</p>
+                    <p className='body__text'>Graduado em Administração de Empresas, atuou em operações de comércio eletrônico de empresas de grande porte, como Lojas Colombo e Grupo Dass, detentora das marcas Fila e Umbro na América Latina. Foi Head de E-Commerce na Miolo Wine Group, renomada vinícola brasileira e maior exportadora de vinhos. Foi palestrante em 2017 na FBV (Feira Brasileira do Varejo) e em 2018 na Conferência E-Commerce Brasil RS. Atualmente é sócio da Converte Educação Digital e consultor na Brava Consultoria em E-Commerce.</p>
+                </div>
+            </div>
+            <div className='biografias__body'>
+                <img src={FotoAmanda} alt="Foto Felipe" />
+                <div className='biografias__body__desc'>
+                    <p className='body__title'>Amanda Seimetz</p>
+                    <p className='body__text'>Graduada em Relações Públicas, com Pós Graduação em Gestão de Negócios Digitais. Teve uma experiência de trabalho no exterior, através de intercâmbio nos Estados Unidos. Implementou o e-commerce da Piccadilly, estruturou a área dentro da organização e foi responsável pela gestão de toda a operação e performance dos negócios digitais durante 7 anos. Foi palestrante da Conferência E-commerce Brasil RS, em 2018 e 2021, e da Locaweb Digital Conference, em 2022. Atualmente é consultora da Brava Consultoria em E-commerce.</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Biografias
