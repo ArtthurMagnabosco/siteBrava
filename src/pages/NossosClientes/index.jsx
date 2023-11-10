@@ -1,6 +1,26 @@
+import { useEffect,useState } from 'react'
+import NossosClientesMobile from './Mobile/index'
+
 const NossosClientes = () => {
+
+    const [isMobile, setIsMobile] = useState()
+    const handleWidth = () => {
+        window.innerWidth >= 1024 ?
+        setIsMobile(false) :
+        setIsMobile(true)
+    }
+    useEffect(() => {
+        handleWidth()
+        window.addEventListener("resize", handleWidth)
+    }, [])
+
     return (
-        <p>Pagina Nossos CLientes</p>
+        <>
+        {isMobile ? 
+        <NossosClientesMobile/> :
+        <p>Nossos Clientes desk</p>}
+        </>
+        
     )
 }
 
