@@ -2,6 +2,7 @@
 .home__clientes {
   display: flex;
   flex-direction: column;
+  background-color: #F3F3F3;
 }
 .home__clientes .clientes__titles {
   padding: 2rem 1.25rem 0rem 1.25rem;
@@ -16,7 +17,7 @@
   text-transform: uppercase;
 }
 .home__clientes .clientes__titles .clientes__title1 {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
 }

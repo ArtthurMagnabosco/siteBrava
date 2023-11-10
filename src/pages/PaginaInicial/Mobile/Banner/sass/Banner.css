@@ -7,10 +7,11 @@
   position: absolute;
 }
 .banner .banner__content .banner__maintitle {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
   line-height: 150%;
+  font-size: 1.875rem;
 }
 .banner .banner__content .banner__maintitle .text-highlight {
   font-weight: 500;

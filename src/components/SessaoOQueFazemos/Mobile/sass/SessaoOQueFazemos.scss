@@ -1,0 +1,117 @@
+@import "../../../../styles/padroes/padroes.scss";
+
+.oq-fazemos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1.25rem;
+    background-color: $background;
+    
+    .oq-fazemos__title2 {
+        @include title2();
+        text-transform: uppercase;
+    }
+
+    .oq-fazemos__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .oq-fazemos__maintitle {
+            @include title1();
+        }
+
+        .oq-fazemos__paragraph {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .modelos-negocio {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .modelos__title {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: $grey;
+        }
+
+        .modelos__card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .modelos__header {
+                display: flex;
+                gap: 0.62rem;
+                align-items: center;
+
+                .modelos__header__text {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .modelos__body__text {
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: $text2;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 2rem 0;
+
+        .servicos__card {
+            display: flex;
+
+            .card__image {
+                width: 30%;
+            }
+
+            .servicos__text {
+                background-color: $green;
+                width: 100%;
+                
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.25rem;
+
+                color: $white;
+                line-height: 1.5rem;
+
+                .card__title {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                }
+    
+                .card__paragraph {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                }
+            }
+
+            .servico2 {
+                background-color: $green2;
+            }
+            .servico3 {
+                background-color: $green3;
+            }
+            .servico4 {
+                background-color: $green4;
+            }
+            .servico5 {
+                background-color: $green5;
+            }
+        }
+    }
+}

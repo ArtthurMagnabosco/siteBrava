@@ -11,6 +11,7 @@
         .banner__maintitle {
             @include title1;
             line-height: 150%;
+            font-size: 1.875rem;         
         }
         .banner__mainbutton {
             @include button1;

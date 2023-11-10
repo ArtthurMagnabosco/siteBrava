@@ -3,6 +3,7 @@
 .home__clientes {
     display: flex;
     flex-direction: column;
+    background-color: $background;
 
     .clientes__titles {
         padding: 2rem 1.25rem 0rem 1.25rem;
