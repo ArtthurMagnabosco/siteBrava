@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 .home__clientes {
-  padding: 2rem 1.25rem 0rem 1.25rem;
   display: flex;
   flex-direction: column;
 }
 .home__clientes .clientes__titles {
+  padding: 2rem 1.25rem 0rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -17,12 +17,35 @@
 }
 .home__clientes .clientes__titles .clientes__title1 {
   font-size: 1.875rem;
-  line-height: 150%;
+  line-height: normal;
   font-weight: 300;
 }
 .home__clientes .clientes__titles .clientes__title1 .text-highlight {
   font-weight: 500;
   color: #21594F;
+}
+.home__clientes .clientes__brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5.1875rem;
+  position: relative;
+  overflow: hidden;
+}
+.home__clientes .clientes__brands .clientes__roller {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  position: absolute;
+  animation: slideshow 15s linear infinite;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
 }
 .home__clientes .clientes__mainbutton {
   font-family: "Montserrat", sans-serif;
@@ -30,6 +53,7 @@
   line-height: normal;
   font-weight: 300;
   color: #353A42;
+  display: inline-block;
   background: #21594F;
   padding: 0.75rem 2rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);

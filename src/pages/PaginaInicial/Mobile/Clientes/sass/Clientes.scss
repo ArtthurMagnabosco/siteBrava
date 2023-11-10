@@ -1,25 +1,46 @@
 @import "../../../../../styles/padroes/padroes.scss";
 
 .home__clientes {
-    padding: 2rem 1.25rem 0rem 1.25rem;
     display: flex;
     flex-direction: column;
-
+    
     .clientes__titles {
+        padding: 2rem 1.25rem 0rem 1.25rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        
+
         .clientes__title2 {
-            @include title2(); 
+            @include title2();
             text-transform: uppercase;
         }
 
         .clientes__title1 {
-            @include title1() 
+            @include title1();
         }
     }
 
+    .clientes__brands {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5.1875rem;
+        position: relative;
+        overflow: hidden;
+
+        .clientes__roller {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+            position: absolute;
+            animation: slideshow 15s linear infinite;
+
+            @keyframes slideshow {
+                0%    { left: 0; }
+                100%  { left: -200%; }
+              }
+        }
+    }
 
     .clientes__mainbutton {
         @include button1();

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./sass/Clientes.css";
+import { logosClientes } from "../../sliderClientes/logosClientes";
 
 const Clientes = () => {
   return (
@@ -12,7 +13,25 @@ const Clientes = () => {
           nossa qualidade
         </h3>
       </div>
-      <div className="clientes__brands"></div>
+      <div className="clientes__brands">
+        <div className="clientes__roller">
+          {logosClientes.group1.map((logo, index) => (
+            <img src={logo} key={index} />
+          ))}
+        </div>
+
+        <div className="clientes__roller clientes__roller-right">
+          {logosClientes.group2.map((logo, index) => (
+            <img src={logo} key={index} />
+          ))}
+        </div>
+
+        <div className="clientes__roller">
+          {logosClientes.group3.map((logo, index) => (
+            <img src={logo} key={index} />
+          ))}
+        </div>
+      </div>
 
       <Link to="/nossos-clientes" className="clientes__mainbutton">
         <p>Saiba Mais</p>

@@ -8,7 +8,7 @@
 }
 .banner .banner__content .banner__maintitle {
   font-size: 1.875rem;
-  line-height: 150%;
+  line-height: normal;
   font-weight: 300;
   line-height: 150%;
 }
@@ -22,6 +22,7 @@
   line-height: normal;
   font-weight: 300;
   color: #353A42;
+  display: inline-block;
   background: #21594F;
   padding: 0.75rem 2rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
