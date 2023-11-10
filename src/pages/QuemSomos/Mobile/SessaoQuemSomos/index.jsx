@@ -7,8 +7,8 @@ const SessaoQuemSomos = () => {
     return (
         <div className='quem-somos__container'>
             <div className='quem-somos__header'>
-                <p className='header__title2'>Quem somos</p>
-                <p className='header__title1'>Valorizamos <span className='text-highlight'>pessoas</span> e impulsionamos <span className='text-highlight'>negócios</span></p>
+                <h4 className='header__title2'>Quem somos</h4>
+                <h3 className='header__title1'>Valorizamos <span className='text-highlight'>pessoas</span> e impulsionamos <span className='text-highlight'>negócios</span></h3>
                 <p className='header__text1'>Somos um grupo que oferece diferentes soluções para diferentes necessidades, dentro do ecossistema do mercado digital.</p>     
             </div>
             <div className='quem-somos__body'>

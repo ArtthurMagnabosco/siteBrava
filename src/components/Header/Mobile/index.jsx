@@ -7,6 +7,7 @@ import { useState } from "react";
 const HeaderMobile = ({openMenu}) => {
    return <>
     <header>
+        
         <div className="header__container">
             <p></p>
             <Link to="/">
@@ -14,10 +15,9 @@ const HeaderMobile = ({openMenu}) => {
             </Link>
             <div className="header__menu-button" >
                 <img src={IconMenu} alt="iconMenu" onClick={() => openMenu()} />
-            </div>
-                    
-                    
+            </div>                                     
         </div>
+        <div className="placeholder"></div>
     </header>
    </>
     
