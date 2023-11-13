@@ -6,7 +6,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 0 1.25rem;
+        padding: 2rem 1.25rem 0;
 
         .oq-fazemos__title2 {
             @include title2();
