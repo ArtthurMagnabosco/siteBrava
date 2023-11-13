@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import HeaderMobile from "./Mobile"
+import HeaderDesk from './Desk'
 
 const Header = ({openMenu}) => {
 
@@ -18,7 +19,7 @@ const Header = ({openMenu}) => {
         <>
         {isMobile ? 
         <HeaderMobile openMenu={() => openMenu()}/> :
-        <p>Header desk</p>}
+        <HeaderDesk/>}
         </>
     )
     
