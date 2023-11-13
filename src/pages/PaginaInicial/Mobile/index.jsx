@@ -1,7 +1,8 @@
-import SessaoOQueFazemos from "../../../components/SessaoOQueFazemos/Mobile";
+import "./sass/PaginaInicial.css";
 import Banner from "./Banner";
 import Clientes from "./Clientes";
-import "./sass/PaginaInicial.css";
+import SessaoOQueFazemos from "../../../components/SessaoOQueFazemos/Mobile";
+import Proposito from "./Proposito";
 
 const PaginaInicialMobile = () => {
   return (
@@ -9,6 +10,7 @@ const PaginaInicialMobile = () => {
       <Banner />
       <Clientes />
       <SessaoOQueFazemos />
+      <Proposito />
     </div>
   );
 };
