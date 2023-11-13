@@ -43,3 +43,10 @@
   gap: 2.5rem;
   justify-content: space-between;
 }
+.nossos-clientes__container .nossos-clientes__body .logo__clientes {
+  display: flex;
+  width: 5.0625rem;
+  height: 1.875rem;
+  justify-content: center;
+  align-items: center;
+}

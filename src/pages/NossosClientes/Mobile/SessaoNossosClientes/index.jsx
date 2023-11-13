@@ -14,7 +14,7 @@ const SessaoNossosClientesMobile = () => {
             <div className='nossos-clientes__body'>
                 
                 {logoClientesColorido.map((cliente) => (
-                    <a href={cliente.link} key={cliente.id} target='_blank'>
+                    <a className='logo__clientes' href={cliente.link} key={cliente.id} target='_blank'>
                         <img src={cliente.src} ></img>
                     </a>
                    
