@@ -1,6 +1,7 @@
 import './sass/SessaoNossosClientes.scss'
 import { logoClientesColorido } from './clientes'
 
+
 const SessaoNossosClientesMobile = () => {
     const c = 1;
     return (
@@ -19,6 +20,7 @@ const SessaoNossosClientesMobile = () => {
                     </a>
                    
                 ))}
+               
             </div>
         </div>
     )

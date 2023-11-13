@@ -1,0 +1,15 @@
+@import "../../../../../styles/padroes/padroes.scss";
+
+
+.setores__container{
+    display: flex;
+    width: 100%;
+    padding: 0px 20px 45px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 2rem;
+    .container__text1{
+        @include padrao;
+    }
+}
