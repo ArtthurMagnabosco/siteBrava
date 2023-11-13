@@ -35,28 +35,28 @@
             justify-content: space-between;
             gap: 4rem;
             position: relative;
-            animation: slideshow 30s linear infinite;
+            animation: slideshow 20s linear infinite;
 
             @keyframes slideshow {
                 0% {
                     left: 10%;
                 }
                 100% {
-                    left: -330%;
+                    left: -200%;
                 }
             }
         }
 
         .clientes__slider-reverse {
             align-self: flex-end;
-            animation: slideshow-reverse 30s linear infinite;
+            animation: slideshow-reverse 20s linear infinite;
             
             @keyframes slideshow-reverse {
                 0% {
                     right: 10%;
                 }
                 100% {
-                    right: -300%;
+                    right: -200%;
                 }
             }
         }
