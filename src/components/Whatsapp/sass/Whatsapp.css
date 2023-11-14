@@ -5,3 +5,10 @@
   bottom: 1.25rem;
   right: 1.25rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .whatsapp {
+    bottom: 7.5rem;
+    right: 7.5rem;
+  }
+}

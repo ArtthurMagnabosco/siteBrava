@@ -1,6 +1,7 @@
 import "./Mobile/sass/PaginaInicial.css";
 import PaginaInicialMobile from "./Mobile";
 import { useEffect, useState } from "react";
+import PaginaInicialDesk from "./Desk";
 
 const PaginaInicial = () => {
   const [isMobile, setIsMobile] = useState();
@@ -14,7 +15,7 @@ const PaginaInicial = () => {
 
   return (
     <>
-        {isMobile ? <PaginaInicialMobile /> : <p>Pagina inicial desk</p>}
+        {isMobile ? <PaginaInicialMobile /> : <PaginaInicialDesk />}
     </>
     );
 };
