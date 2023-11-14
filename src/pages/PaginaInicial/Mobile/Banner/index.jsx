@@ -1,5 +1,5 @@
 import "./sass/Banner.scss";
-import bgImage from "../../../../assets/imagens/banner/banner.png";
+import bgImage from "../../../../assets/imagens/banner/bannerMobile.png";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
