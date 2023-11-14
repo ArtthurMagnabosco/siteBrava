@@ -1,5 +1,6 @@
 import { useEffect,useState } from 'react'
 import OqueFazemosMobile from './Mobile'
+import OqueFazemosDesk from './Desk'
 
 const OQueFazemos = () => {
         const [isMobile, setIsMobile] = useState()
@@ -17,7 +18,7 @@ const OQueFazemos = () => {
             <>
             {isMobile ? 
             <OqueFazemosMobile/> :
-            <p>Oque Fazemos desk</p>}
+            <OqueFazemosDesk/>}
             </>
             
         )
