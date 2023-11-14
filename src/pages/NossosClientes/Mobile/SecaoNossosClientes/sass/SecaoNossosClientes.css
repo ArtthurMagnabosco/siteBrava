@@ -16,6 +16,7 @@
   font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
 }
@@ -28,6 +29,7 @@
   font-weight: 500;
   color: #8A8A8A;
   text-transform: uppercase;
+  font-size: 1rem;
 }
 .nossos-clientes__container .nossos-clientes__header .header__text1 {
   font-family: "Montserrat", sans-serif;

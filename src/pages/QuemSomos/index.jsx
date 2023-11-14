@@ -1,5 +1,6 @@
 import { useEffect,useState } from 'react'
 import QuemSomosMobile from './Mobile'
+import QuemSomosDesk from './Desk'
 
 const QuemSomos = () => {
     const [isMobile, setIsMobile] = useState()
@@ -17,7 +18,7 @@ const QuemSomos = () => {
         <>
         {isMobile ? 
         <QuemSomosMobile/> :
-        <p>Quem Somos desk</p>}
+        <QuemSomosDesk/>}
         </>
     )
 }

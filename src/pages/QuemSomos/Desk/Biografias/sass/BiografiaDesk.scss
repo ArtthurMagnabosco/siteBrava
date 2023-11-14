@@ -1,0 +1,51 @@
+@import "../../../../../styles/padroes/padroes.scss";
+
+.biografias__container-desk{
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 17.8125rem 5rem 17.8125rem;
+    align-items: flex-start;
+    gap: 1.875rem;
+    background: $green;
+
+    .biografias__body{
+
+        .foto__consultores{
+            max-width: 26.875rem;
+        }
+
+        .biografias__body__desc{
+            margin-top: -5px;
+            display: flex;
+            width: 100%;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            align-self: stretch;
+            background: $white;
+            max-width: 26.875rem;
+            
+
+            
+
+            .body__title{
+                color: $green;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.5rem;
+            }
+
+            .body__text{
+                color: $text1;           
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem;
+                align-self: stretch;
+            }
+        }
+    
+    }
+}
