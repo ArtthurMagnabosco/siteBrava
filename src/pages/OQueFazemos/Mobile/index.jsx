@@ -1,10 +1,10 @@
-import SessaoOQueFazemos from '../../../components/SessaoOQueFazemos/Mobile'
+import SecaoOQueFazemos from '../../../components/SecaoOQueFazemos/Mobile'
 import Setores from './Setores'
 
 const OqueFazemosMobile = () => {
     return (
         <div className='oque-fazemos-mobile'>
-         <SessaoOQueFazemos/>
+         <SecaoOQueFazemos/>
          <Setores/>
             
         </div>

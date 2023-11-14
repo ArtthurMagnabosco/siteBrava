@@ -1,4 +1,3 @@
-import {slide as burguer} from 'react-burger-menu'
 import { Link } from "react-router-dom";
 import LogoBravaBranco from '../../assets/imagens/logo/logoBravaBranco.svg'
 import IconX from '../../assets/imagens/icons/iconX.svg'

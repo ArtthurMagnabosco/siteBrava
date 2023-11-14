@@ -1,8 +1,8 @@
-import './sass/SessaoNossosClientes.scss'
+import './sass/SecaoNossosClientes.scss'
 import { logoClientesColorido } from './clientes'
 
 
-const SessaoNossosClientesMobile = () => {
+const SecaoNossosClientesMobile = () => {
     const c = 1;
     return (
         <div className="nossos-clientes__container">
@@ -26,4 +26,4 @@ const SessaoNossosClientesMobile = () => {
     )
 }
 
-export default SessaoNossosClientesMobile
+export default SecaoNossosClientesMobile

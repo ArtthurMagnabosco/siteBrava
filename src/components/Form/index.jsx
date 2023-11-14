@@ -2,16 +2,20 @@ import { useState } from "react";
 import "./sass/Form.css";
 
 const Form = () => {
-
   const handleForm = (event) => {
     event.preventDefault();
     setSubmittedForm(true);
+    console.log({name, company, phone, message})
     setTimeout(() => {
       setSubmittedForm(false);
     }, 5000);
   };
 
   const [submittedForm, setSubmittedForm] = useState(false);
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <div className="form">
@@ -34,8 +38,10 @@ const Form = () => {
           <label className="form__label">
             Nome*
             <input
-              required
               className="form__input"
+              onChange={(event) => setName(event.target.value)}
+              value={name}
+              required
               name="name"
               type="text"
               placeholder="Digite seu nome completo"
@@ -44,8 +50,10 @@ const Form = () => {
           <label className="form__label">
             Empresa*
             <input
-              required
               className="form__input"
+              onChange={(event) => setCompany(event.target.value)}
+              value={company}
+              required
               name="company"
               type="text"
               placeholder="Digite o nome da empresa"
@@ -54,8 +62,10 @@ const Form = () => {
           <label className="form__label">
             Telefone*
             <input
-              required
               className="form__input"
+              onChange={(event) => setPhone(event.target.value)}
+              value={phone}
+              required
               name="phone"
               type="tel"
               placeholder="+55 (000) 9 9999-9999"
@@ -64,10 +74,11 @@ const Form = () => {
           <label className="form__label">
             Sua mensagem*
             <textarea
-              required
               className="form__input form__input__textarea"
+              onChange={(event) => setMessage(event.target.value)}
+              value={message}
+              required
               name="message"
-              type="text"
               placeholder="Escreva aqui sua mensagem"
               rows={4}
             ></textarea>

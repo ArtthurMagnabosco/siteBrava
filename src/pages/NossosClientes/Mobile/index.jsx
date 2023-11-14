@@ -1,9 +1,9 @@
-import SessaoNossosClientesMobile from './SessaoNossosClientes'
+import SecaoNossosClientesMobile from './SecaoNossosClientes'
 
 const NossosClientesMobile = () => {
     return(
         <div>
-        <SessaoNossosClientesMobile />
+        <SecaoNossosClientesMobile />
     </div>
     )
     

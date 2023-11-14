@@ -1,5 +1,5 @@
 import './sass/Biografia.scss'
-import '../SessaoQuemSomos/sass/SessaoQuemSomos.scss'
+import '../SecaoQuemSomos/sass/SecaoQuemSomos.scss'
 import FotoFelipe from '../../../../assets/imagens/fotos/img-Felipe.png'
 import FotoBernardo from '../../../../assets/imagens/fotos/img-Bernardo.png'
 import FotoAmanda from '../../../../assets/imagens/fotos/img-Amanda.png'

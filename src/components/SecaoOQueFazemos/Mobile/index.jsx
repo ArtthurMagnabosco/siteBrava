@@ -1,4 +1,4 @@
-import "./sass/SessaoOQueFazemos.css";
+import "./sass/SecaoOQueFazemos.css";
 import B2CIcon from "../../../assets/imagens/icons/B2C.svg";
 import D2CIcon from "../../../assets/imagens/icons/D2C.svg";
 import B2BIcon from "../../../assets/imagens/icons/B2B.svg";
@@ -10,7 +10,7 @@ import aceleracaoPhoto from "../../../assets/imagens/fotos/aceleracao.png";
 import cursosInCompanyPhoto from "../../../assets/imagens/fotos/cursosInCompany.png";
 import diagnosticoPhoto from "../../../assets/imagens/fotos/diagnostico.png";
 
-const SessaoOQueFazemos = () => {
+const SecaoOQueFazemos = () => {
   return (
     <div className="oq-fazemos">
       <div className="oq-fazemos-container">
@@ -185,4 +185,4 @@ const SessaoOQueFazemos = () => {
   );
 };
 
-export default SessaoOQueFazemos;
+export default SecaoOQueFazemos;

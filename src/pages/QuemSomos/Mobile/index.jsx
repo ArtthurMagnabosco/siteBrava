@@ -1,10 +1,10 @@
 import Biografias from './Biografias'
-import SessaoQuemSomos from './SessaoQuemSomos'
+import SecaoQuemSomos from './SecaoQuemSomos'
 
 const QuemSomosMobile = () => {
     return (
         <>
-            <SessaoQuemSomos />
+            <SecaoQuemSomos />
             <Biografias />
         </>
     )
