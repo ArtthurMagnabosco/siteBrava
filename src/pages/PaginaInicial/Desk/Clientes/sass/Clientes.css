@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.home__clientes-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #F3F3F3;
+  padding: 1.5rem 0 5rem;
+}
+.home__clientes-desk .clientes__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.home__clientes-desk .clientes__titles .clientes__title2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8A8A8A;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.home__clientes-desk .clientes__titles .clientes__title1 {
+  font-size: 1.75rem;
+  line-height: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  max-width: 45%;
+  text-align: center;
+}
+.home__clientes-desk .clientes__titles .clientes__title1 .text-highlight {
+  font-weight: 500;
+  color: #21594F;
+}
+.home__clientes-desk .clientes__brands {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.home__clientes-desk .clientes__brands .clientes__slider {
+  margin: 0.5rem 0 1rem 0;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  position: relative;
+  animation: slideshow 60s linear infinite;
+}
+@keyframes slideshow {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+.home__clientes-desk .clientes__brands .clientes__slider-reverse {
+  align-self: flex-end;
+  animation: slideshow-reverse 60s linear infinite;
+}
+@keyframes slideshow-reverse {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -200%;
+  }
+}
+.home__clientes-desk .clientes__mainbutton {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 300;
+  color: #353A42;
+  display: inline-block;
+  background: #21594F;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 0.875rem 3rem;
+}
+.home__clientes-desk .clientes__mainbutton * {
+  color: #FFF;
+  font-weight: 500;
+}
+.home__clientes-desk .clientes__mainbutton p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
