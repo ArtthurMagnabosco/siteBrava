@@ -1,0 +1,56 @@
+@import "../../../../../styles/padroes/padroes.scss";
+
+.nossos-clientes__container_desk{
+    display: flex;
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    align-self: stretch;
+    .nossos-clientes__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+
+        .header__title1 {
+            @include title1;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            text-align: center
+            }
+    
+            .header__title2 {
+            @include title2;
+            text-transform: uppercase;
+            }
+    
+            .header__text1 {
+            @include padrao;
+            line-height: 1.5rem;
+            text-align: center;
+            
+            }
+    }
+
+    .nossos-clientes__body{
+        display: flex;
+        width: 100%;
+        padding: 0rem 17.8125rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .logo__clientes{
+            display: flex;
+            height: 7.5rem;
+            padding: 0 1.5rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex: 1 0 0;
+        }
+        
+    }
+}
