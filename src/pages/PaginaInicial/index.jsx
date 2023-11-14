@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Mobile/sass/PaginaInicial.css";
 import PaginaInicialMobile from "./Mobile";
 import { useEffect, useState } from "react";

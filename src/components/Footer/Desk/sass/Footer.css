@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.footer-desk {
+  display: flex;
+  flex-direction: column;
+}
+.footer-desk .footer1 {
+  background-color: #2F2F2F;
+  padding: 5rem 18%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.footer-desk .footer1 .footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-desk .footer1 .footer__section .footer__title {
+  color: #8A8A8A;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer-desk .footer1 .footer__section .footer__link {
+  line-height: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1;
+  font-weight: 300;
+}
+.footer-desk .footer1 .footer__section .footer__text {
+  line-height: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-desk .footer1 .footer__section .footer__social {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.38rem;
+}
+.footer-desk .footer2 {
+  background-color: #21594F;
+  padding: 2rem 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-desk .footer2 .footer2__text {
+  line-height: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: right;
+}

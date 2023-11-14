@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useEffect } from "react"
 import FooterMobile from "./Mobile"
+import FooterDesk from "./Desk"
 
 const Footer = () => {
 
@@ -19,7 +20,7 @@ const Footer = () => {
         <>
         {isMobile ? 
         <FooterMobile /> :
-        <p>Footer desk</p>}
+        <FooterDesk />}
         </>
     )
 }
