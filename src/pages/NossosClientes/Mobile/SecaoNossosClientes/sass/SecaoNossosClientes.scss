@@ -16,6 +16,7 @@
 
         .header__title1 {
         @include title1;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
         margin-top: 2rem;
         }
@@ -23,6 +24,7 @@
         .header__title2 {
         @include title2;
         text-transform: uppercase;
+        font-size: 1rem;
         }
 
         .header__text1 {
