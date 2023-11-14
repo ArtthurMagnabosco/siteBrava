@@ -1,5 +1,5 @@
 import './sass/SecaoNossosClientes.scss'
-import { logoClientesColorido } from './clientes'
+import { logoClientesColorido } from '../../clientes'
 
 
 const SecaoNossosClientesMobile = () => {

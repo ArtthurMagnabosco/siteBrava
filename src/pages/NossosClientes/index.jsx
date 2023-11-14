@@ -1,5 +1,6 @@
 import { useEffect,useState } from 'react'
 import NossosClientesMobile from './Mobile/index'
+import NossosClientesDesk from './Desk/index'
 import Form from '../../components/Form'
 
 const NossosClientes = () => {
@@ -19,7 +20,7 @@ const NossosClientes = () => {
         <>
         {isMobile ? 
         <NossosClientesMobile/> :
-        <p>Nossos Clientes desk</p>}
+        <NossosClientesDesk/>}
         </>
         
     )
