@@ -35,11 +35,12 @@
     }
 
     .nossos-clientes__body{
-        display: flex;
         width: 100%;
-        padding: 0rem 17.8125rem;
-        justify-content: space-around;
+        display: flex;
+        padding: 0rem 17.8125rem;         
         flex-wrap: wrap;
+        
+       
 
         .logo__clientes{
             display: flex;
@@ -48,9 +49,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 0.625rem;
-            flex: 1 0 0;
+            gap: 0.625rem;  
+            width: 15rem;
+            scale: 1.5;
+            flex: auto;
         }
-        
+     
     }
+    
 }

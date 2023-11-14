@@ -19,7 +19,10 @@ const SessaoNossosClientesDesk = () => {
                         <img src={cliente.src} ></img>
                     </a>
                    
-                ))}
+                ))} 
+               
+                 
+                
                
             </div>
         </div>
