@@ -4,7 +4,6 @@ import buttonArrow from "../../assets/imagens/icons/buttonArrow.svg";
 import sentCheck from "../../assets/imagens/icons/sentCheck.svg";
 
 const Form = () => {
-
   const [submittedForm, setSubmittedForm] = useState(false);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -14,10 +13,10 @@ const Form = () => {
   const [contact, setContact] = useState({
     name: "",
     email: "",
-    subject: "StaticForms - Contact Form",
+    subject: "StaticForms - Contato Brava",
     honeypot: "",
     message: "",
-    replyTo: 'felipe@wecode.digital',
+    replyTo: "felipe@wecode.digital",
     accessKey: "d51e8e2c-19f1-497e-b5a0-486af15bc604",
   });
 
@@ -38,12 +37,14 @@ const Form = () => {
 
   const handleForm = async (event) => {
     event.preventDefault();
-    setSubmittedForm(true);
-    console.log(contact);
 
     await fetchApi();
 
-    resetForm();
+    setTimeout(() => {
+      setSubmittedForm(true);
+      resetForm();
+    }, 2000);
+
     setTimeout(() => {
       setSubmittedForm(false);
     }, 5000);
