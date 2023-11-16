@@ -1,27 +1,90 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./sass/Form.css";
 import buttonArrow from "../../assets/imagens/icons/buttonArrow.svg";
 import sentCheck from "../../assets/imagens/icons/sentCheck.svg";
 
 const Form = () => {
-  const handleForm = (event) => {
-    event.preventDefault();
-    setSubmittedForm(true);
-    console.log({ name, company, phone, message });
-    setName("");
-    setCompany("");
-    setPhone("");
-    setMessage("");
-    setTimeout(() => {
-      setSubmittedForm(false);
-    }, 5000);
-  };
 
   const [submittedForm, setSubmittedForm] = useState(false);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    subject: "StaticForms - Contact Form",
+    honeypot: "",
+    message: "",
+    replyTo: 'felipe@wecode.digital',
+    accessKey: "d51e8e2c-19f1-497e-b5a0-486af15bc604",
+  });
+
+  const [response, setResponse] = useState({
+    type: "",
+    message: "",
+  });
+
+  const updateContact = useEffect(() => {
+    setContact({
+      ...contact,
+      name,
+      $company: company,
+      phone,
+      message,
+    });
+  }, [name, company, phone, message]);
+
+  const handleForm = async (event) => {
+    event.preventDefault();
+    setSubmittedForm(true);
+    console.log(contact);
+
+    await fetchApi();
+
+    resetForm();
+    setTimeout(() => {
+      setSubmittedForm(false);
+    }, 5000);
+
+    async function fetchApi() {
+      try {
+        const res = await fetch("https://api.staticforms.xyz/submit", {
+          method: "POST",
+          body: JSON.stringify(contact),
+          headers: { "Content-Type": "application/json" },
+        });
+
+        const json = res.json();
+
+        if (json.success) {
+          setResponse({
+            type: "success",
+            message: "Thank you for reaching out to us.",
+          });
+        } else {
+          setResponse({
+            type: "error",
+            message: json.message,
+          });
+        }
+      } catch (e) {
+        console.log("An error occurred", e);
+        setResponse({
+          type: "error",
+          message: "An error occurred while submitting the form.",
+        });
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setName("");
+    setCompany("");
+    setPhone("");
+    setMessage("");
+  };
 
   return (
     <div className="form">
