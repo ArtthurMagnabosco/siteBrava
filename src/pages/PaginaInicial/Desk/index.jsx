@@ -1,7 +1,7 @@
 import Banner from "./Banner";
 import Clientes from "./Clientes";
 import SecaoOQueFazemos from "../../../components/SecaoOQueFazemos/Desk";
-// import Proposito from "./Proposito";
+import Proposito from "./Proposito";
 // import Form from "../../../components/Form";
 
 const PaginaInicialDesk = () => {
@@ -10,8 +10,8 @@ const PaginaInicialDesk = () => {
       <Banner />
       <Clientes />
       <SecaoOQueFazemos />
-      {/* <Proposito />
-      <Form /> */}
+      <Proposito />
+      {/* <Form /> */}
     </div>
   );
 };

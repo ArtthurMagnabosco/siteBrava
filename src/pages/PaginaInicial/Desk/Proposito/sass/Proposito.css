@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.proposito-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F3F3F3;
+  gap: 3rem;
+  padding: 5rem 0rem;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+.proposito-desk .proposito__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.proposito-desk .proposito__header .proposito__title2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8A8A8A;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.proposito-desk .proposito__header .proposito__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  max-width: 55%;
+}
+.proposito-desk .proposito__header .proposito__text .proposito__maintitle {
+  font-size: 1.75rem;
+  line-height: normal;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.proposito-desk .proposito__header .proposito__text .proposito__maintitle .text-highlight {
+  font-weight: 500;
+  color: #21594F;
+}
+.proposito-desk .proposito__header .proposito__text .proposito__paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.proposito-desk .proposito__cards {
+  display: flex;
+  gap: 1.875rem;
+  max-width: 70%;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.proposito-desk .proposito__cards .proposito__card {
+  display: flex;
+  flex-direction: column;
+  gap: 4.1875rem;
+  padding: 1.9rem 1.875rem 3.4rem;
+  color: #FFF;
+  line-height: 1.5rem;
+  background-color: #21594F;
+  width: 18.22%;
+}
+.proposito-desk .proposito__cards .proposito__card .proposito__card__number {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.proposito-desk .proposito__cards .proposito__card .proposito__card__text {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.proposito-desk .proposito__cards .proposito__card2 {
+  background-color: #3A6C63;
+}
+.proposito-desk .proposito__cards .proposito__card3 {
+  background-color: #4A776F;
+}
+.proposito-desk .proposito__cards .proposito__card4 {
+  background-color: #557F77;
+}
+.proposito-desk .proposito__cards .proposito__card5 {
+  background-color: #648A84;
+}
+.proposito-desk .proposito__cards::-webkit-scrollbar {
+  display: none;
+}
