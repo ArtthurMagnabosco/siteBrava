@@ -17,7 +17,6 @@
   line-height: normal;
   font-weight: 300;
   text-align: center;
-  margin-top: 2rem;
   font-size: 3rem;
 }
 .quem-somos__container-desk .quem-somos__header .header__title1 .text-highlight {
@@ -44,8 +43,8 @@
 .quem-somos__container-desk .quem-somos__body {
   display: flex;
   width: 100%;
-  padding: 3.75rem 17.8125rem;
-  align-items: flex-start;
+  padding: 3.75rem 0;
+  align-items: stretch;
   gap: 1.875rem;
   justify-content: center;
 }
@@ -57,6 +56,7 @@
   flex: 1 0 0;
   border: 1px solid #F3F3F3;
   background: #FFF;
+  max-width: 22.4%;
 }
 .quem-somos__container-desk .quem-somos__body .body__company .body__company__logo {
   display: flex;
@@ -74,6 +74,7 @@
   align-items: flex-start;
   gap: 1rem;
   align-self: stretch;
+  height: 100%;
 }
 .quem-somos__container-desk .quem-somos__body .body__company .body__company__info .body__company__title {
   color: #21594F;

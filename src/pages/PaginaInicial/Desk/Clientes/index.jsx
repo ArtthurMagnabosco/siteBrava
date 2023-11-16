@@ -1,6 +1,7 @@
 import "./sass/Clientes.css";
 import { Link } from "react-router-dom";
 import { logosClientesDesk } from "../../sliderClientes/logosClientes";
+import buttonArrow from "../../../../assets/imagens/icons/buttonArrow.svg"
 
 const Clientes = () => {
   return (
@@ -34,7 +35,8 @@ const Clientes = () => {
       </div>
 
       <Link to="/nossos-clientes" className="clientes__mainbutton">
-        <p>Saiba Mais</p>
+        <p className="clientes__button__text">Saiba Mais</p>
+        <img src={buttonArrow} className="clientes__button__icon" />
       </Link>
     </div>
   );

@@ -9,11 +9,19 @@ import reestruturacaoPhoto from "../../../assets/imagens/fotos/reestruturacaoDes
 import aceleracaoPhoto from "../../../assets/imagens/fotos/aceleracaoDesk.png";
 import cursosInCompanyPhoto from "../../../assets/imagens/fotos/cursosInCompanyDesk.png";
 import diagnosticoPhoto from "../../../assets/imagens/fotos/diagnosticoDesk.png";
+import { useLocation } from "react-router-dom";
 
 const SecaoOQueFazemos = () => {
+  const location = useLocation().pathname;
+
   return (
     <div className="oq-fazemos-desk">
-      <div className="oq-fazemos-container">
+      <div
+        className={`
+          oq-fazemos__container 
+          ${location == "/" && "oq-fazemos__container-home"}
+          `}
+      >
         <div className="oq-fazemos__header">
           <h4 className="oq-fazemos__title2">O que fazemos</h4>
           <div className="oq-fazemos__text">
@@ -92,7 +100,6 @@ const SecaoOQueFazemos = () => {
         <div className="servicos">
           <h4 className="servicos__title">Serviços</h4>
           <div className="servicos__cardrow">
-
             <div className="servicos__card">
               <img
                 src={implantacaoPhoto}
@@ -149,7 +156,7 @@ const SecaoOQueFazemos = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="servicos__card">
               <img
                 src={diagnosticoPhoto}

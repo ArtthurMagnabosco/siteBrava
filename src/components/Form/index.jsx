@@ -1,11 +1,17 @@
 import { useState } from "react";
 import "./sass/Form.css";
+import buttonArrow from "../../assets/imagens/icons/buttonArrow.svg";
+import sentCheck from "../../assets/imagens/icons/sentCheck.svg";
 
 const Form = () => {
   const handleForm = (event) => {
     event.preventDefault();
     setSubmittedForm(true);
-    console.log({name, company, phone, message})
+    console.log({ name, company, phone, message });
+    setName("");
+    setCompany("");
+    setPhone("");
+    setMessage("");
     setTimeout(() => {
       setSubmittedForm(false);
     }, 5000);
@@ -20,14 +26,18 @@ const Form = () => {
   return (
     <div className="form">
       <div className="form__container">
-        <h2 className="form__title2">CONTATO</h2>
-        <h3 className="form__title1">
-          Vamos <span className="text-highlight">conversar!</span>
-        </h3>
-        <p className="form__text1">
-          Preencha o formulário abaixo para entrar em contato, ou pelos outros
-          meios de comunicações abaixo.
-        </p>
+        <div className="form__header">
+          <h2 className="form__title2">CONTATO</h2>
+          <div className="form__text">
+            <h3 className="form__title1">
+              Vamos <span className="text-highlight">conversar!</span>
+            </h3>
+            <p className="form__paragraph">
+              Preencha o formulário abaixo para entrar em contato, ou pelos
+              outros meios de comunicações abaixo.
+            </p>
+          </div>
+        </div>
         <form
           className="form__body"
           onSubmit={handleForm}
@@ -83,14 +93,21 @@ const Form = () => {
               rows={4}
             ></textarea>
           </label>
+          <button
+            type="submit"
+            form="contact"
+            className={`button__submit ${submittedForm && "form__submitted"}`}
+          >
+            <p className="button__submit__text">
+              {submittedForm ? "Enviado" : "Enviar"}
+            </p>
+            <img
+              src={submittedForm ? sentCheck : buttonArrow}
+              className="button__submit__icon"
+              alt=""
+            ></img>
+          </button>
         </form>
-        <button
-          type="submit"
-          form="contact"
-          className={`button__submit ${submittedForm && "form__submitted"}`}
-        >
-          <p>{submittedForm ? "Enviado" : "Enviar"}</p>
-        </button>
       </div>
     </div>
   );

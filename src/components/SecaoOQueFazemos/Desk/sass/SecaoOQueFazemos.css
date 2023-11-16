@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
-.oq-fazemos-desk .oq-fazemos-container {
+.oq-fazemos-desk .oq-fazemos__container {
   background-color: #21594F;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding-top: 2rem;
+  padding-top: 10rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   text-align: center;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__title2 {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__title2 {
   font-size: 0.75rem;
   font-weight: 500;
   color: #8A8A8A;
@@ -22,51 +22,51 @@
   font-size: 1rem;
   color: #FFF2CC;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__text {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   color: #FFF;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle {
   font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
   max-width: 60%;
   font-size: 3rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle .text-highlight {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle .text-highlight {
   font-weight: 500;
   color: #21594F;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle .text-highlight {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__maintitle .text-highlight {
   color: #FFF;
 }
-.oq-fazemos-desk .oq-fazemos-container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__paragraph {
+.oq-fazemos-desk .oq-fazemos__container .oq-fazemos__header .oq-fazemos__text .oq-fazemos__paragraph {
   font-size: 1.25rem;
   line-height: 1.5rem;
   max-width: 50%;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__title {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__title {
   font-size: 1.375rem;
   font-weight: 500;
   color: #FFF;
   align-self: center;
   margin: 2rem 0 1.88rem 0;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__cardrow {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow {
   display: flex;
   gap: 1.875rem;
   max-width: 70%;
   justify-content: center;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__cardrow .modelos__card {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card {
   background-color: #FFF;
   padding: 1.875rem;
   display: flex;
@@ -74,49 +74,49 @@
   gap: 0.75rem;
   width: 19.15%;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__cardrow .modelos__card .modelos__header__img {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card .modelos__header__img {
   width: 3.5rem;
   height: 3.5rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__cardrow .modelos__card .modelos__header__text {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card .modelos__header__text {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .modelos-negocio .modelos__cardrow .modelos__card .modelos__body__text {
+.oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card .modelos__body__text {
   font-size: 1.125rem;
   font-weight: 400;
   color: #8A8A8A;
   line-height: 1.5rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos {
+.oq-fazemos-desk .oq-fazemos__container .servicos {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
   padding: 1rem 0 5rem 0;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__title {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__title {
   color: #FFF;
   font-size: 1.375rem;
   font-weight: 500;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow {
   display: flex;
   gap: 1.875rem;
   width: 70%;
   justify-content: center;
   align-items: stretch;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card {
   display: flex;
   flex-direction: column;
   width: 19.15%;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servicos__card__image {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__card__image {
   width: 100%;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servicos__text {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text {
   background-color: #21594F;
   width: 100%;
   padding: 1.875rem;
@@ -128,23 +128,26 @@
   color: #FFF;
   line-height: 1.5rem;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__title {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__title {
   font-weight: 500;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__paragraph {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__paragraph {
   font-weight: 400;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servico2 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico2 {
   background-color: #3A6C63;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servico3 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico3 {
   background-color: #4A776F;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servico4 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico4 {
   background-color: #557F77;
 }
-.oq-fazemos-desk .oq-fazemos-container .servicos .servicos__cardrow .servicos__card .servico5 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico5 {
   background-color: #648A84;
+}
+.oq-fazemos-desk .oq-fazemos__container-home {
+  padding-top: 2rem;
 }
 .oq-fazemos-desk .como-fazemos {
   display: flex;

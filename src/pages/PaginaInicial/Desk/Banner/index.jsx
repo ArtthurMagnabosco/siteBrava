@@ -1,7 +1,8 @@
-import "./sass/Banner.scss";
+import "./sass/Banner.css";
+import { Link } from "react-router-dom";
 import bgImage from "../../../../assets/imagens/banner/bannerDesk.png";
 import polygon from "../../../../assets/imagens/banner/bannerDeskPolygon.svg";
-import { Link } from "react-router-dom";
+import buttonArrow from "../../../../assets/imagens/icons/buttonArrow.svg";
 
 const Banner = () => {
   return (
@@ -15,7 +16,8 @@ const Banner = () => {
           </h3>
 
           <Link to="/quem-somos" className="banner__mainbutton">
-            <p>Saiba Mais</p>
+            <p className="banner__button__text">Saiba Mais</p>
+            <img src={buttonArrow} className="banner__button__icon" alt=""/>
           </Link>
         </div>
         <img src={bgImage} className="banner__bg" />

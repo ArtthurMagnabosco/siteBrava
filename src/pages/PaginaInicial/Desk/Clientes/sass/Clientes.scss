@@ -75,9 +75,22 @@
         @include button1();
         padding: 0.875rem 3rem;
         
-        p {
+        .clientes__button__text {
             font-size: 1.125rem;
             font-weight: 400;
         }
+
+        .clientes__button__icon {
+            display: none;
+        }
+
+        &:hover {
+            transition: ease-in-out 0.3s;
+            background-color: $greenhover;
+            
+            .clientes__button__icon {
+                display: block;
+            }
+          }
     }
 }

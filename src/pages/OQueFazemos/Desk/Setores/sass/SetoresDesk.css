@@ -1,0 +1,14 @@
+.setores__container-desk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.setores__container-desk .setores__container__text {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  max-width: 46%;
+}

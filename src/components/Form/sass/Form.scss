@@ -1,7 +1,6 @@
 @import "../../../styles/padroes/padroes.scss";
 
 .form {
-  width: 100%;
   display: flex;
   padding: 2rem 1.25rem 2.125rem;
   flex-direction: column;
@@ -16,17 +15,31 @@
     background: $white;
     box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(28px);
-    
-    .form__title2 {
-      @include title2;
-      text-transform: uppercase;
-    }
-    .form__title1 {
-      @include title1;
-    }
-    .form__text1 {
-      @include padrao;
-      line-height: 1.5rem
+
+    .form__header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .form__title2 {
+        @include title2;
+        text-transform: uppercase;
+      }
+
+      .form__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .form__title1 {
+          @include title1;
+        }
+        .form__paragraph {
+          @include padrao;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+        }
+      }
     }
 
     .form__body {
@@ -42,7 +55,6 @@
         font-size: 0.875rem;
         font-weight: 400;
 
-
         .form__input {
           font-family: $fontFamily;
           font-size: 0.75rem;
@@ -53,24 +65,111 @@
           border: 1px solid $background;
           border-radius: 0.125rem;
 
-          resize: none
+          resize: none;
+        }
+      }
+
+      .button__submit {
+        @include button1;
+        width: 100%;
+        .button__submit__text {
+          font-size: 1rem;
+        }
+
+        .button__submit__icon {
+          display: none;
+        }
+      }
+
+      .form__submitted {
+        background: $white;
+        outline: 1px solid $green;
+        .button__submit__text {
+          color: $green;
         }
       }
     }
+  }
+}
 
-    .button__submit {
-      @include button1;
-      width: 100%;
-      p {
-        font-size: 1rem;
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 11.25rem 15%;
+
+    .form__container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 5.5rem;
+      padding: 3rem;
+
+      .form__header {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        .form__title2 {
+          text-align: left;
+          width: 100%;
+        }
+
+        .form__text {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+
+          .form__title1 {
+            font-size: 3rem;
+          }
+
+          .form__paragraph {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 2rem;
+          }
+        }
       }
-    }
 
-    .form__submitted {
-      background: $white;
-      outline: 1px solid $green;
-      p {
-        color: $green;
+      .form__body {
+        width: 40%;
+
+        .form__label {
+          font-size: 1rem;
+
+          .form__input {
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+          }
+        }
+
+        .button__submit {
+          padding: 0.75rem 1.5rem;
+
+          &:hover {
+            background-color: $greenhover;
+          }
+          transition: ease-in-out 0.3s;
+
+          .button__submit__text {
+            font-weight: 400;
+          }
+
+          .button__submit__icon {
+            display: block;
+          }
+        }
+
+        .form__submitted {
+          &:hover {
+            background-color: $white;
+            outline: 1px solid $green;
+            .button__submit__text {
+              color: $green;
+            }
+          }
+        }
       }
     }
   }

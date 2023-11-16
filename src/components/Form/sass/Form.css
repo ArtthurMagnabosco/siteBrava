@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 .form {
-  width: 100%;
   display: flex;
   padding: 2rem 1.25rem 2.125rem;
   flex-direction: column;
@@ -17,27 +16,38 @@
   -webkit-backdrop-filter: blur(28px);
           backdrop-filter: blur(28px);
 }
-.form .form__container .form__title2 {
+.form .form__container .form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form .form__container .form__header .form__title2 {
   font-size: 0.75rem;
   font-weight: 500;
   color: #8A8A8A;
   text-transform: uppercase;
 }
-.form .form__container .form__title1 {
+.form .form__container .form__header .form__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form .form__container .form__header .form__text .form__title1 {
   font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
 }
-.form .form__container .form__title1 .text-highlight {
+.form .form__container .form__header .form__text .form__title1 .text-highlight {
   font-weight: 500;
   color: #21594F;
 }
-.form .form__container .form__text1 {
+.form .form__container .form__header .form__text .form__paragraph {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   line-height: normal;
   font-weight: 300;
   color: #353A42;
+  font-size: 0.875rem;
   line-height: 1.5rem;
 }
 .form .form__container .form__body {
@@ -62,13 +72,12 @@
   border-radius: 0.125rem;
   resize: none;
 }
-.form .form__container .button__submit {
+.form .form__container .form__body .button__submit {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   line-height: normal;
   font-weight: 300;
   color: #353A42;
-  display: inline-block;
   background: #21594F;
   padding: 0.75rem 2rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
@@ -76,20 +85,95 @@
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
 }
-.form .form__container .button__submit * {
+.form .form__container .form__body .button__submit * {
   color: #FFF;
   font-weight: 500;
 }
-.form .form__container .button__submit p {
+.form .form__container .form__body .button__submit .button__submit__text {
   font-size: 1rem;
 }
-.form .form__container .form__submitted {
+.form .form__container .form__body .button__submit .button__submit__icon {
+  display: none;
+}
+.form .form__container .form__body .form__submitted {
   background: #FFF;
   outline: 1px solid #21594F;
 }
-.form .form__container .form__submitted p {
+.form .form__container .form__body .form__submitted .button__submit__text {
   color: #21594F;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 11.25rem 15%;
+  }
+  .form .form__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5.5rem;
+    padding: 3rem;
+  }
+  .form .form__container .form__header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  .form .form__container .form__header .form__title2 {
+    text-align: left;
+    width: 100%;
+  }
+  .form .form__container .form__header .form__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .form .form__container .form__header .form__text .form__title1 {
+    font-size: 3rem;
+  }
+  .form .form__container .form__header .form__text .form__paragraph {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .form .form__container .form__body {
+    width: 40%;
+  }
+  .form .form__container .form__body .form__label {
+    font-size: 1rem;
+  }
+  .form .form__container .form__body .form__label .form__input {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+  .form .form__container .form__body .button__submit {
+    padding: 0.75rem 1.5rem;
+    transition: ease-in-out 0.3s;
+  }
+  .form .form__container .form__body .button__submit:hover {
+    background-color: #0D4238;
+  }
+  .form .form__container .form__body .button__submit .button__submit__text {
+    font-weight: 400;
+  }
+  .form .form__container .form__body .button__submit .button__submit__icon {
+    display: block;
+  }
+  .form .form__container .form__body .form__submitted:hover {
+    background-color: #FFF;
+    outline: 1px solid #21594F;
+  }
+  .form .form__container .form__body .form__submitted:hover .button__submit__text {
+    color: #21594F;
+  }
 }

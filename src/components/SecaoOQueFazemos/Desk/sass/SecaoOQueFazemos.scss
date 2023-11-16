@@ -1,13 +1,13 @@
 @import "../../../../styles/padroes/padroes.scss";
 
 .oq-fazemos-desk {
-    .oq-fazemos-container {
+    .oq-fazemos__container {
         background-color: $green;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 3rem;
-        padding-top: 2rem;
+        padding-top: 10rem;
 
         .oq-fazemos__header {
             display: flex;
@@ -163,6 +163,10 @@
                 }
             }
         }
+    }
+
+    .oq-fazemos__container-home {
+        padding-top: 2rem;
     }
 
     .como-fazemos {

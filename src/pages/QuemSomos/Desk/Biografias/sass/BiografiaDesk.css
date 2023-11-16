@@ -2,30 +2,34 @@
 .biografias__container-desk {
   background: #21594F;
   display: flex;
+  flex-direction: column;
+  padding: 3.75rem 0rem 5rem 0rem;
+  justify-content: center;
+}
+.biografias__container-desk .biografias__people {
+  display: flex;
   flex-direction: row;
-  padding: 2.5% 15% 2.5% 15%;
+  gap: 1.875rem;
   align-items: flex-start;
   justify-content: center;
-  gap: 1.875rem;
 }
-.biografias__container-desk .biografias__body {
+.biografias__container-desk .biografias__people .biografias__body {
   display: flex;
-  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1 0 0;
   border: 1px solid #F3F3F3;
+  width: 22.4%;
 }
-.biografias__container-desk .biografias__body .foto__consultores {
+.biografias__container-desk .biografias__people .biografias__body .foto__consultores {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   align-self: stretch;
-  max-width: 26.875rem;
+  max-width: 100%;
 }
-.biografias__container-desk .biografias__body .biografias__body__desc {
+.biografias__container-desk .biografias__people .biografias__body .biografias__body__desc {
   margin-top: -5px;
   display: flex;
   padding: 2rem;
@@ -35,14 +39,14 @@
   align-self: stretch;
   background: #FFF;
 }
-.biografias__container-desk .biografias__body .biografias__body__desc .body__title {
+.biografias__container-desk .biografias__people .biografias__body .biografias__body__desc .body__title {
   color: #21594F;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
 }
-.biografias__container-desk .biografias__body .biografias__body__desc .body__text {
+.biografias__container-desk .biografias__people .biografias__body .biografias__body__desc .body__text {
   color: #353A42;
   font-size: 1rem;
   font-style: normal;

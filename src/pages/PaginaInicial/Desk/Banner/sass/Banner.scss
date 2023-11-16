@@ -19,11 +19,24 @@
         .banner__mainbutton {
             @include button1;
             padding: 0.875rem 3rem;
-
-            p {
+            
+            .banner__button__text {
                 font-weight: 400;
                 font-size: 1.125rem;
             }
+
+            .banner__button__icon {
+                display: none;
+            }
+
+            &:hover {
+                transition: ease-in-out 0.3s;
+                background-color: $greenhover;
+                
+                .banner__button__icon {
+                    display: block;
+                }
+              }
         }
     }
     .banner__bg {
