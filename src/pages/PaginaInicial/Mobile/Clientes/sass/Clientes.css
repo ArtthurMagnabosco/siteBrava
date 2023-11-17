@@ -67,7 +67,6 @@
   line-height: normal;
   font-weight: 300;
   color: #353A42;
-  display: inline-block;
   background: #21594F;
   padding: 0.75rem 2rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
@@ -75,6 +74,11 @@
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   margin: 2rem auto 1rem;
 }

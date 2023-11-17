@@ -16,9 +16,8 @@
   font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
-  font-size: 3rem;
   margin-bottom: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .nossos-clientes__container .nossos-clientes__header .header__title1 .text-highlight {
   font-weight: 500;
@@ -29,7 +28,7 @@
   font-weight: 500;
   color: #8A8A8A;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 .nossos-clientes__container .nossos-clientes__header .header__text1 {
   font-family: "Montserrat", sans-serif;
@@ -38,6 +37,7 @@
   font-weight: 300;
   color: #353A42;
   line-height: 1.5rem;
+  font-size: 0.875rem;
 }
 .nossos-clientes__container .nossos-clientes__body {
   width: 100%;

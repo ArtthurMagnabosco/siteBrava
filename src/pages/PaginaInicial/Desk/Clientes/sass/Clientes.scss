@@ -59,7 +59,7 @@
         .clientes__slider-reverse {
             align-self: flex-end;
             animation: slideshow-reverse 60s linear infinite;
-            
+
             @keyframes slideshow-reverse {
                 0% {
                     right: 0%;
@@ -74,23 +74,26 @@
     .clientes__mainbutton {
         @include button1();
         padding: 0.875rem 3rem;
-        
+        gap: 0;
+
         .clientes__button__text {
             font-size: 1.125rem;
             font-weight: 400;
         }
 
         .clientes__button__icon {
-            display: none;
+            width: 0;
+            transition: all 0.5s ease;
         }
 
         &:hover {
-            transition: ease-in-out 0.3s;
+            transition: ease-in-out 0.5s;
             background-color: $greenhover;
-            
+
             .clientes__button__icon {
-                display: block;
+                width: 11px;
+                margin-left: 1rem;
             }
-          }
+        }
     }
 }
