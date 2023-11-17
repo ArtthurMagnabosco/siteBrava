@@ -1,40 +1,38 @@
 @import "../../../../../styles/padroes/padroes.scss";
 
-.nossos-clientes__container{
+.nossos-clientes__container {
     display: flex;
     width: 100%;
     padding: 2rem 1.25rem 0rem 1.25rem;
     flex-direction: column;
     align-items: center;
 
-    .nossos-clientes__header{
+    .nossos-clientes__header {
         width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
-        
 
         .header__title1 {
-        @include title1;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-        margin-top: 2rem;
+            @include title1;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
         }
 
         .header__title2 {
-        @include title2;
-        text-transform: uppercase;
-        font-size: 1rem;
+            @include title2;
+            text-transform: uppercase;
+            font-size: 0.75rem;
         }
 
         .header__text1 {
-        @include padrao;
-        line-height: 1.5rem;
-        
+            @include padrao;
+            line-height: 1.5rem;
+            font-size: 0.875rem;
         }
     }
 
-    .nossos-clientes__body{
+    .nossos-clientes__body {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -42,11 +40,11 @@
         justify-content: space-between;
         padding-bottom: 3rem;
 
-        :last-child{
+        :last-child {
             margin: 0 auto;
         }
 
-        .logo__clientes{
+        .logo__clientes {
             display: flex;
             width: 5.0625rem;
             height: 1.875rem;

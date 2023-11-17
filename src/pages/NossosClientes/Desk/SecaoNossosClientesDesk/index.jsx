@@ -1,8 +1,8 @@
-import './sass/style.scss'
+import './sass/SecaoNossosClientesDesk.scss'
 import { logoClientesColorido } from '../../clientes.js'
 
 
-const SessaoNossosClientesDesk = () => {
+const SecaoNossosClientesDesk = () => {
     
     return (
         <div className="nossos-clientes__container_desk">
@@ -29,4 +29,4 @@ const SessaoNossosClientesDesk = () => {
     )
 }
 
-export default SessaoNossosClientesDesk
+export default SecaoNossosClientesDesk

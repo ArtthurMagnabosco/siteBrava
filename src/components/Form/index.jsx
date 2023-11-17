@@ -41,12 +41,11 @@ const Form = () => {
     await fetchApi();
 
     setTimeout(() => {
-      setSubmittedForm(true);
-      resetForm();
-    }, 2000);
-
-    setTimeout(() => {
       setSubmittedForm(false);
+      setResponse({
+        type: "",
+        message: "",
+      });
     }, 5000);
 
     async function fetchApi() {
@@ -57,25 +56,28 @@ const Form = () => {
           headers: { "Content-Type": "application/json" },
         });
 
-        const json = res.json();
+        const json = await res.json();
 
         if (json.success) {
           setResponse({
             type: "success",
-            message: "Thank you for reaching out to us.",
+            message: "Enviado",
           });
+          resetForm();
         } else {
           setResponse({
             type: "error",
-            message: json.message,
+            message: "Erro ao enviar",
           });
         }
       } catch (e) {
         console.log("An error occurred", e);
         setResponse({
           type: "error",
-          message: "An error occurred while submitting the form.",
+          message: "Erro ao enviar",
         });
+      } finally {
+        setSubmittedForm(true);
       }
     }
   };
@@ -107,7 +109,6 @@ const Form = () => {
           onSubmit={handleForm}
           method="get"
           id="contact"
-          action="/action_page.php"
         >
           <label className="form__label">
             Nome*
@@ -163,10 +164,10 @@ const Form = () => {
             className={`button__submit ${submittedForm && "form__submitted"}`}
           >
             <p className="button__submit__text">
-              {submittedForm ? "Enviado" : "Enviar"}
+              {submittedForm ? response.message : "Enviar"}
             </p>
             <img
-              src={submittedForm ? sentCheck : buttonArrow}
+              src={response.type == "success" ? sentCheck : buttonArrow}
               className="button__submit__icon"
               alt=""
             ></img>

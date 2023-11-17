@@ -1,8 +1,8 @@
-import SessaoNossosClientesDesk from "./SecaoNossosClientesDesk"
+import SecaoNossosClientesDesk from "./SecaoNossosClientesDesk"
 
 const NossosClientesDesk = () => {
     return (
-        <SessaoNossosClientesDesk/>
+        <SecaoNossosClientesDesk/>
     )
 }
 
