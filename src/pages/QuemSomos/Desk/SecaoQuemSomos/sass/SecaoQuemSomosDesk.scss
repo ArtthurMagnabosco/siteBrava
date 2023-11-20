@@ -17,7 +17,10 @@
             @include title1; 
             text-align: center;         
             font-size: 3rem;
+            max-width: 72rem;
+            
           }
+
       
           .header__title2 {
             @include title2;
@@ -30,6 +33,11 @@
             text-align: center;
             font-size: 1.25rem;
             max-width: 73%;
+          }
+          @media (max-width: 1500px) {
+            .header__title1 {
+              max-width: 50rem;
+            }
           }
     }
     .quem-somos__body{
