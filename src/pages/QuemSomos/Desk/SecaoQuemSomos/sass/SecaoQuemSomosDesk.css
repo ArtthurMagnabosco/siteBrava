@@ -18,6 +18,7 @@
   font-weight: 300;
   text-align: center;
   font-size: 3rem;
+  max-width: 72rem;
 }
 .quem-somos__container-desk .quem-somos__header .header__title1 .text-highlight {
   font-weight: 500;
@@ -39,6 +40,11 @@
   text-align: center;
   font-size: 1.25rem;
   max-width: 73%;
+}
+@media (max-width: 1500px) {
+  .quem-somos__container-desk .quem-somos__header .header__title1 {
+    max-width: 50rem;
+  }
 }
 .quem-somos__container-desk .quem-somos__body {
   display: flex;

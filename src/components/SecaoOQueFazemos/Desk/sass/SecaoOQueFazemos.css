@@ -79,12 +79,12 @@
   height: 3.5rem;
 }
 .oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card .modelos__header__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
 }
 .oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card .modelos__body__text {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #8A8A8A;
   line-height: 1.5rem;
@@ -130,9 +130,11 @@
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__title {
   font-weight: 500;
+  font-size: 1rem;
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text .servicos__card__paragraph {
   font-weight: 400;
+  font-size: 0.875rem;
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico2 {
   background-color: #3A6C63;

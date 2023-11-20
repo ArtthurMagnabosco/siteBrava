@@ -81,13 +81,13 @@
                     }
 
                     .modelos__header__text {
-                        font-size: 1.125rem;
+                        font-size: 1rem;
                         font-weight: 500;
                         line-height: 1.5rem;
                     }
 
                     .modelos__body__text {
-                        font-size: 1.125rem;
+                        font-size: 0.875rem;
                         font-weight: 400;
                         color: $text2;
                         line-height: 1.5rem;
@@ -141,10 +141,12 @@
 
                         .servicos__card__title {
                             font-weight: 500;
+                            font-size: 1rem;
                         }
 
                         .servicos__card__paragraph {
                             font-weight: 400;
+                            font-size: 0.875rem;
                         }
                     }
 
