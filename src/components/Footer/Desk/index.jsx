@@ -26,7 +26,7 @@ const FooterDesk = () => {
         </div>
         <div className="footer__section">
           <h4 className="footer__title">Telefone</h4>
-          <p className="footer__text">+55 (54) 2222-0235</p>
+          <a href="tel:+555422220235" className="footer__text">+55 (54) 2222-0235</a>
         </div>
         <div className="footer__section">
           <h4 className="footer__title">Endereço</h4>
@@ -38,13 +38,19 @@ const FooterDesk = () => {
         <div className="footer__section">
           <h4 className="footer__title">Conecte-se</h4>
           <div className="footer__social">
-            <Link to="https://www.instagram.com/brava.digital/">
+            <Link target="_blank" to="https://www.instagram.com/brava.digital/">
               <img src={logoInstagram} alt="Instagram da Brava" />
             </Link>
-            <Link to="https://www.facebook.com/bravaconsultoria">
+            <Link
+              target="_blank"
+              to="https://www.facebook.com/bravaconsultoria"
+            >
               <img src={logoFacebook} alt="Facebook da Brava" />
             </Link>
-            <Link to="https://www.linkedin.com/company/brava-consultoria-ecommerce">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/company/brava-consultoria-ecommerce"
+            >
               <img src={logoLinkedin} alt="LinkedIn da Brava" />
             </Link>
           </div>

@@ -143,7 +143,9 @@ const Form = () => {
               required
               name="phone"
               type="tel"
-              placeholder="+55 (000) 9 9999-9999"
+              placeholder="(00) 9 9999-9999"
+              pattern="[0-9]{11}"
+              maxLength={11}
             ></input>
           </label>
           <label className="form__label">

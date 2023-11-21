@@ -16,12 +16,10 @@
         .header__title1 {
             @include title1; 
             text-align: center;         
-            font-size: 3rem;
+            font-size: 2.5rem;
             max-width: 72rem;
-            
           }
 
-      
           .header__title2 {
             @include title2;
             text-transform: uppercase;

@@ -33,7 +33,7 @@
   font-size: 1.75rem;
   line-height: normal;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .proposito-desk .proposito__header .proposito__text .proposito__maintitle .text-highlight {
   font-weight: 500;
@@ -54,8 +54,8 @@
 .proposito-desk .proposito__cards .proposito__card {
   display: flex;
   flex-direction: column;
-  gap: 4.1875rem;
-  padding: 1.9rem 1.875rem 3.4rem;
+  gap: 2rem;
+  padding: 1.9rem 1.875rem 2.5rem;
   color: #FFF;
   line-height: 1.5rem;
   background-color: #21594F;

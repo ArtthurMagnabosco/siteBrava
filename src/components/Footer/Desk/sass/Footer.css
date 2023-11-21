@@ -29,6 +29,9 @@
   font-size: 1;
   font-weight: 300;
 }
+.footer-desk .footer1 .footer__section .footer__link:hover {
+  text-decoration: underline;
+}
 .footer-desk .footer1 .footer__section .footer__text {
   line-height: 1.5rem;
   color: #FFF;
@@ -36,6 +39,10 @@
   font-style: normal;
   font-size: 1rem;
   font-weight: 400;
+  cursor: pointer;
+}
+.footer-desk .footer1 .footer__section .footer__text:hover {
+  text-decoration: underline;
 }
 .footer-desk .footer1 .footer__section .footer__social {
   display: flex;

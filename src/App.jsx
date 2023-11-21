@@ -1,48 +1,52 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 
-import PaginaInicial from './pages/PaginaInicial'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Menu from './components/Menu'
-import Contato from './pages/Contato'
-import NossosClientes from './pages/NossosClientes'
-import WhatsApp from './components/Whatsapp'
-import OQueFazemos from './pages/OQueFazemos'
-import QuemSomos from './pages/QuemSomos'
-import { useCallback, useMemo, useState } from 'react'
+import PaginaInicial from "./pages/PaginaInicial";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Contato from "./pages/Contato";
+import NossosClientes from "./pages/NossosClientes";
+import WhatsApp from "./components/Whatsapp";
+import OQueFazemos from "./pages/OQueFazemos";
+import QuemSomos from "./pages/QuemSomos";
+import { useState } from "react";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const openMenu = () => {
-    setMenuOpen(true)
+    setMenuOpen(true);
     document.body.style.overflow = "hidden";
-  }
+  };
   const closeMenu = () => {
-    setMenuOpen(false)
+    setMenuOpen(false);
     document.body.style.overflow = "scroll";
-  }
-  
+  };
+
   // const handleMenuOpen = useCallback(() => {
   //   setMenuOpen()
   // },[])
 
- 
   return (
     <BrowserRouter>
-      {menuOpen && <Menu closeMenu={closeMenu}/>}
+      <ScrollToTop />
+      {menuOpen && <Menu closeMenu={closeMenu} />}
       <Header openMenu={openMenu} />
       <Routes>
-        <Route path="/" element={<PaginaInicial/>}/>
-        <Route path="/contato" element={<Contato />}/>
-        <Route path="/nossos-clientes" element={<NossosClientes />}/>
-        <Route path="/o-que-fazemos" element={<OQueFazemos/>}/>
-        <Route path="/quem-somos" element={<QuemSomos/>}/>  
+        <Route path="/" element={<PaginaInicial />} />
+        <Route path="/contato" element={<Contato />} />
+        <Route path="/nossos-clientes" element={<NossosClientes />} />
+        <Route path="/o-que-fazemos" element={<OQueFazemos />} />
+        <Route path="/quem-somos" element={<QuemSomos />} />
       </Routes>
       <WhatsApp />
       <Footer />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

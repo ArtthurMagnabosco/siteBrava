@@ -33,7 +33,7 @@
                 .oq-fazemos__maintitle {
                     @include title1();
                     max-width: 60%;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
 
                     .text-highlight {
                         color: $white;
@@ -199,7 +199,7 @@
                 .como-fazemos__maintitle {
                     @include title1();
                     line-height: 1.5rem;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
 
                 .como-fazemos__paragraph {

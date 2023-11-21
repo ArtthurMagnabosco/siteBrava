@@ -33,7 +33,7 @@
             
             .proposito__maintitle {
                 @include title1();
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             .proposito__paragraph {
@@ -51,9 +51,9 @@
         .proposito__card {
             display: flex;
             flex-direction: column;
-            gap: 4.1875rem;
+            gap: 2rem;
 
-            padding: 1.9rem 1.875rem 3.4rem;
+            padding: 1.9rem 1.875rem 2.5rem;
 
             color: $white;
             line-height: 1.5rem;
