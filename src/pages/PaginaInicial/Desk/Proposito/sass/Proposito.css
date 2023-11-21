@@ -51,6 +51,11 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+@media screen and (max-width: 1500px) {
+  .proposito-desk .proposito__cards {
+    max-width: 90%;
+  }
+}
 .proposito-desk .proposito__cards .proposito__card {
   display: flex;
   flex-direction: column;

@@ -66,6 +66,11 @@
   max-width: 70%;
   justify-content: center;
 }
+@media screen and (max-width: 1500px) {
+  .oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow {
+    max-width: 90%;
+  }
+}
 .oq-fazemos-desk .oq-fazemos__container .modelos-negocio .modelos__cardrow .modelos__card {
   background-color: #FFF;
   padding: 1.875rem;
@@ -104,14 +109,19 @@
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow {
   display: flex;
   gap: 1.875rem;
-  width: 70%;
+  max-width: 70%;
   justify-content: center;
   align-items: stretch;
+}
+@media screen and (max-width: 1500px) {
+  .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow {
+    max-width: 90%;
+  }
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card {
   display: flex;
   flex-direction: column;
-  width: 19.15%;
+  max-width: 19.15%;
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__card__image {
   width: 100%;

@@ -130,6 +130,8 @@
   .form .form__container .form__header .form__title2 {
     text-align: left;
     width: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
   .form .form__container .form__header .form__text {
     display: flex;

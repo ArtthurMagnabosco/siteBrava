@@ -67,6 +67,10 @@
                 max-width: 70%;
                 justify-content: center;
 
+                @media screen and (max-width: 1500px) {
+                    max-width: 90%;
+                }
+
                 .modelos__card {
                     background-color: $white;
                     padding: 1.875rem;
@@ -112,14 +116,18 @@
             .servicos__cardrow {
                 display: flex;
                 gap: 1.875rem;
-                width: 70%;
+                max-width: 70%;
                 justify-content: center;
                 align-items: stretch;
+
+                @media screen and (max-width: 1500px) {
+                    max-width: 90%;
+                }
                 
                 .servicos__card {
                     display: flex;
                     flex-direction: column;
-                    width: 19.15%;
+                    max-width: 19.15%;
 
                     .servicos__card__image {
                         width: 100%;

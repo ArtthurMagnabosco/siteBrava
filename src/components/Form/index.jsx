@@ -93,7 +93,7 @@ const Form = () => {
     <div className="form">
       <div className="form__container">
         <div className="form__header">
-          <h2 className="form__title2">CONTATO</h2>
+          <h3 className="form__title2">Contato</h3>
           <div className="form__text">
             <h3 className="form__title1">
               Vamos <span className="text-highlight">conversar!</span>
