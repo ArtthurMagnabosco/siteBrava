@@ -89,6 +89,23 @@ const Form = () => {
     setMessage("");
   };
 
+  const phoneMask = (phone) => {
+    if (phone.length === 11 && Number(phone)) {
+      const ddd = phone.slice(0, 2);
+      const firstPart = phone.slice(2, 7);
+      const secPart = phone.slice(7, 11);
+      const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
+      return fixedPhone;
+    }
+    if (phone.length === 10 && Number(phone)) {
+      const ddd = phone.slice(0, 2);
+      const firstPart = phone.slice(2, 6);
+      const secPart = phone.slice(6, 10);
+      const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
+      return fixedPhone;
+    }
+  };
+
   return (
     <div className="form">
       <div className="form__container">
@@ -139,13 +156,16 @@ const Form = () => {
             <input
               className="form__input"
               onChange={(event) => setPhone(event.target.value)}
+              onBlur={(event) => setPhone(phoneMask(event.target.value))}
+              inputMode="numeric"
               value={phone}
               required
               name="phone"
               type="tel"
               placeholder="(00) 9 9999-9999"
-              pattern="[0-9]{11}"
               maxLength={11}
+              minLength={10}
+              pattern="[0-9]*"
             ></input>
           </label>
           <label className="form__label">

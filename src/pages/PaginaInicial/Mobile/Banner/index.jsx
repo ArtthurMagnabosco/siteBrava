@@ -9,8 +9,8 @@ const Banner = () => {
         <div className="banner__content">
           <h3 className="banner__maintitle">
             <span className="text-highlight">Consultoria estratégica</span> para
-            estruturar e acelerar sua operação de
-            <span className="text-highlight"> e-commerce e marketplace</span>
+            estruturar e acelerar sua operação de {" "}
+            <span className="text-highlight"><nobr>e-commerce</nobr> e marketplace</span>
           </h3>
 
           <Link to="/quem-somos" className="banner__mainbutton">
