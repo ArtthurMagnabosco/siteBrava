@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.banner-desk {
+  background-color: #F3F3F3;
+}
 .banner-desk .banner__content {
   display: flex;
   flex-direction: column;
@@ -64,16 +67,11 @@
 }
 .banner-desk .banner__bg {
   width: 100%;
-  padding-top: 19rem;
   z-index: -1;
+  margin-top: -2rem;
 }
-.banner-desk .banner__polygonbox {
-  background-color: #F3F3F3;
-  z-index: -1;
-}
-.banner-desk .banner__polygonbox .banner__polygon {
-  z-index: 0;
-  width: 100%;
-  bottom: 2.35rem;
-  position: relative;
+@media screen and (min-width: 1800px) {
+  .banner-desk .banner__bg {
+    margin-top: -7rem;
+  }
 }

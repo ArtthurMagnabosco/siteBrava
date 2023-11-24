@@ -1,6 +1,7 @@
 @import "../../../../../styles/padroes/padroes.scss";
 
 .banner-desk {
+    background-color: $background;
     .banner__content {
         display: flex;
         flex-direction: column;
@@ -44,19 +45,11 @@
     }
     .banner__bg {
         width: 100%;
-        padding-top: 19rem;
         z-index: -1;
-    }
+        margin-top: -2rem;
 
-    .banner__polygonbox {
-        background-color: $background;
-        z-index: -1;
-
-        .banner__polygon {
-            z-index: 0;
-            width: 100%;
-            bottom: 2.35rem;
-            position: relative;
+        @media screen and (min-width: 1800px) {
+            margin-top: -7rem;
         }
     }
 }

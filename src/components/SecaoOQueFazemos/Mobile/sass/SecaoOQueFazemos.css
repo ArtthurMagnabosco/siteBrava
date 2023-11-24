@@ -67,6 +67,11 @@
   gap: 1.25rem;
   padding: 2rem 0;
 }
+.oq-fazemos .oq-fazemos-container .servicos .servicos__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2F2F2F;
+}
 .oq-fazemos .oq-fazemos-container .servicos .servicos__card {
   display: flex;
 }

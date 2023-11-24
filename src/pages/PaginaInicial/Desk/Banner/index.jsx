@@ -1,7 +1,6 @@
 import "./sass/Banner.css";
 import { Link } from "react-router-dom";
-import bgImage from "../../../../assets/imagens/banner/bannerDesk.png";
-import polygon from "../../../../assets/imagens/banner/bannerDeskPolygon.svg";
+import bgImage from "../../../../assets/imagens/banner/bannerDesk.svg";
 import buttonArrow from "../../../../assets/imagens/icons/buttonArrow.svg";
 
 const Banner = () => {
@@ -21,9 +20,6 @@ const Banner = () => {
           </Link>
         </div>
         <img src={bgImage} className="banner__bg" />
-        <div className="banner__polygonbox">
-          <img src={polygon} className="banner__polygon" />
-        </div>
       </div>
     </>
   );
