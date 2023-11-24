@@ -1,7 +1,7 @@
 import "./sass/SecaoQuemSomos.scss";
-import LogoBravaCinza from "../../../../assets/imagens/logo/LogoBravaCinza.svg";
-import LogoConverte from "../../../../assets/imagens/logo/LogoConverte.svg";
-import LogoWecode from "../../../../assets/imagens/logo/LogoWecode.svg";
+import LogoBravaCinza from "../../../../assets/imagens/logo/logoBravaCinza.svg";
+import LogoConverte from "../../../../assets/imagens/logo/logoConverte.svg";
+import LogoWecode from "../../../../assets/imagens/logo/logoWecode.svg";
 
 const SecaoQuemSomos = () => {
   return (
