@@ -163,9 +163,9 @@ const Form = () => {
               name="phone"
               type="tel"
               placeholder="(00) 9 9999-9999"
-              maxLength={11}
+              maxLength={15}
               minLength={10}
-              pattern="[0-9]*"
+              pattern="([0-9]{2}) [0-9]{4, 5}-[0-9]{4}"
             ></input>
           </label>
           <label className="form__label">
