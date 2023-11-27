@@ -35,14 +35,13 @@ const BiografiasDesk = () => {
           <div className="biografias__body__desc">
             <p className="body__title">Bernardo Finimundi</p>
             <p className="body__text">
-              Graduado em Administração de Empresas, atuou em operações de
-              comércio eletrônico de empresas de grande porte, como Lojas
-              Colombo e Grupo Dass, detentora das marcas Fila e Umbro na América
-              Latina. Foi Head de E-Commerce na Miolo Wine Group, renomada
-              vinícola brasileira e maior exportadora de vinhos. Foi palestrante
-              em 2017 na FBV (Feira Brasileira do Varejo) e em 2018 na
-              Conferência E-Commerce Brasil RS. Atualmente é sócio da Converte
-              Educação Digital e consultor na Brava Consultoria em E-Commerce.
+              Graduado em Administração de Empresas, possui mais de 13 anos de
+              atuação no mercado de negócios digitais, com passagens por
+              empresas de grande porte como Lojas Colombo, Grupo Dass (detentora
+              das marcas Fila & Umbro) e Miolo Wine Group. Possui experiência em
+              projetos B2C, B2B, D2C e Marketplace. Atualmente é consultor na
+              Brava Consultoria em E-commerce e sócio da Converte Educação
+              Digital.
             </p>
           </div>
         </div>

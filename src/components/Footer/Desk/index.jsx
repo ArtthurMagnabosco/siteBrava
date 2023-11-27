@@ -26,7 +26,9 @@ const FooterDesk = () => {
         </div>
         <div className="footer__section">
           <h4 className="footer__title">Telefone</h4>
-          <a href="tel:+555422220235" className="footer__text">+55 (54) 2222-0235</a>
+          <a href="https://wa.me/5554981110081" target="_blank" className="footer__text">
+            +55 (54) 98111-0081
+          </a>
         </div>
         <div className="footer__section">
           <h4 className="footer__title">Endereço</h4>

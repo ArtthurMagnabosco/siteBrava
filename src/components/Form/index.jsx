@@ -116,7 +116,7 @@ const Form = () => {
               Vamos <span className="text-highlight">conversar!</span>
             </h3>
             <p className="form__paragraph">
-              Preencha o formulário abaixo para entrar em contato, ou pelos
+              Preencha o formulário para entrar em contato, ou pelos
               outros meios de comunicações abaixo.
             </p>
           </div>

@@ -32,6 +32,14 @@ import sumig from "../../../assets/imagens/logoClientes/semCor/sumig.svg";
 import telasul from "../../../assets/imagens/logoClientes/semCor/telasul.svg";
 import thela from "../../../assets/imagens/logoClientes/semCor/thela.svg";
 import vtex from "../../../assets/imagens/logoClientes/semCor/vtex.svg";
+import dismat from "../../../assets/imagens/logoClientes/semCor/dismat.svg";
+import madesa from "../../../assets/imagens/logoClientes/semCor/madesa.svg";
+import panvel from "../../../assets/imagens/logoClientes/semCor/panvel.svg";
+import proChile from "../../../assets/imagens/logoClientes/semCor/proChile.svg";
+import rumoCerto from "../../../assets/imagens/logoClientes/semCor/rumoCerto.svg";
+import sugarShoes from "../../../assets/imagens/logoClientes/semCor/sugarShoes.svg";
+import yoi from "../../../assets/imagens/logoClientes/semCor/yoi.svg";
+
 
 export const logosClientes = {
   group1: [
@@ -46,6 +54,9 @@ export const logosClientes = {
     colibri,
     decibal,
     djMoveis,
+    dismat,
+    madesa,
+    panvel
   ],
   group2: [
     forma,
@@ -59,6 +70,9 @@ export const logosClientes = {
     mxMoveis,
     niini,
     ou,
+    proChile,
+    rumoCerto,
+    sugarShoes
   ],
   group3: [
     piccadilly,
@@ -73,6 +87,7 @@ export const logosClientes = {
     telasul,
     thela,
     vtex,
+    yoi
   ],
 };
 
@@ -95,6 +110,10 @@ export const logosClientesDesk = {
     politorno,
     rafaelaTomazzoni,
     sanremo,
+    dismat,
+    madesa,
+    panvel,
+    proChile
   ],
   group2: [
     forma,
@@ -114,5 +133,8 @@ export const logosClientesDesk = {
     telasul,
     thela,
     vtex,
+    rumoCerto,
+    sugarShoes,
+    yoi
   ]
 }
