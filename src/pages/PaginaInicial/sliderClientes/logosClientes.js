@@ -39,6 +39,8 @@ import proChile from "../../../assets/imagens/logoClientes/semCor/proChile.svg";
 import rumoCerto from "../../../assets/imagens/logoClientes/semCor/rumoCerto.svg";
 import sugarShoes from "../../../assets/imagens/logoClientes/semCor/sugarShoes.svg";
 import yoi from "../../../assets/imagens/logoClientes/semCor/yoi.svg";
+import roniChaves from "../../../assets/imagens/logoClientes/semCor/roniChaves.svg";
+import santosAndira from "../../../assets/imagens/logoClientes/semCor/santosAndira.svg";
 
 
 export const logosClientes = {
@@ -56,7 +58,8 @@ export const logosClientes = {
     djMoveis,
     dismat,
     madesa,
-    panvel
+    panvel,
+    santosAndira
   ],
   group2: [
     forma,
@@ -87,7 +90,8 @@ export const logosClientes = {
     telasul,
     thela,
     vtex,
-    yoi
+    yoi,
+    roniChaves
   ],
 };
 
@@ -113,7 +117,8 @@ export const logosClientesDesk = {
     dismat,
     madesa,
     panvel,
-    proChile
+    proChile,
+    santosAndira
   ],
   group2: [
     forma,
@@ -135,6 +140,7 @@ export const logosClientesDesk = {
     vtex,
     rumoCerto,
     sugarShoes,
-    yoi
+    yoi,
+    roniChaves
   ]
 }
