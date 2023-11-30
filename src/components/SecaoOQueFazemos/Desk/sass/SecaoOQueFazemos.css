@@ -127,7 +127,7 @@
   width: 100%;
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servicos__text {
-  background-color: #21594F;
+  background-color: #3A6C63;
   width: 100%;
   padding: 1.875rem;
   display: flex;
@@ -147,16 +147,16 @@
   font-size: 0.875rem;
 }
 .oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico2 {
-  background-color: #3A6C63;
-}
-.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico3 {
   background-color: #4A776F;
 }
-.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico4 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico3 {
   background-color: #557F77;
 }
-.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico5 {
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico4 {
   background-color: #648A84;
+}
+.oq-fazemos-desk .oq-fazemos__container .servicos .servicos__cardrow .servicos__card .servico5 {
+  background-color: #789C96;
 }
 .oq-fazemos-desk .oq-fazemos__container-home {
   padding-top: 2rem;

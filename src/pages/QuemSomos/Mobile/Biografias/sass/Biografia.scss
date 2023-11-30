@@ -7,6 +7,14 @@
     flex-direction: column;
     align-items: center;
 
+    .biografias__title {
+        font-size: 1.125rem;
+        color: $grey;
+        font-weight: 500;
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
     .biografias__body {
         width: 100%;
         display: flex;

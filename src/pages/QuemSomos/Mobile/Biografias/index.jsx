@@ -7,6 +7,7 @@ import FotoAmanda from "../../../../assets/imagens/fotos/img-Amanda.png";
 const Biografias = () => {
   return (
     <div className="biografias__container">
+      <h3 className="biografias__title">Nossos consultores</h3>
       <div className="biografias__body">
         <img src={FotoFelipe} alt="Foto Felipe" />
         <div className="biografias__body__desc">
@@ -40,14 +41,12 @@ const Biografias = () => {
           <p className="body__title">Amanda Seimetz</p>
           <p className="body__text">
             Graduada em Relações Públicas, com Pós Graduação em Gestão de
-            Negócios Digitais. Teve uma experiência de trabalho no exterior,
-            através de intercâmbio nos Estados Unidos. Implementou o e-commerce
-            da Piccadilly, estruturou a área dentro da organização e foi
-            responsável pela gestão de toda a operação e performance dos
-            negócios digitais durante 7 anos. Foi palestrante da Conferência
-            E-commerce Brasil RS, em 2018 e 2021, e da Locaweb Digital
-            Conference, em 2022. Atualmente é consultora da Brava Consultoria em
-            E-commerce.
+            Negócios Digitais. Implementou o e-commerce da Piccadilly,
+            estruturou a área dentro da organização e foi responsável pela
+            gestão de toda a operação e performance dos negócios digitais
+            durante 7 anos. Foi palestrante da Conferência E-commerce Brasil RS,
+            em 2018 e 2021, e da Locaweb Digital Conference, em 2022. Atualmente
+            é consultora da Brava Consultoria em E-commerce.
           </p>
         </div>
       </div>
