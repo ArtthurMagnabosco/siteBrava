@@ -38,7 +38,7 @@ function App() {
       <Header openMenu={openMenu} />
       <Routes>
         <Route path="/" element={<PaginaInicial />} />
-        <Route path="/contato" element={<Contato />} />
+        <Route path="/entre-em-contato" element={<Contato />} />
         <Route path="/nossos-clientes" element={<NossosClientes />} />
         <Route path="/o-que-fazemos" element={<OQueFazemos />} />
         <Route path="/quem-somos" element={<QuemSomos />} />

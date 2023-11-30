@@ -35,7 +35,7 @@ const HeaderDesk = () => {
               <Link className="menu__link-desk" to="/nossos-clientes">
                 Nossos clientes
               </Link>
-              <Link className="menu__link-desk" to="/contato">
+              <Link className="menu__link-desk" to="/entre-em-contato">
                 Entre em contato
               </Link>
             </div>
@@ -62,7 +62,7 @@ const HeaderDesk = () => {
             <Link className="menu__link-desk" to="/nossos-clientes">
               Nossos clientes
             </Link>
-            <Link className="menu__link-desk" to="/contato">
+            <Link className="menu__link-desk" to="/entre-em-contato">
               Entre em contato
             </Link>
           </div>

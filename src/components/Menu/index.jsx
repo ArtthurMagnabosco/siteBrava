@@ -17,7 +17,7 @@ const Menu = ({closeMenu}) => {
                 <Link onClick={() => closeMenu()} className='menu__body__link' to="/quem-somos">Quem Somos</Link>
                 <Link onClick={() => closeMenu()} className='menu__body__link' to="/o-que-fazemos">O que fazemos</Link>
                 <Link onClick={() => closeMenu()} className='menu__body__link' to="/nossos-clientes">Nossos clientes</Link>
-                <Link onClick={() => closeMenu()} className='menu__body__link' to="/contato">Entre em contato</Link>
+                <Link onClick={() => closeMenu()} className='menu__body__link' to="/entre-em-contato">Entre em contato</Link>
             </div>
             <div className='menu__footer'>
                 <p className='menu__subtitle'>ENDEREÇO</p>
