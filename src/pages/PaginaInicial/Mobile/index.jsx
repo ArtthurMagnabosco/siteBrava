@@ -10,9 +10,9 @@ const PaginaInicialMobile = () => {
     <div className="home">
       <Banner />
       <Clientes />
-      <SecaoOQueFazemos />
+      <SecaoOQueFazemos home />
       <Proposito />
-      <Form />
+      <Form home/>
     </div>
   );
 };

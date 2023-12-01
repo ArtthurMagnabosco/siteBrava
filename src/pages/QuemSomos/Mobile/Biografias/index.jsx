@@ -7,7 +7,7 @@ import FotoAmanda from "../../../../assets/imagens/fotos/img-Amanda.png";
 const Biografias = () => {
   return (
     <div className="biografias__container">
-      <h3 className="biografias__title">Nossos consultores</h3>
+      <h2 className="biografias__title">Nossos consultores</h2>
       <div className="biografias__body">
         <img src={FotoFelipe} alt="Foto Felipe" />
         <div className="biografias__body__desc">

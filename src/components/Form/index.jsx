@@ -3,7 +3,7 @@ import "./sass/Form.css";
 import buttonArrow from "../../assets/imagens/icons/buttonArrow.svg";
 import sentCheck from "../../assets/imagens/icons/sentCheck.svg";
 
-const Form = () => {
+const Form = ({ home }) => {
   const [submittedForm, setSubmittedForm] = useState(false);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -110,11 +110,21 @@ const Form = () => {
     <div className="form">
       <div className="form__container">
         <div className="form__header">
-          <h3 className="form__title2">Contato</h3>
+          {home ? (
+            <p className="form__title2">Contato</p>
+          ) : (
+            <h2 className="form__title2">Contato</h2>
+          )}
           <div className="form__text">
-            <h3 className="form__title1">
-              Vamos <span className="text-highlight">conversar!</span>
-            </h3>
+            {home ? (
+              <h2 className="form__title1">
+                Vamos <span className="text-highlight">conversar!</span>
+              </h2>
+            ) : (
+              <h1 className="form__title1">
+                Vamos <span className="text-highlight">conversar!</span>
+              </h1>
+            )}
             <p className="form__paragraph">
               Preencha o formulário para que possamos entrar em contato ou nos
               mande uma mensagem pelos canais abaixo:
@@ -165,7 +175,7 @@ const Form = () => {
               placeholder="(00) 9 9999-9999"
               maxLength={15}
               minLength={10}
-              pattern="([0-9]{2}) [0-9]{4, 5}-[0-9]{4}"
+              pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
             ></input>
           </label>
           <label className="form__label">

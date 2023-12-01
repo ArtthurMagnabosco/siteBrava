@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 .oq-fazemos .oq-fazemos-container {
-  background-color: #F3F3F3;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -117,6 +117,7 @@
 }
 .oq-fazemos .como-fazemos .como-fazemos__header {
   padding: 2rem 1.25rem 1.25rem;
+  background-color: #F3F3F3;
 }
 .oq-fazemos .como-fazemos .como-fazemos__header .como-fazemos__title2 {
   font-size: 0.75rem;
@@ -146,8 +147,10 @@
 }
 .oq-fazemos .como-fazemos .como-fazemos__content {
   padding-left: 1.25rem;
+  padding-bottom: 1.5rem;
   display: flex;
   overflow: scroll;
+  background-color: #F3F3F3;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

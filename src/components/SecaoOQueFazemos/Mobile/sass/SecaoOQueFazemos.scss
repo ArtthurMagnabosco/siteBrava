@@ -2,7 +2,7 @@
 
 .oq-fazemos {
     .oq-fazemos-container {
-        background-color: $background;
+        background-color: $white;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
@@ -130,6 +130,7 @@
 
         .como-fazemos__header {
             padding: 2rem 1.25rem 1.25rem;
+            background-color: $background;
 
             .como-fazemos__title2 {
                 @include title2();
@@ -156,8 +157,10 @@
 
         .como-fazemos__content {
             padding-left: 1.25rem;
+            padding-bottom: 1.5rem;
             display: flex;
             overflow: scroll;
+            background-color: $background;
             
             .como-fazemos__card {
                 background-image: url("../../../../assets/imagens/cardsMetodologia/card1.svg");

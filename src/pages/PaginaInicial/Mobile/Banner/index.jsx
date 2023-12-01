@@ -7,14 +7,14 @@ const Banner = () => {
     <>
       <div className="banner">
         <div className="banner__content">
-          <h3 className="banner__maintitle">
+          <h1 className="banner__maintitle">
             <span className="text-highlight">Consultoria estratégica</span> para
             estruturar e acelerar sua operação de {" "}
             <span className="text-highlight"><nobr>e-commerce</nobr> e marketplace</span>
-          </h3>
+          </h1>
 
           <Link to="/quem-somos" className="banner__mainbutton">
-            <p>Saiba Mais</p>
+            Saiba Mais
           </Link>
         </div>
         <img src={bgImage} className="banner__bg" />

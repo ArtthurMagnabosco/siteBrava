@@ -8,14 +8,14 @@ const Banner = () => {
     <>
       <div className="banner-desk">
         <div className="banner__content">
-          <h3 className="banner__maintitle">
+          <h1 className="banner__maintitle">
             <span className="text-highlight">Consultoria estratégica</span> para
             estruturar e acelerar sua operação de
             <span className="text-highlight"> e-commerce e marketplace</span>
-          </h3>
+          </h1>
 
           <Link to="/quem-somos" className="banner__mainbutton">
-            <p className="banner__button__text">Saiba Mais</p>
+            Saiba Mais
             <img src={buttonArrow} className="banner__button__icon" alt=""/>
           </Link>
         </div>

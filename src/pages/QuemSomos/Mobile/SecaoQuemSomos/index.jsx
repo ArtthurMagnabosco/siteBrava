@@ -7,11 +7,11 @@ const SecaoQuemSomos = () => {
   return (
     <div className="quem-somos__container">
       <div className="quem-somos__header">
-        <h4 className="header__title2">Quem somos</h4>
-        <h3 className="header__title1">
+        <p className="header__title2">Quem somos</p>
+        <h1 className="header__title1">
           Valorizamos <span className="text-highlight">pessoas</span> e
           impulsionamos <span className="text-highlight">negócios</span>
-        </h3>
+        </h1>
         <p className="header__text1">
           Somos um grupo que oferece diferentes soluções para diferentes
           necessidades, dentro do ecossistema do mercado digital.
@@ -23,7 +23,7 @@ const SecaoQuemSomos = () => {
             <img src={LogoBravaCinza} alt="Logo Brava Cinza" />
           </div>
           <div className="body__company__info">
-            <p className="body__company__title">Consultoria</p>
+            <h3 className="body__company__title">Consultoria</h3>
             <p className="body__company__text">
               Especializada em implantação, diagnóstico e evolução de projetos
               de e-commerce e marketplace.
@@ -35,7 +35,7 @@ const SecaoQuemSomos = () => {
             <img src={LogoConverte} alt="Logo Brava Cinza" />
           </div>
           <div className="body__company__info">
-            <p className="body__company__title">Educação</p>
+            <h3 className="body__company__title">Educação</h3>
             <p className="body__company__text">
               Cursos in company para o mercado de e-commerce, marketplace e
               marketing digital
@@ -47,7 +47,7 @@ const SecaoQuemSomos = () => {
             <img src={LogoWecode} alt="Logo Brava Cinza" />
           </div>
           <div className="body__company__info">
-            <p className="body__company__title">Tecnologia</p>
+            <h3 className="body__company__title">Tecnologia</h3>
             <p className="body__company__text">
               Certificada em implantação, migração e suporte da plataforma VTEX
             </p>

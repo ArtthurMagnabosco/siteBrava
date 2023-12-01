@@ -4,11 +4,11 @@ const Proposito = () => {
   return (
     <div className="proposito-desk">
       <div className="proposito__header">
-        <h4 className="proposito__title2">Propósito</h4>
+        <p className="proposito__title2">Propósito</p>
         <div className="proposito__text">
-          <h3 className="proposito__maintitle">
+          <h2 className="proposito__maintitle">
             Nossos <span className="text-highlight">diferenciais</span>
-          </h3>
+          </h2>
           <p className="proposito__paragraph">
             Nosso propósito é promover o aculturamento digital, garantindo a
             sinergia entre as áreas e gerando assim um posicionamento

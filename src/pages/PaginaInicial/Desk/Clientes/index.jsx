@@ -7,12 +7,12 @@ const Clientes = () => {
   return (
     <div className="home__clientes-desk">
       <div className="clientes__titles">
-        <h4 className="clientes__title2">Nossos clientes</h4>
-        <h3 className="clientes__title1">
+        <p className="clientes__title2">Nossos clientes</p>
+        <h2 className="clientes__title1">
           Quem <span className="text-highlight">confia </span>
           em nosso trabalho e <span className="text-highlight">atesta </span>
           nossa qualidade
-        </h3>
+        </h2>
       </div>
       <div className="clientes__brands">
         <div className="clientes__slider">
@@ -35,7 +35,7 @@ const Clientes = () => {
       </div>
 
       <Link to="/nossos-clientes" className="clientes__mainbutton">
-        <p className="clientes__button__text">Saiba Mais</p>
+        Saiba Mais
         <img src={buttonArrow} className="clientes__button__icon" />
       </Link>
     </div>
