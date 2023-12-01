@@ -10,7 +10,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    
+
     .footer1 {
         background-color: $grey;
         padding: 3rem 1.25rem;
@@ -23,29 +23,37 @@
             flex-direction: column;
             gap: 0.5rem;
 
+            .footer__section__list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                list-style: none;
+
+                .footer__link {
+                    @include footer-text();
+                    font-size: 0.875rem;
+                    font-weight: 300;
+                }
+            }
+
             .footer__title {
                 color: $text2;
                 font-weight: 500;
                 text-transform: uppercase;
-                font-size: 1rem
+                font-size: 1rem;
             }
-            
-            .footer__link {
-                @include footer-text();
-                font-size: 0.875rem;
-                font-weight: 300;
-            }
-            
+
             .footer__text {
                 @include footer-text();
                 font-size: 0.875rem;
                 font-weight: 400;
             }
 
-            .footer__social {
+            .footer__social__list {
                 display: flex;
                 gap: 1.25rem;
                 margin-top: 0.38rem;
+                list-style: none;
             }
         }
     }
@@ -64,4 +72,3 @@
         }
     }
 }
-

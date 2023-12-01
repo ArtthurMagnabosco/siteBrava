@@ -23,20 +23,27 @@
             flex-direction: column;
             gap: 1rem;
 
+            .footer__section__list {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                list-style: none;
+
+                .footer__link {
+                    @include footer-text();
+                    font-size: 1;
+                    font-weight: 300;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
             .footer__title {
                 color: $text2;
                 text-transform: uppercase;
                 font-size: 1.5rem;
                 font-weight: 300;
-            }
-            
-            .footer__link {
-                @include footer-text();
-                font-size: 1;
-                font-weight: 300;
-                &:hover {
-                    text-decoration: underline;
-                }
             }
             
             .footer__text {
@@ -49,10 +56,11 @@
                 }
             }
 
-            .footer__social {
+            .footer__social__list {
                 display: flex;
                 gap: 1.25rem;
                 margin-top: 0.38rem;
+                list-style: none;
             }
         }
     }

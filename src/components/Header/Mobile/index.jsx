@@ -2,12 +2,10 @@ import { Link } from "react-router-dom";
 import LogoBravaVerde from "../../../assets/imagens/logo/logoBravaVerde.svg";
 import IconMenu from "../../../assets/imagens/icons/icon-menu.svg";
 import "./sass/Header.scss"
-import { useState } from "react";
 
-const HeaderMobile = ({openMenu}) => {
+const HeaderMobile = ({ openMenu }) => {
    return <>
     <header>
-        
         <div className="header__container">
             <p></p>
             <Link to="/">

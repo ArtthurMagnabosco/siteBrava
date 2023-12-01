@@ -11,18 +11,28 @@ const FooterDesk = () => {
       <div className="footer1">
         <div className="footer__section">
           <h5 className="footer__title">Explore</h5>
-          <Link className="footer__link" to="/quem-somos">
-            Quem somos
-          </Link>
-          <Link className="footer__link" to="/o-que-fazemos">
-            O que fazemos
-          </Link>
-          <Link className="footer__link" to="/nossos-clientes">
-            Nossos clientes
-          </Link>
-          <Link className="footer__link" to="/entre-em-contato">
-            Entre em contato
-          </Link>
+          <ul className="footer__section__list">
+            <li>
+              <Link className="footer__link" to="/quem-somos">
+                Quem somos
+              </Link>
+            </li>
+            <li>
+              <Link className="footer__link" to="/o-que-fazemos">
+                O que fazemos
+              </Link>
+            </li>
+            <li>
+              <Link className="footer__link" to="/nossos-clientes">
+                Nossos clientes
+              </Link>
+            </li>
+            <li>
+              <Link className="footer__link" to="/entre-em-contato">
+                Entre em contato
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="footer__section">
           <h5 className="footer__title">Telefone</h5>
@@ -39,23 +49,32 @@ const FooterDesk = () => {
         </div>
         <div className="footer__section">
           <h5 className="footer__title">Conecte-se</h5>
-          <div className="footer__social">
-            <Link target="_blank" to="https://www.instagram.com/brava.digital/">
-              <img src={logoInstagram} alt="Instagram da Brava" />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://www.facebook.com/bravaconsultoria"
-            >
-              <img src={logoFacebook} alt="Facebook da Brava" />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://www.linkedin.com/company/brava-consultoria-ecommerce"
-            >
-              <img src={logoLinkedin} alt="LinkedIn da Brava" />
-            </Link>
-          </div>
+          <ul className="footer__social__list">
+            <li>
+              <Link
+                target="_blank"
+                to="https://www.instagram.com/brava.digital/"
+              >
+                <img src={logoInstagram} alt="Instagram da Brava" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                target="_blank"
+                to="https://www.facebook.com/bravaconsultoria"
+              >
+                <img src={logoFacebook} alt="Facebook da Brava" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                target="_blank"
+                to="https://www.linkedin.com/company/brava-consultoria-ecommerce"
+              >
+                <img src={logoLinkedin} alt="LinkedIn da Brava" />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="footer2">

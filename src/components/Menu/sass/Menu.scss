@@ -8,6 +8,10 @@
     height: 100%;
     z-index: 10;
     animation: fadeIn 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     @keyframes fadeIn {
         0% { opacity: 0; }
         100% { opacity: 1; }
@@ -16,15 +20,24 @@
     .menu__header{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 4.3rem;
+        position: fixed;
+
+        .menu__header__logo, .menu__header__closebtn {
+            position: fixed;
+        }
+        .menu__header__closebtn { 
+            right: 1.25rem; 
+        }
     }
 
-    .menu__body{
+
+    .menu__body-nav {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
-        margin-bottom: 9rem;
+        margin-top: 5.625rem;
+        list-style: none;
 
         .menu__body__link{
             color: $white;

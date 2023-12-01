@@ -26,18 +26,28 @@ const HeaderDesk = () => {
               <img src={LogoBravaVerde} alt="Logo Brava" />
             </Link>
             <div className="menu__body-desk">
-              <Link className="menu__link-desk" to="/quem-somos">
-                Quem Somos
-              </Link>
-              <Link className="menu__link-desk" to="/o-que-fazemos">
-                O que fazemos
-              </Link>
-              <Link className="menu__link-desk" to="/nossos-clientes">
-                Nossos clientes
-              </Link>
-              <Link className="menu__link-desk" to="/entre-em-contato">
-                Entre em contato
-              </Link>
+              <ul className="menu__body-nav">
+                <li>
+                  <Link className="menu__link-desk" to="/quem-somos">
+                    Quem Somos
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/o-que-fazemos">
+                    O que fazemos
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/nossos-clientes">
+                    Nossos clientes
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/entre-em-contato">
+                    Entre em contato
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -53,18 +63,28 @@ const HeaderDesk = () => {
             <img src={LogoBravaVerde} alt="Logo Brava" />
           </Link>
           <div className="menu__body-desk">
-            <Link className="menu__link-desk" to="/quem-somos">
-              Quem Somos
-            </Link>
-            <Link className="menu__link-desk" to="/o-que-fazemos">
-              O que fazemos
-            </Link>
-            <Link className="menu__link-desk" to="/nossos-clientes">
-              Nossos clientes
-            </Link>
-            <Link className="menu__link-desk" to="/entre-em-contato">
-              Entre em contato
-            </Link>
+          <ul className="menu__body-nav">
+                <li>
+                  <Link className="menu__link-desk" to="/quem-somos">
+                    Quem Somos
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/o-que-fazemos">
+                    O que fazemos
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/nossos-clientes">
+                    Nossos clientes
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu__link-desk" to="/entre-em-contato">
+                    Entre em contato
+                  </Link>
+                </li>
+              </ul>
           </div>
         </div>
       </div>

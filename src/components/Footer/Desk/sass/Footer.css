@@ -15,13 +15,13 @@
   flex-direction: column;
   gap: 1rem;
 }
-.footer-desk .footer1 .footer__section .footer__title {
-  color: #8A8A8A;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 300;
+.footer-desk .footer1 .footer__section .footer__section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
 }
-.footer-desk .footer1 .footer__section .footer__link {
+.footer-desk .footer1 .footer__section .footer__section__list .footer__link {
   line-height: 1.5rem;
   color: #FFF;
   text-decoration: none;
@@ -29,8 +29,14 @@
   font-size: 1;
   font-weight: 300;
 }
-.footer-desk .footer1 .footer__section .footer__link:hover {
+.footer-desk .footer1 .footer__section .footer__section__list .footer__link:hover {
   text-decoration: underline;
+}
+.footer-desk .footer1 .footer__section .footer__title {
+  color: #8A8A8A;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .footer-desk .footer1 .footer__section .footer__text {
   line-height: 1.5rem;
@@ -44,10 +50,11 @@
 .footer-desk .footer1 .footer__section .footer__text:hover {
   text-decoration: underline;
 }
-.footer-desk .footer1 .footer__section .footer__social {
+.footer-desk .footer1 .footer__section .footer__social__list {
   display: flex;
   gap: 1.25rem;
   margin-top: 0.38rem;
+  list-style: none;
 }
 .footer-desk .footer2 {
   background-color: #21594F;
