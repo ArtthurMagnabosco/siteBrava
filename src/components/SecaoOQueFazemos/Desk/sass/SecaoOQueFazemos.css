@@ -204,6 +204,7 @@
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content {
   display: flex;
+  max-width: 100%;
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content .como-fazemos__card {
   background-image: url("../../../../assets/imagens/cardsMetodologia/deskcard1.svg");

@@ -1,0 +1,55 @@
+@import "../../../../styles/padroes/padroes.scss";
+
+.depoimentos-desk {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .depoimentos__header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1.25rem;
+
+        .depoimentos__title2 {
+            @include title2();
+            text-transform: uppercase;
+        }
+
+        .depoimentos__maintitle {
+            @include title1();
+        }
+    }
+
+    .depoimentos__card {
+        width: 76.5%;
+        background-color: $depoimentosCard;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .depoimentos__card__title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+
+            .depoimentos__card__name {
+                font-weight: 400;
+            }
+
+            .depoimentos__card__desc {
+                font-size: 0.875rem;
+                font-weight: 100;
+            }
+        }
+
+        .depoimentos__card__text {
+            font-size: 0.875rem;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+    }
+}
