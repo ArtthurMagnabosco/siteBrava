@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./sass/Form.css";
 import buttonArrow from "../../assets/imagens/icons/buttonArrow.svg";
 import sentCheck from "../../assets/imagens/icons/sentCheck.svg";
+import "./sass/Form.css";
 
 const Form = ({ home }) => {
   const [submittedForm, setSubmittedForm] = useState(false);
@@ -89,22 +89,22 @@ const Form = ({ home }) => {
     setMessage("");
   };
 
-  const phoneMask = (phone) => {
-    if (phone.length === 11 && Number(phone)) {
-      const ddd = phone.slice(0, 2);
-      const firstPart = phone.slice(2, 7);
-      const secPart = phone.slice(7, 11);
-      const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
-      return fixedPhone;
-    }
-    if (phone.length === 10 && Number(phone)) {
-      const ddd = phone.slice(0, 2);
-      const firstPart = phone.slice(2, 6);
-      const secPart = phone.slice(6, 10);
-      const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
-      return fixedPhone;
-    }
-  };
+  // const phoneMask = (phone) => {
+  //   if (phone.length === 11 && Number(phone)) {
+  //     const ddd = phone.slice(0, 2);
+  //     const firstPart = phone.slice(2, 7);
+  //     const secPart = phone.slice(7, 11);
+  //     const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
+  //     return fixedPhone;
+  //   }
+  //   if (phone.length === 10 && Number(phone)) {
+  //     const ddd = phone.slice(0, 2);
+  //     const firstPart = phone.slice(2, 6);
+  //     const secPart = phone.slice(6, 10);
+  //     const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
+  //     return fixedPhone;
+  //   }
+  // };
 
   return (
     <div className="form">
@@ -166,7 +166,7 @@ const Form = ({ home }) => {
             <input
               className="form__input"
               onChange={(event) => setPhone(event.target.value)}
-              onBlur={(event) => setPhone(phoneMask(event.target.value))}
+              // onBlur={(event) => setPhone(phoneMask(event.target.value))}
               inputMode="numeric"
               value={phone}
               required
@@ -175,7 +175,7 @@ const Form = ({ home }) => {
               placeholder="(00) 9 9999-9999"
               maxLength={15}
               minLength={10}
-              pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
+              // pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
             ></input>
           </label>
           <label className="form__label">
