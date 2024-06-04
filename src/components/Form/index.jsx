@@ -9,16 +9,15 @@ const Form = ({ home }) => {
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
+
   const [contact, setContact] = useState({
     name: "",
     email: "",
     subject: "StaticForms - Contato Brava",
     honeypot: "",
     message: "",
-    //replyTo: "gudutra05@outlook.com",
-    replyTo: "felipe@brava.digital",
-    accessKey: "8cfe55e0-5ad2-4964-a126-47aef2eae4ce",
+    replyTo: "felipe@wecode.digital",
+    accessKey: "7277fb36-e05f-47ef-86ff-d0bf291ca2a8",
   });
 
   const [response, setResponse] = useState({
@@ -33,9 +32,8 @@ const Form = ({ home }) => {
       $company: company,
       phone,
       message,
-      email,
     });
-  }, [name, company, phone, message, email]);
+  }, [name, company, phone, message]);
 
   const handleForm = async (event) => {
     event.preventDefault();
@@ -89,7 +87,6 @@ const Form = ({ home }) => {
     setCompany("");
     setPhone("");
     setMessage("");
-    setEmail("");
   };
 
   // const phoneMask = (phone) => {
@@ -178,22 +175,6 @@ const Form = ({ home }) => {
               placeholder="(00) 9 9999-9999"
               maxLength={15}
               minLength={10}
-            // pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
-            ></input>
-          </label>
-          <label className="form__label">
-            Email*
-            <input
-              className="form__input"
-              onChange={(event) => setEmail(event.target.value)}
-              // onBlur={(event) => setPhone(phoneMask(event.target.value))}
-
-              value={email}
-              required
-              name="email"
-              type="email"
-              placeholder="Digite o seu email"
-
             // pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
             ></input>
           </label>
