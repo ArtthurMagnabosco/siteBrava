@@ -65,6 +65,8 @@ const Form = ({ home }) => {
             type: "success",
             message: "Enviado",
           });
+          dataLayerEvent(contact);
+
           resetForm();
         } else {
           setResponse({
@@ -84,6 +86,24 @@ const Form = ({ home }) => {
     }
   };
 
+  const dataLayerEvent = (data) => {
+    //console.log(data, "dados")
+
+
+    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
+      window.dataLayer.push({
+        dadosCliente: {
+          nome: data?.name,
+          empresa: data?.subject,
+          telefone: data?.phone,
+          email: data?.phone,
+          mensagem: data?.message
+        }
+      });
+      console.log("datalayer", window.dataLayer)
+    };
+  }
+
   const resetForm = () => {
     setName("");
     setCompany("");
@@ -92,22 +112,7 @@ const Form = ({ home }) => {
     setEmail("");
   };
 
-  // const phoneMask = (phone) => {
-  //   if (phone.length === 11 && Number(phone)) {
-  //     const ddd = phone.slice(0, 2);
-  //     const firstPart = phone.slice(2, 7);
-  //     const secPart = phone.slice(7, 11);
-  //     const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
-  //     return fixedPhone;
-  //   }
-  //   if (phone.length === 10 && Number(phone)) {
-  //     const ddd = phone.slice(0, 2);
-  //     const firstPart = phone.slice(2, 6);
-  //     const secPart = phone.slice(6, 10);
-  //     const fixedPhone = `(${ddd}) ${firstPart}-${secPart}`;
-  //     return fixedPhone;
-  //   }
-  // };
+
 
   return (
     <div className="form">
