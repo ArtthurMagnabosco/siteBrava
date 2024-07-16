@@ -98,9 +98,10 @@ const Form = ({ home }) => {
           telefone: data?.phone,
           email: data?.phone,
           mensagem: data?.message
-        }
+        },
+        event: "submitFormWecode"
       });
-      console.log("datalayer", window.dataLayer)
+      //console.log("datalayer", window.dataLayer)
     };
   }
 
