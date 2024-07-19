@@ -87,19 +87,19 @@ const Form = ({ home }) => {
   };
 
   const dataLayerEvent = (data) => {
-    //console.log(data, "dados")
+    // console.log(data, "dados")
 
 
     if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
       window.dataLayer.push({
         dadosCliente: {
           nome: data?.name,
-          empresa: data?.subject,
+          empresa: data?.$company,
           telefone: data?.phone,
           email: data?.phone,
           mensagem: data?.message
         },
-        event: "submitFormWecode"
+        event: "submitFormBrava"
       });
       //console.log("datalayer", window.dataLayer)
     };
