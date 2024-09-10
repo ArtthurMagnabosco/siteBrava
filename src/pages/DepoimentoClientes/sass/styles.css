@@ -11,26 +11,38 @@ body {
 
 .testimony-main-container {
   overflow: hidden;
-  margin-inline: -20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .testimony-main-container {
+    width: 65vw;
+    margin-inline: auto;
+  }
+}
 .testimony-titles-container {
   display: flex;
   flex-direction: column;
   margin: 2rem 0 1.5rem;
+  padding-inline: 1rem;
   gap: 1.5rem;
 }
 .testimony-titles-container .testimony-title {
   color: #8a8a8a;
-  text-align: center;
+  text-align: left;
   font-size: 0.75rem;
   font-family: Montserrat;
   font-weight: 500;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1008px) {
+  .testimony-titles-container .testimony-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .testimony-titles-container .testimony-subtitle {
   color: #353A42;
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   font-family: Montserrat;
   font-weight: 300;
@@ -46,6 +58,9 @@ body {
   .testimony-titles-container .testimony-subtitle {
     font-size: 3rem;
     margin-bottom: 3rem;
+    text-align: center;
+    width: 45vw;
+    margin-inline: auto;
   }
   .testimony-titles-container .testimony-subtitle span {
     font-size: 3rem;
@@ -215,7 +230,7 @@ body {
 .modal-content .modal-content-inner .modal-close-button {
   top: 4px;
   position: absolute;
-  right: 4px;
+  right: 8px;
   border-radius: 4px;
   border: none;
   background: none;
@@ -224,4 +239,4 @@ body {
 .modal-content .modal-content-inner .modal-close-button img:hover {
   filter: opacity(0.5);
   cursor: pointer;
-}
+}/*# sourceMappingURL=styles.css.map */

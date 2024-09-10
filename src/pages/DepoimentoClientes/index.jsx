@@ -77,7 +77,7 @@ export const TestimonialSlider = () => {
 
   const settings = {
     centerMode: true,
-    dots: true,
+    dots: false,
     centerPadding: '20px',
     slidesToShow: 3,
     arrows: true,
