@@ -1,12 +1,5 @@
-p,
-h2,
-h3 {
-  margin: unset;
-}
-
-body {
-  overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../../../styles/padroes/padroes.scss";
 
 .testimony-main-container {
   overflow: hidden;
@@ -19,11 +12,10 @@ body {
   }
 }
 
-
 .testimony-titles-container {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 1.5rem;
+  margin: 2rem 0 0;
   padding-inline: 1rem;
   gap: 1.5rem;
 
@@ -83,13 +75,13 @@ body {
     opacity: 0.75;
     transition: opacity 0.3s ease;
     position: absolute;
-    top: 38%;
+    top: 43%;
     transform: translateY(-50%);
     z-index: 2;
   }
 
   button.slick-prev {
-    left: 24%; /* Altere para ajustar a posição */
+    left: 28%; /* Altere para ajustar a posição */
     font-size: 0;
   }
 
@@ -99,14 +91,14 @@ body {
   }
   
   .slick-prev::before {
-    content: url('../../../../../assets/imagens/svg/left-arrow.svg');
+    content: url('../../../assets/imagens/svg/left-arrow.svg');
     display: block;
     cursor: pointer;
     font-size: 0 !important;
   }
 
   .slick-next::before {
-    content: url('../../../../../assets/imagens/svg/right-arrow.svg');
+    content: url('../../../assets/imagens/svg/right-arrow.svg');
     display: block;
     font-size: 0 !important;
     cursor: pointer;
@@ -123,10 +115,14 @@ body {
     border-radius: 10px;
     gap: 1rem;
     margin-bottom: 2rem;
+    height: 390px;
+      justify-content: center;
 
     @media screen and (min-width: 1008px) {
       padding: 48px 52px;
       margin-bottom: 80px;
+      height: 470px;
+      justify-content: center;
     }
 
     .testimonial-profile {
@@ -141,16 +137,20 @@ body {
 
         .testimonial-name {
           color: #353a42;
-          font-family: Monteserrat;
-          font-weight: 400;
+          font-family: Montserrat;
+          font-size: 1rem;
+          font-weight: 500;
         }
 
         .testimonial-position {
           color: #353a42;
-          font-family: Monteserrat;
+          font-family: Montserrat;
           font-size: .875rem;
-          font-weight: 100;
+          font-weight: 300;
         }
+      }
+      .testimonial-image {
+        max-width: 60px;
       }
     }
 
@@ -158,15 +158,19 @@ body {
 
       .testimonial-description-content {
         color: #353a42;
-          font-family: Monteserrat;
-        font-size: .875rem;
+          font-family: Montserrat;
+        font-size: 12px;
         font-style: italic;
         font-weight: 300;
         line-height: 1.5rem;
 
         @media screen and (min-width: 1008px) {
-          font-size: 1.125rem;
+          font-size: 1rem;
           line-height: 2rem;
+        }
+
+        span {
+          font-weight: 600;
         }
       }
     }
@@ -174,17 +178,33 @@ body {
     .testimonial-video {
 
       .testimonial-button-video {
-        display: flex;
-        gap: 6px;
-        align-items: center;
-        padding: .875rem 1rem;
-        border-radius: 8px;
-        border: 1px solid #21594F;
-        background: none;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-        color: #21594F;
-        font-family: Monteserrat;
         cursor: pointer;
+        font-size: .75rem;
+        background: $green;
+        // margin-inline: auto;
+        width: 180px;
+        display: flex;
+        padding: 12px 40px;
+        border-radius: 8px;
+        border: none;
+        color: $white;
+        gap: 16px;
+        text-decoration: none;
+        align-items: center;
+        transition: ease-in-out 0.6s;
+        animation: ease-in-out 0.6s;
+        white-space: nowrap;
+        &:hover {
+          background: $greenhover;
+          width: 200px;
+    
+          img {
+            display: block;
+          }
+        }
+        img {
+          display: none;
+        }
       }
 
     }

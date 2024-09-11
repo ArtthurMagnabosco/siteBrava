@@ -5,48 +5,68 @@ import Slider from "react-slick";
 import Modal from 'react-modal';
 import "./sass/styles.css";
 
+//Profile pic
+import felipeFarina from "../../assets/imagens/client-profile-pic/felipe-carraro-photo.png"
+import priscilaBaum from "../../assets/imagens/client-profile-pic/priscila-baum-photo.png";
+import giulianoBettanin from "../../assets/imagens/client-profile-pic/giuliano-inbetta.png";
+import viniciusMartini from "../../assets/imagens/client-profile-pic/vinicius-ou-photo.png";
+
+//Videos
+import felipeHorizontal from "../../assets/imagens/videos/depoimentos/felipe-carraro-horizontal.mp4"
+import felipeVertical from "../../assets/imagens/videos/depoimentos/felipe-carraro-vertical.mp4"
+
+import priscilaHorizontal from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-horizontal.mp4"
+import priscilaVertical from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-vertical.mp4"
+
+import giulianoHorizontal from "../../assets/imagens/videos/depoimentos/giuliano-bettanin-horizontal.mp4"
+import giulianoVertical from "../../assets/imagens/videos/depoimentos/giuliano-bettanin-vertical.mp4"
+
+import viniciusHorizontal from "../../assets/imagens/videos/depoimentos/vinicius-ou-horizontal.mp4"
+import viniciusVertical from "../../assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
+
+//svg
 import playDepoimentos from "../../assets/imagens/svg/play.svg"
 import fecharModal from "../../assets/imagens/svg/fechar-modal.svg"
 
 const testimonials = [
   {
-    name: 'Teste.',
-    position: 'CEO • Teste',
-    image: '',
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: {
-      horizontal: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
-      // vertical: felipeVertical,
-    }
-  },
-  {
     name: 'Felipe Farina',
-    position: 'CEO • Carraro',
-    image: '',
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    position: 'Gerente de E-commerce da Carraro',
+    image: felipeFarina,
+    testimonial: '&quotA consultoria nos ajudou muito desde o princípio, quando eles fizeram uma <span>imersão na empresa</span>, para <span>mapear todas as áreas</span> e todos os pontos críticos. Até o pós GO Live do projeto.&quot',
     video: {
-      // horizontal: felipeHorizontal,
-      // vertical: felipeVertical,
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
     }
   },
   {
-    name: 'Horizontal Video',
-    position: 'CEO • PICCADILLY',
-    image: '',
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    name: 'Priscila Baum',
+    position: 'Gerente de E-commerce da PICCADILLY',
+    image: priscilaBaum,
+    testimonial: '&quotA consultoria da Brava trouxe a <span>expertise de estratégias do digital</span> para reestruturar o e-commerce, nos últimos anos, e <span>alavancar os resultados</span> de uma forma mais rápida na empresa, seguindo todos os desafios que a gente tinha na área.&quot',
     video: {
-      // horizontal: felipeHorizontal,
-      // vertical: felipeVertical,
+      horizontal: priscilaHorizontal,
+      vertical: priscilaVertical,
     }
   },
   {
-    name: 'Fernanda L.',
-    position: 'CEO • PICCADILLY',
-    image: '',
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    name: 'Giuliano Bettanin',
+    position: 'Gestor dos Canais Digitais da InBetta',
+    image: giulianoBettanin,
+    testimonial: '&quotQuando a gente fala de e-commerce a primeira coisa que tem que andar em conjunto no projeto é a <span>cultura dos funcionários</span> com o canal digital. A Brava nos ajudou a desenvolver todo <span>o modelo de negócio e alinhar as expectativas</span> entre todas as áreas e colaboradores.&quot',
     video: {
-      // horizontal: felipeHorizontal,
-      // vertical: felipeVertical,
+      horizontal: giulianoHorizontal,
+      vertical: giulianoVertical,
+    }
+  },
+  {
+    name: 'Vinícius Martini',
+    position: 'Gerente de Marketing da Martiplast',
+    image: viniciusMartini,
+    testimonial: '&quotA gente foi atrás de uma consultoria para <span>nos apoiar a acelerar esse desenvolvimento</span>, tanto de conhecimento, tanto de <span>aculturar</span> um pouco mais a empresa. Não só no como implementar um e-commerce, mas os benefícios disso.&quot',
+    video: {
+      horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
     }
   },
 ];
@@ -114,7 +134,7 @@ export const TestimonialSlider = () => {
                 </div>
               </div>
               <div className={'testimonial-desciption'}>
-                <p className={'testimonial-description-content'}>{testimonial.testimonial}</p>
+              <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
               </div>
               <div className={'testimonial-video'}>
                 <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} alt="" /></button>
