@@ -92,7 +92,12 @@ export const TestimonialSlider = () => {
     };
 
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      setVideoSrc(''); // limpa o estado ao desmontar
+    };
   }, []);
 
   const settings = {
@@ -127,17 +132,24 @@ export const TestimonialSlider = () => {
           <div key={index} className="testimonial-slide">
             <div className="testimonial-content">
               <div className={'testimonial-profile'}>
-                <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+                {/* Renderiza a imagem somente se estiver disponível */}
+                {testimonial.image && <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />}
                 <div className='testimonial-name-position'>
                   <h3 className={'testimonial-name'}>{testimonial.name}</h3>
                   <p className={'testimonial-position'}>{testimonial.position}</p>
                 </div>
               </div>
               <div className={'testimonial-desciption'}>
-              <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
+                {/* Renderiza o depoimento */}
+                <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
               </div>
               <div className={'testimonial-video'}>
-                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} alt="" /></button>
+                {/* Renderiza o botão do vídeo somente se o vídeo estiver disponível */}
+                {testimonial.video && (
+                  <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>
+                    Assistir depoimento <img src={playDepoimentos} alt="" />
+                  </button>
+                )}
               </div>
             </div>
           </div>
