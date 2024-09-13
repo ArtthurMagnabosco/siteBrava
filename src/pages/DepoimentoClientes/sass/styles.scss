@@ -5,10 +5,16 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width:1201px) and (max-width: 1400px){
   .testimony-main-container {
-    width: 65vw;
-    margin-inline: auto;
+    margin-inline: 20px;
+  }
+}
+
+@media screen and (min-width: 1401px){
+  .testimony-main-container {
+    margin-inline: 180px;
   }
 }
 
@@ -116,14 +122,36 @@
     gap: 1rem;
     margin-bottom: 2rem;
     height: 390px;
-      justify-content: center;
+    justify-content: center;
 
-    @media screen and (min-width: 1008px) {
-      padding: 48px 52px;
-      margin-bottom: 80px;
-      height: 470px;
-      justify-content: center;
-    }
+      @media screen and (min-width: 1008px) and (max-width: 1200px) {
+        padding: 48px 52px;
+        margin-bottom: 80px;
+        height: 420px;
+      }
+  
+      @media screen and (min-width: 1201px) and (max-width:1400px){
+        padding: 48px 52px;
+        margin-bottom: 80px;
+        height: 460px;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 1401px) and (max-width: 1600px) {
+        padding: 48px 52px;
+        margin-bottom: 80px;
+        height: 450px;
+      }
+
+      @media screen and (min-width: 1601px) {
+        padding: 48px 52px;
+        margin-bottom: 80px;
+        height: 440px;
+      }
+
+      // @media screen and (min-width: 1750px) and (max-width: 1920px) {
+      //   height: 400px;
+      // }
 
     .testimonial-profile {
       display: flex;
@@ -138,15 +166,23 @@
         .testimonial-name {
           color: #353a42;
           font-family: Montserrat;
-          font-size: 1rem;
+          font-size: .875rem;
           font-weight: 500;
+        }
+        
+        @media screen and (min-width: 1008px) {
+          font-size: 1rem;
         }
 
         .testimonial-position {
           color: #353a42;
           font-family: Montserrat;
-          font-size: .875rem;
+          font-size: .75rem;
           font-weight: 300;
+        }
+
+        @media screen and (min-width: 1008px) {
+          font-size: .875rem;
         }
       }
       .testimonial-image {
@@ -184,7 +220,6 @@
         width: 180px;
         display: flex;
         padding: 12px 40px;
-        border-radius: 8px;
         border: none;
         color: $white;
         gap: 8px;
@@ -203,11 +238,11 @@
           width: 190px;
           display: flex;
           padding: 12px 40px;
-          border-radius: 8px;
           border: none;
           color: $white;
           gap: 16px;
           text-decoration: none;
+          justify-content: start;
           align-items: center;
           transition: ease-in-out 0.6s;
           animation: ease-in-out 0.6s;
@@ -309,7 +344,6 @@
       top: 4px;
       position: absolute;
       right: 8px;
-      border-radius: 4px;
       border: none;
       background: none;
       z-index: 999;

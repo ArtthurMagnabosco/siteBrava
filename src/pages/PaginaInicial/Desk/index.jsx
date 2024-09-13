@@ -10,9 +10,9 @@ const PaginaInicialDesk = () => {
     <div className="home">
       <Banner />
       <Clientes />
+      <TestimonialSlider />
       <SecaoOQueFazemos home />
       <Proposito />
-      <TestimonialSlider />
       <Form home />
     </div>
   );
