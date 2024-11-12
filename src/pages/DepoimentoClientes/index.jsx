@@ -10,6 +10,7 @@ import felipeFarina from "../../assets/imagens/client-profile-pic/felipe-carraro
 import priscilaBaum from "../../assets/imagens/client-profile-pic/priscila-baum-photo.png";
 import giulianoBettanin from "../../assets/imagens/client-profile-pic/giuliano-inbetta.png";
 import viniciusMartini from "../../assets/imagens/client-profile-pic/vinicius-ou-photo.png";
+import liliamMantovani from "../../assets/imagens/client-profile-pic/liliam-keko-photo.png"
 
 //Videos
 import felipeHorizontal from "../../assets/imagens/videos/depoimentos/felipe-carraro-horizontal.mp4"
@@ -24,11 +25,23 @@ import giulianoVertical from "../../assets/imagens/videos/depoimentos/giuliano-b
 import viniciusHorizontal from "../../assets/imagens/videos/depoimentos/vinicius-ou-horizontal.mp4"
 import viniciusVertical from "../../assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
 
+import liliamDepoimento from "../../assets/imagens/videos/depoimentos/liliam-keko.mp4"
+
 //svg
 import playDepoimentos from "../../assets/imagens/svg/play.svg"
 import fecharModal from "../../assets/imagens/svg/fechar-modal.svg"
 
 const testimonials = [
+  {
+    name: 'Liliam Mantovani',
+    position: 'Gerente de Marketing da Keko',
+    image: liliamMantovani,
+    testimonial: '&quotEu mais do que aconselho a consultoria da Brava <span>com certeza foi um investimento acertado</span>.&quot',
+    video: {
+      horizontal: liliamDepoimento,
+      vertical: liliamDepoimento,
+    }
+  },
   {
     name: 'Felipe Farina',
     position: 'Gerente de E-commerce da Carraro',
