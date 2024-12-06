@@ -1,7 +1,7 @@
 import "./sass/Clientes.css";
 import { Link } from "react-router-dom";
 import { logosClientesDesk } from "../../sliderClientes/logosClientes";
-import buttonArrow from "../../../../assets/imagens/icons/buttonArrow.svg"
+import buttonArrow from "../../../../assets/imagens/icons/buttonArrow.svg";
 
 const Clientes = () => {
   return (
@@ -9,9 +9,11 @@ const Clientes = () => {
       <div className="clientes__titles">
         <p className="clientes__title2">Nossos clientes</p>
         <h2 className="clientes__title1">
-          Quem <span className="text-highlight">confia </span>
-          em nosso trabalho e <span className="text-highlight">atesta </span>
-          nossa qualidade
+          Fazemos parte de um grupo que oferece diferentes{" "}
+          <span className="text-highlight">soluções</span> para diferentes{" "}
+          <span className="text-highlight">necessidades</span>, dentro do
+          ecossistema do mercado digital.{" "}
+          <span className="text-highlight">Conheça nossos clientes</span>
         </h2>
       </div>
       <div className="clientes__brands">
