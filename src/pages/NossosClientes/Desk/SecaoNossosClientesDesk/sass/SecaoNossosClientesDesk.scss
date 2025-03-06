@@ -2,7 +2,7 @@
 
 .nossos-clientes__container_desk {
     display: flex;
-    padding-top: 10rem;
+    padding: 10rem 0 5rem 0;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
@@ -38,21 +38,30 @@
     }
 
     .nossos-clientes__body {
-        width: 100%;
-        display: flex;
-        padding: 0rem 10%;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 5rem;
+        display: grid
+        ;
+            grid-template-columns: repeat(5, 200px);
+            grid-template-rows: repeat(5, 100px);
+            grid-column-gap: 1.5rem;
+            grid-row-gap: .5rem;
+            justify-items: center;
+            margin: 0 18vw !important;
+            align-items: center;
+            justify-content: center;
 
         .logo__clientes {
             display: flex;
-            height: 7.5rem;
-            width: 15rem;
+            height: auto;
+            width: 123px;
             padding: 0 1.5rem;
             justify-content: center;
             align-items: center;
             scale: 1.4;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }

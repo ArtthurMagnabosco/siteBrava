@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./sass/Clientes.css";
-import { logosClientes } from "../../sliderClientes/logosClientes";
+import { logoClientesColorido } from "../../Desk/Clientes/clientes_cinza";
 
 const Clientes = () => {
   return (
@@ -14,21 +14,11 @@ const Clientes = () => {
         </h2>
       </div>
       <div className="clientes__brands">
-        <div className="clientes__slider">
-          {logosClientes.group1.map((logo, index) => (
-            <img src={logo} key={index} />
-          ))}
-        </div>
-
-        <div className="clientes__slider clientes__slider-reverse">
-          {logosClientes.group2.map((logo, index) => (
-            <img src={logo} key={index} />
-          ))}
-        </div>
-
-        <div className="clientes__slider">
-          {logosClientes.group3.map((logo, index) => (
-            <img src={logo} key={index} />
+        <div className="nossos-clientes__body">
+          {logoClientesColorido.map((cliente) => (
+            <div className="logo__clientes" key={cliente.id}>
+              <img src={cliente.src}></img>
+            </div>
           ))}
         </div>
       </div>
