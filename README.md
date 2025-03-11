@@ -36,4 +36,3 @@
 Projeto desenvolvido por <i>Wecode</i>, com a contribuição de:
 - **Ana Clara Tonieto** - *Estruturação e layout das páginas*
 - **Guilherme Henrique Dalla Rosa** - *Desenvolvimento*
-- **Estevão Bresolin** - *Desenvolvimento*
