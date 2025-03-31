@@ -60,7 +60,7 @@ const Form = ({ home }) => {
 
         const json = await res.json();
 
-        if (json.success) {
+        if (res.ok) {
           setResponse({
             type: "success",
             message: "Enviado",
@@ -71,7 +71,7 @@ const Form = ({ home }) => {
         } else {
           setResponse({
             type: "error",
-            message: "Erro ao enviar",
+            message: json.response,
           });
         }
       } catch (e) {
@@ -90,7 +90,7 @@ const Form = ({ home }) => {
     // console.log(data, "dados")
 
 
-    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
+    // if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
       window.dataLayer.push({
         dadosCliente: {
           nome: data?.name,
@@ -102,7 +102,7 @@ const Form = ({ home }) => {
         event: "submitFormBrava"
       });
       //console.log("datalayer", window.dataLayer)
-    };
+    // };
   }
 
   const resetForm = () => {
