@@ -48,9 +48,6 @@
   justify-content: center;
   width: 100%;
 }
-.home__clientes .clientes__brands .nossos-clientes__body .logo__clientes:last-child {
-  grid-column: 2;
-}
 
 .home__clientes .clientes__brands .nossos-clientes__body .logo__clientes img {
   height: 100%;

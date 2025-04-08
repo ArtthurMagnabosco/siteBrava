@@ -17,11 +17,23 @@ const SecaoNossosClientesDesk = () => {
       </div>
 
       <div className="nossos-clientes__body">
-        {logoClientesColorido.map((cliente) => (
-          <div className="logo__clientes" key={cliente.id}>
-            <img src={cliente.src}></img>
-          </div>
+        {logoClientesColorido.map((cliente, index) => (
+          index <= 24 ?
+            <div className="logo__clientes" key={cliente.id}>
+              <img src={cliente.src}></img>
+            </div>
+            : <></>
         ))}
+        <div style={{ gridColumn: 3, display: "flex", gap: "6.5rem", height: "110px", justifyContent: "center", width: "650px" }}>
+          {logoClientesColorido.map((cliente, index) => (
+            index <= 24 ?
+              <></>
+              :
+              <div className="logo__clientes" key={cliente.id}>
+                <img src={cliente.src}></img>
+              </div>
+          ))}
+        </div>
       </div>
     </div>
   );

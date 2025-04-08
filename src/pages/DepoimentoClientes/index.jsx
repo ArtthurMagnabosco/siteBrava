@@ -10,7 +10,8 @@ import felipeFarina from "../../assets/imagens/client-profile-pic/felipe-carraro
 import priscilaBaum from "../../assets/imagens/client-profile-pic/priscila-baum-photo.png";
 import giulianoBettanin from "../../assets/imagens/client-profile-pic/giuliano-inbetta.png";
 import viniciusMartini from "../../assets/imagens/client-profile-pic/vinicius-ou-photo.png";
-import liliamMantovani from "../../assets/imagens/client-profile-pic/liliam-keko-photo.png"
+import liliamMantovani from "../../assets/imagens/client-profile-pic/liliam-keko-photo.png";
+import svenStihlPhoto from "../../assets/imagens/client-profile-pic/sven-stihl-photo.png";
 
 //Videos
 import felipeHorizontal from "../../assets/imagens/videos/depoimentos/felipe-carraro-horizontal.mp4"
@@ -26,6 +27,8 @@ import viniciusHorizontal from "../../assets/imagens/videos/depoimentos/vinicius
 import viniciusVertical from "../../assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
 
 import liliamDepoimento from "../../assets/imagens/videos/depoimentos/liliam-keko.mp4"
+
+import svenStihl from "../../assets/imagens/videos/depoimentos/sven-vanessa-stihl.mp4"
 
 //svg
 import playDepoimentos from "../../assets/imagens/svg/play.svg"
@@ -80,6 +83,16 @@ const testimonials = [
     video: {
       horizontal: viniciusHorizontal,
       vertical: viniciusVertical,
+    }
+  },
+  {
+    name: 'Sven Laure',
+    position: 'Head of Marketing Systems & E-Commerce',
+    image: svenStihlPhoto,
+    testimonial: '&quotA nossa experiência foi fantástica, e a gente entende como <span>um marco na história da STIHL.</span>&quot',
+    video: {
+      horizontal: svenStihl,
+      vertical: svenStihl,
     }
   },
 ];

@@ -91,17 +91,17 @@ const Form = ({ home }) => {
 
 
     // if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
-      window.dataLayer.push({
-        dadosCliente: {
-          nome: data?.name,
-          empresa: data?.$company,
-          telefone: data?.phone,
-          email: data?.phone,
-          mensagem: data?.message
-        },
-        event: "submitFormBrava"
-      });
-      //console.log("datalayer", window.dataLayer)
+    window.dataLayer.push({
+      dadosCliente: {
+        nome: data?.name,
+        empresa: data?.$company,
+        telefone: data?.phone,
+        email: data?.phone,
+        mensagem: data?.message
+      },
+      event: "submitFormBrava"
+    });
+    //console.log("datalayer", window.dataLayer)
     // };
   }
 
@@ -203,6 +203,7 @@ const Form = ({ home }) => {
             // pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}"
             ></input>
           </label>
+          <div style={{ display: "none" }} class="g-recaptcha" data-sitekey="6LczhgUrAAAAANBibb_aXHjmX2s8VpwWIupzZ7Bo"></div>
           <label className="form__label">
             Sua mensagem*
             <textarea
@@ -229,6 +230,8 @@ const Form = ({ home }) => {
               alt=""
             ></img>
           </button>
+          {/* recaptcha script */}
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         </form>
       </div>
     </div>

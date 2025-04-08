@@ -23,6 +23,8 @@ import roniChaves from "../../../../assets/imagens/logoClientes/neutro/logoroniC
 import fabiolamolina from "../../../../assets/imagens/logoClientes/neutro/logofabiolamolina.svg";
 import jorgebischoff from "../../../../assets/imagens/logoClientes/neutro/logojorgebischoff.svg";
 import trestentos from "../../../../assets/imagens/logoClientes/neutro/logo3tentos.svg";
+import oba from "../../../../assets/imagens/logoClientes/neutro/logo-oba.svg";
+import honeybe from "../../../../assets/imagens/logoClientes/neutro/logo-honeybe.svg";
 
 export const logoClientesColorido = [
   {
@@ -124,6 +126,14 @@ export const logoClientesColorido = [
   {
     src: belasletras,
     id: 24,
+  },
+  {
+    src: oba,
+    id: 25,
+  },
+  {
+    src: honeybe,
+    id: 26,
   },
 ];
 
