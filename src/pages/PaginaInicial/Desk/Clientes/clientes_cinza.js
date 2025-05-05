@@ -5,17 +5,17 @@ import dj from "../../../../assets/imagens/logoClientes/neutro/logodj.svg";
 import bebece from "../../../../assets/imagens/logoClientes/neutro/logobebece.svg";
 import petitejolie from "../../../../assets/imagens/logoClientes/neutro/logopetitejolie.svg";
 import katarze from "../../../../assets/imagens/logoClientes/neutro/logokatarze.svg";
-import piccadily from "../../../../assets/imagens/logoClientes/neutro/logopiccadily.svg";
+// import piccadily from "../../../../assets/imagens/logoClientes/neutro/logopiccadily.svg";
 import perfumaria from "../../../../assets/imagens/logoClientes/neutro/logoperfumaria.svg";
 import fiero from "../../../../assets/imagens/logoClientes/neutro/logofiero.svg";
-import belasletras from "../../../../assets/imagens/logoClientes/neutro/logobelasletras.svg";
+// import belasletras from "../../../../assets/imagens/logoClientes/neutro/logobelasletras.svg";
 import bibi from "../../../../assets/imagens/logoClientes/neutro/logobibi.svg";
 import carraro from "../../../../assets/imagens/logoClientes/neutro/logocarraro.svg";
 import keko from "../../../../assets/imagens/logoClientes/neutro/logokeko.svg";
 import kiss from "../../../../assets/imagens/logoClientes/neutro/logokiss.svg";
 import lots from "../../../../assets/imagens/logoClientes/neutro/logolots.svg";
 import niini from "../../../../assets/imagens/logoClientes/neutro/logoniini.svg";
-import ou from "../../../../assets/imagens/logoClientes/neutro/logoou.svg";
+// import ou from "../../../../assets/imagens/logoClientes/neutro/logoou.svg";
 import pituchinhus from "../../../../assets/imagens/logoClientes/neutro/logopituchinhus.svg";
 import soprano from "../../../../assets/imagens/logoClientes/neutro/logosoprano.svg";
 import stihl from "../../../../assets/imagens/logoClientes/neutro/logostihl.svg";
@@ -25,7 +25,7 @@ import jorgebischoff from "../../../../assets/imagens/logoClientes/neutro/logojo
 import trestentos from "../../../../assets/imagens/logoClientes/neutro/logo3tentos.svg";
 import oba from "../../../../assets/imagens/logoClientes/neutro/logo-oba.svg";
 import honeybe from "../../../../assets/imagens/logoClientes/neutro/logo-honeybe.svg";
-
+import santaclara from "../../../../assets/imagens/logoClientes/neutro/logosantaclara.svg"
 export const logoClientesColorido = [
   {
     src: politorno,
@@ -47,10 +47,10 @@ export const logoClientesColorido = [
     src: soprano,
     id: 4,
   },
-  {
-    src: ou,
-    id: 5,
-  },
+  // {
+  //   src: ou,
+  //   id: 5,
+  // },
   {
     src: lots,
     id: 6,
@@ -95,10 +95,10 @@ export const logoClientesColorido = [
     src: perfumaria,
     id: 16,
   },
-  {
-    src: piccadily,
-    id: 17,
-  },
+  // {
+  //   src: piccadily,
+  //   id: 17,
+  // },
   {
     src: petitejolie,
     id: 18,
@@ -124,7 +124,7 @@ export const logoClientesColorido = [
     id: 23,
   },
   {
-    src: belasletras,
+    src: santaclara,
     id: 24,
   },
   {
