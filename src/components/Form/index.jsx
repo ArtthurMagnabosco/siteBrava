@@ -135,8 +135,8 @@ const Form = ({ home }) => {
               </h1>
             )}
             <p className="form__paragraph">
-              Preencha o formulário para que possamos entrar em contato ou nos
-              mande uma mensagem pelos canais abaixo:
+              Preencha o formulário para que possamos falar com você ou entre em contato 
+              pelos canais abaixo. 
             </p>
           </div>
         </div>
