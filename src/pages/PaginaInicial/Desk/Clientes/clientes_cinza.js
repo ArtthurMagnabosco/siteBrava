@@ -26,6 +26,7 @@ import trestentos from "../../../../assets/imagens/logoClientes/neutro/logo3tent
 import oba from "../../../../assets/imagens/logoClientes/neutro/logo-oba.svg";
 import honeybe from "../../../../assets/imagens/logoClientes/neutro/logo-honeybe.svg";
 import santaclara from "../../../../assets/imagens/logoClientes/neutro/logosantaclara.svg"
+
 export const logoClientesColorido = [
   {
     src: politorno,

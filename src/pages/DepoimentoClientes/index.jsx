@@ -7,9 +7,9 @@ import "./sass/styles.css";
 
 //Profile pic
 import felipeFarina from "../../assets/imagens/client-profile-pic/felipe-carraro-photo.png"
-import priscilaBaum from "../../assets/imagens/client-profile-pic/priscila-baum-photo.png";
+// import priscilaBaum from "../../assets/imagens/client-profile-pic/priscila-baum-photo.png";s
 import giulianoBettanin from "../../assets/imagens/client-profile-pic/giuliano-inbetta.png";
-import viniciusMartini from "../../assets/imagens/client-profile-pic/vinicius-ou-photo.png";
+// import viniciusMartini from "../../assets/imagens/client-profile-pic/vinicius-ou-photo.png";
 import liliamMantovani from "../../assets/imagens/client-profile-pic/liliam-keko-photo.png";
 import svenStihlPhoto from "../../assets/imagens/client-profile-pic/sven-stihl-photo.png";
 
@@ -17,14 +17,14 @@ import svenStihlPhoto from "../../assets/imagens/client-profile-pic/sven-stihl-p
 import felipeHorizontal from "../../assets/imagens/videos/depoimentos/felipe-carraro-horizontal.mp4"
 import felipeVertical from "../../assets/imagens/videos/depoimentos/felipe-carraro-vertical.mp4"
 
-import priscilaHorizontal from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-horizontal.mp4"
-import priscilaVertical from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-vertical.mp4"
+// import priscilaHorizontal from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-horizontal.mp4"
+// import priscilaVertical from "../../assets/imagens/videos/depoimentos/priscila-piccaddily-vertical.mp4"
 
 import giulianoHorizontal from "../../assets/imagens/videos/depoimentos/giuliano-bettanin-horizontal.mp4"
 import giulianoVertical from "../../assets/imagens/videos/depoimentos/giuliano-bettanin-vertical.mp4"
 
-import viniciusHorizontal from "../../assets/imagens/videos/depoimentos/vinicius-ou-horizontal.mp4"
-import viniciusVertical from "../../assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
+// import viniciusHorizontal from "../../assets/imagens/videos/depoimentos/vinicius-ou-horizontal.mp4"
+// import viniciusVertical from "../../assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
 
 import liliamDepoimento from "../../assets/imagens/videos/depoimentos/liliam-keko.mp4"
 
@@ -55,16 +55,16 @@ const testimonials = [
       vertical: felipeVertical,
     }
   },
-  {
-    name: 'Priscila Baum',
-    position: 'Gerente de E-commerce da PICCADILLY',
-    image: priscilaBaum,
-    testimonial: '&quotA consultoria da Brava trouxe a <span>expertise de estratégias do digital</span> para reestruturar o e-commerce, nos últimos anos, e <span>alavancar os resultados</span> de uma forma mais rápida na empresa, seguindo todos os desafios que a gente tinha na área.&quot',
-    video: {
-      horizontal: priscilaHorizontal,
-      vertical: priscilaVertical,
-    }
-  },
+  // {
+  //   name: 'Priscila Baum',
+  //   position: 'Gerente de E-commerce da PICCADILLY',
+  //   image: priscilaBaum,
+  //   testimonial: '&quotA consultoria da Brava trouxe a <span>expertise de estratégias do digital</span> para reestruturar o e-commerce, nos últimos anos, e <span>alavancar os resultados</span> de uma forma mais rápida na empresa, seguindo todos os desafios que a gente tinha na área.&quot',
+  //   video: {
+  //     horizontal: priscilaHorizontal,
+  //     vertical: priscilaVertical,
+  //   }
+  // },
   {
     name: 'Giuliano Bettanin',
     position: 'Gestor dos Canais Digitais da InBetta',
@@ -75,16 +75,16 @@ const testimonials = [
       vertical: giulianoVertical,
     }
   },
-  {
-    name: 'Vinícius Martini',
-    position: 'Gerente de Marketing da Martiplast',
-    image: viniciusMartini,
-    testimonial: '&quotA gente foi atrás de uma consultoria para <span>nos apoiar a acelerar esse desenvolvimento</span>, tanto de conhecimento, tanto de <span>aculturar</span> um pouco mais a empresa. Não só no como implementar um e-commerce, mas os benefícios disso.&quot',
-    video: {
-      horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
-    }
-  },
+  // {
+  //   name: 'Vinícius Martini',
+  //   position: 'Gerente de Marketing da Martiplast',
+  //   image: viniciusMartini,
+  //   testimonial: '&quotA gente foi atrás de uma consultoria para <span>nos apoiar a acelerar esse desenvolvimento</span>, tanto de conhecimento, tanto de <span>aculturar</span> um pouco mais a empresa. Não só no como implementar um e-commerce, mas os benefícios disso.&quot',
+  //   video: {
+  //     horizontal: viniciusHorizontal,
+  //     vertical: viniciusVertical,
+  //   }
+  // },
   {
     name: 'Sven Laure',
     position: 'Head of Marketing Systems & E-Commerce',
