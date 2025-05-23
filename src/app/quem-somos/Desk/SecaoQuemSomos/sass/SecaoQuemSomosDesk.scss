@@ -1,0 +1,96 @@
+@import '@/app/styleGuide.scss';
+
+.quem-somos__container-desk{
+    display: flex;
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .quem-somos__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        
+        .header__title1 {
+            @include title1; 
+            text-align: center;         
+            font-size: 2.5rem;
+            max-width: 50%;
+          }
+
+          .header__title2 {
+            @include title2;
+            text-transform: uppercase;
+            font-size: 1rem;
+          }
+      
+          .header__text1 {
+            @include padrao;
+            text-align: center;
+            font-size: 1.25rem;
+            max-width: 73%;
+          }
+          @media (max-width: 1500px) {
+            .header__title1 {
+              max-width: 50rem;
+            }
+          }
+    }
+    .quem-somos__body{
+        display: flex;
+        width: 100%;
+        padding: 3.75rem 0;
+        align-items: stretch;
+        gap: 1.875rem;
+        justify-content: center;
+
+        .body__company{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 1 0 0;
+            border: 1px solid $background;
+            background: $white;
+            max-width: 22.4%;
+
+            .body__company__logo{
+                display: flex;
+                height: 6.25rem;
+                padding: 2.1875rem 6.13194rem 2.0625rem 6.1875rem;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+                background: $background;
+            }
+
+            .body__company__info{
+                display: flex;
+                padding: 1.875rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                align-self: stretch;
+                height: 100%;
+
+                .body__company__title {
+                    color: $green;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                  }
+          
+                  .body__company__text {
+                    color: $text1;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                  }
+            }
+        }
+    }
+}

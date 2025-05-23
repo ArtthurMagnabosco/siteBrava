@@ -1,0 +1,68 @@
+@import '@/app/styleGuide.scss';
+
+.nossos-clientes__container_desk {
+    display: flex;
+    padding: 10rem 0 5rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    align-self: stretch;
+
+    .nossos-clientes__header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header__title1 {
+            @include title1;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            text-align: center;
+            max-width: 60%;
+            font-size: 2.5rem;
+        }
+
+        .header__title2 {
+            @include title2;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .header__text1 {
+            @include padrao;
+            line-height: 1.5rem;
+            font-size: 1.25rem;
+            text-align: center;
+            max-width: 55%;
+        }
+    }
+
+    .nossos-clientes__body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);;
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 3.5rem;
+        grid-row-gap: .5rem;
+        justify-items: center;
+        margin: 0 18vw !important;
+        align-items: center;
+        justify-content: center;
+
+        .logo__clientes {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            // width: auto;
+            padding: 0 1.5rem;
+            justify-content: center;
+            align-items: center;
+            // scale: 1.4; //olha a brisa do cara que escreveu isso
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

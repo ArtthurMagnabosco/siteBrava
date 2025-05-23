@@ -1,0 +1,12 @@
+@import '@/app/styleGuide.scss';
+
+img {
+  height: auto;
+}
+
+* {
+  font-family: $fontFamily;
+  font-style: normal;
+  line-height: normal;
+  box-sizing: border-box;
+}

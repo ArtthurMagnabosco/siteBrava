@@ -1,38 +1,36 @@
-![image](https://github.com/ArtthurMagnabosco/siteBrava/assets/149530007/f42eba5b-8165-4fc0-b8a3-c44341cfb6a2)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-<h1 align="center">Site Brava</h1>
+## Getting Started
 
-## Descrição
-<p>Projeto desenvolvido em React + Vite para o site insitucional da Brava Consultoria em E-commerce e Marketplace</p>
-<a href="https://www.figma.com/file/Tl7J2CC58hk0ZQ7zUl5Ec7/Site-Brava?type=design&t=05KR4RfJoFLCAUzZ-6">Layout do projeto no Figma</a>
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Pré-requisitos
-- Ter o *Git* ou *GitHub Desktop* instalado para clonagem do repositório
-- Ter o *NodeJs* instalado para rodar o servidor do projeto
-<p>Após clonar o repositório, rodar os seguintes comandos na pasta do projeto:</p>
-<p><i>yarn install</i> - instalar dependências</p>
-<p><i>yarn run dev</i> - rodar o servidor NodeJs do projeto</p>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Deploy
-<p>Projeto publicado na plataforma Vercel, e hospedado em <a href="https://www.brava.digital">brava.digital</a></p>
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Learn More
 
-### Status do projeto
-<p>Sprint 1 concluída ✅</p>
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Tecnologias utilizadas
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- ReactJs
-- Vite
-- NodeJs
-- React Router Dom
-- Sass
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Autoria
-Projeto desenvolvido por <i>Wecode</i>, com a contribuição de:
-- **Ana Clara Tonieto** - *Estruturação e layout das páginas*
-- **Guilherme Henrique Dalla Rosa** - *Desenvolvimento*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

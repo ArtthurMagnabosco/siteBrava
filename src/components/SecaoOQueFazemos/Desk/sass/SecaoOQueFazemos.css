@@ -206,7 +206,7 @@
   display: flex;
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content .como-fazemos__card {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/deskcard1.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard1.svg");
   background-repeat: no-repeat;
   width: 16.5625rem;
   height: 13.625rem;
@@ -237,11 +237,11 @@
   line-height: 1.5rem;
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content .como-fazemos__card2 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/deskcard2.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard2.svg");
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content .como-fazemos__card3 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/deskcard3.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard3.svg");
 }
 .oq-fazemos-desk .como-fazemos .como-fazemos__content .como-fazemos__card4 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/deskcard4.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard4.svg");
 }/*# sourceMappingURL=SecaoOQueFazemos.css.map */

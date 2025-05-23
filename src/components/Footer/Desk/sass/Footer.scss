@@ -1,4 +1,5 @@
-@import "../../../../styles/padroes/padroes.scss";
+@import '@/app/styleGuide.scss';
+
 
 @mixin footer-text {
     line-height: 1.5rem;

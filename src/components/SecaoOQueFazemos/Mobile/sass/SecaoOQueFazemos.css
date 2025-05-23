@@ -156,7 +156,7 @@
   scrollbar-width: none; /* Firefox */
 }
 .oq-fazemos .como-fazemos .como-fazemos__content .como-fazemos__card {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/card1.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/card1.svg");
   background-repeat: no-repeat;
   background-size: auto;
   min-width: 11.71875rem;
@@ -187,13 +187,13 @@
   line-height: 1.5rem;
 }
 .oq-fazemos .como-fazemos .como-fazemos__content .como-fazemos__card2 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/card2.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/card2.svg");
 }
 .oq-fazemos .como-fazemos .como-fazemos__content .como-fazemos__card3 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/card3.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/card3.svg");
 }
 .oq-fazemos .como-fazemos .como-fazemos__content .como-fazemos__card4 {
-  background-image: url("../../../../assets/imagens/cardsMetodologia/card4.svg");
+  background-image: url("../../../../../public/assets/imagens/cardsMetodologia/card4.svg");
 }
 .oq-fazemos .como-fazemos .como-fazemos__content::-webkit-scrollbar {
   display: none;
