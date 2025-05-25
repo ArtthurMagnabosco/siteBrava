@@ -6,6 +6,7 @@ import Clientes from "@/components/Home/Mobile/Clientes";
 import SecaoOQueFazemos from "../../SecaoOQueFazemos/Mobile";
 import Proposito from "@/components/Home/Mobile/Proposito";
 import TestimonialSlider from "../../DepoimentoClientes";
+import Contato from "@/components/Contato/Contato";
 // import Form from "../../../components/Form";
 
 const HomeMobile = () => {
@@ -16,7 +17,7 @@ const HomeMobile = () => {
       <TestimonialSlider />
       <SecaoOQueFazemos Home={true} />
       <Proposito />
-      {/* <Form home /> */}
+      <Contato />
     </div>
   );
 };
