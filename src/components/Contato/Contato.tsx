@@ -106,7 +106,7 @@ export default function Contato() {
         </div>
 
         <form onSubmit={handleSubmit} className={styles.contatoFormGroup}>
-          <div>
+          <div className={styles.contatoFormGroupInput}>
             <label htmlFor="name">Nome*</label>
             <input
               name="name"
