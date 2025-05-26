@@ -1,4 +1,4 @@
-import "./sass/SecaoOQueFazemos.css";
+import "./sass/SecaoOQueFazemos.scss";
 import B2CIcon from "../../../../public/assets/imagens/icons/B2C.svg";
 import D2CIcon from "../../../../public/assets/imagens/icons/D2C.svg";
 import B2BIcon from "../../../../public/assets/imagens/icons/B2B.svg";

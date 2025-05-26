@@ -124,7 +124,7 @@
                 @media screen and (max-width: 1500px) {
                     max-width: 90%;
                 }
-                
+
                 .servicos__card {
                     display: flex;
                     flex-direction: column;
@@ -162,12 +162,15 @@
                     .servico2 {
                         background-color: $green3;
                     }
+
                     .servico3 {
                         background-color: $green4;
                     }
+
                     .servico4 {
                         background-color: $green5;
                     }
+
                     .servico5 {
                         background-color: $green6;
                     }
@@ -186,7 +189,7 @@
         align-items: center;
         gap: 2rem;
         padding: 5rem 0rem;
-        background-color: $white;
+        background-color: #fff;
 
         .como-fazemos__header {
             display: flex;
@@ -195,9 +198,12 @@
             text-align: center;
 
             .como-fazemos__title2 {
-                @include title2();
+                font-size: .75rem;
+                font-weight: 500;
+                color: #8a8a8a;
                 text-transform: uppercase;
                 font-size: 1rem;
+                margin: 0;
             }
 
             .como-fazemos__text {
@@ -209,20 +215,25 @@
                     @include title1();
                     line-height: 1.5rem;
                     font-size: 2.5rem;
+                    margin: 0;
                 }
 
                 .como-fazemos__paragraph {
                     font-size: 1.125rem;
                     line-height: 1.5rem;
+                    margin: 0;
                 }
             }
         }
 
         .como-fazemos__content {
+            // padding-left: 1.25rem;
+            // padding-bottom: 1.5rem;
             display: flex;
+            // background-color: $background;
 
             .como-fazemos__card {
-                background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard1.svg");
+                background-image: url("/assets/imagens/cardsMetodologia/deskcard1.svg");
                 background-repeat: no-repeat;
                 width: 16.5625rem;
                 height: 13.625rem;
@@ -237,34 +248,48 @@
 
                     .como-fazemos__card__title {
                         color: $white;
-                        font-size: 1.125rem;
+                        font-size: 1.1rem;
                         font-weight: 500;
                         line-height: 1.5rem;
                     }
 
                     .como-fazemos__card__divisor {
-                        background: $white;
+                        background: #fff;
                         width: 1.32994rem;
-                        height: 0.0625rem;
+                        height: .0625rem;
                     }
 
                     .como-fazemos__card__text {
                         color: $white;
-                        font-size: 1rem;
+                        font-size: 0.95rem;
                         font-weight: 400;
                         line-height: 1.5rem;
                     }
                 }
             }
+
             .como-fazemos__card2 {
-                background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard2.svg");
+                background-image: url("/assets/imagens/cardsMetodologia/deskcard2.svg");
             }
+
             .como-fazemos__card3 {
-                background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard3.svg");
+                background-image: url("/assets/imagens/cardsMetodologia/deskcard3.svg");
             }
+
             .como-fazemos__card4 {
-                background-image: url("../../../../../public/assets/imagens/cardsMetodologia/deskcard4.svg");
+                background-image: url("/assets/imagens/cardsMetodologia/deskcard4.svg");
             }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .como-fazemos__content::-webkit-scrollbar {
+            display: none;
         }
     }
 }

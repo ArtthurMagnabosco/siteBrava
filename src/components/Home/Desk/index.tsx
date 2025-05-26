@@ -1,7 +1,7 @@
 'use client';
 
 import Banner from "./Banner";
-import Clientes from "./Clientes";
+import Clientes from "../../../app/nossos-clientes/Desk/index";
 import SecaoOQueFazemos from "../../SecaoOQueFazemos/Desk";
 import Proposito from "./Proposito";
 import TestimonialSlider from "../../DepoimentoClientes";
