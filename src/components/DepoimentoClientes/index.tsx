@@ -7,28 +7,16 @@ import "./sass/styles.css";
 import Image from 'next/image';
 
 //Profile pic
-import felipeFarina from "../../../public/assets/imagens/client-profile-pic/felipe-carraro-photo.png"
-import priscilaBaum from "../../../public/assets/imagens/client-profile-pic/priscila-baum-photo.png";
-import giulianoBettanin from "../../../public/assets/imagens/client-profile-pic/giuliano-inbetta.png";
-import viniciusMartini from "../../../public/assets/imagens/client-profile-pic/vinicius-ou-photo.png";
-import liliamMantovani from "../../../public/assets/imagens/client-profile-pic/liliam-keko-photo.png";
 import svenStihlPhoto from "../../../public/assets/imagens/client-profile-pic/sven-stihl-photo.png";
+import alanRosanelli from "../../../public/assets/imagens/client-profile-pic/alan-bibi-photo.png";
+import ezequielJbPhoto from "../../../public/assets/imagens/client-profile-pic/ezequiel-jb-photo.png";
+import giulianoBettanin from "../../../public/assets/imagens/client-profile-pic/giuliano-inbetta.png";
 
 //Videos
-import felipeHorizontal from "../../../public/assets/imagens/videos/depoimentos/felipe-carraro-horizontal.mp4"
-import felipeVertical from "../../../public/assets/imagens/videos/depoimentos/felipe-carraro-vertical.mp4"
-
-import priscilaHorizontal from "../../../public/assets/imagens/videos/depoimentos/priscila-piccaddily-horizontal.mp4"
-import priscilaVertical from "../../../public/assets/imagens/videos/depoimentos/priscila-piccaddily-vertical.mp4"
-
-import giulianoHorizontal from "../../../public/assets/imagens/videos/depoimentos/giuliano-bettanin-horizontal.mp4"
+import giulianoHorizontal from "../../../public/assets/imagens/videos/depoimentos/giuliano-bettanin-vertical.mp4"
 import giulianoVertical from "../../../public/assets/imagens/videos/depoimentos/giuliano-bettanin-vertical.mp4"
-
-import viniciusHorizontal from "../../../public/assets/imagens/videos/depoimentos/vinicius-ou-horizontal.mp4"
-import viniciusVertical from "../../../public/assets/imagens/videos/depoimentos/vinicius-ou-vertical.mp4"
-
-import liliamDepoimento from "../../../public/assets/imagens/videos/depoimentos/liliam-keko.mp4"
-
+import alanBibi from "../../../public/assets/imagens/videos/depoimentos/alan-bibi-depoimento.mp4"
+import ezequielJb from "../../../public/assets/imagens/videos/depoimentos/ezequiel-jorgebischoff.mp4"
 import svenStihl from "../../../public/assets/imagens/videos/depoimentos/sven-vanessa-stihl.mp4"
 
 //svg
@@ -36,54 +24,84 @@ import playDepoimentos from "../../../public/assets/imagens/svg/play.svg"
 import fecharModal from "../../../public/assets/imagens/svg/fechar-modal.svg"
 
 const testimonials = [
-  {
-    name: 'Liliam Mantovani',
-    position: 'Gerente de Marketing da Keko',
-    image: liliamMantovani,
-    testimonial: '&quotEu mais do que aconselho a consultoria da Brava <span>com certeza foi um investimento acertado</span>.&quot',
-    video: {
-      horizontal: liliamDepoimento,
-      vertical: liliamDepoimento,
-    }
-  },
-  {
-    name: 'Felipe Farina',
-    position: 'Gerente de E-commerce da Carraro',
-    image: felipeFarina,
-    testimonial: '&quotA consultoria nos ajudou muito desde o princípio, quando eles fizeram uma <span>imersão na empresa</span>, para <span>mapear todas as áreas</span> e todos os pontos críticos. Até o pós GO Live do projeto.&quot',
-    video: {
-      horizontal: felipeHorizontal,
-      vertical: felipeVertical,
-    }
-  },
-  {
-    name: 'Priscila Baum',
-    position: 'Gerente de E-commerce da PICCADILLY',
-    image: priscilaBaum,
-    testimonial: '&quotA consultoria da Brava trouxe a <span>expertise de estratégias do digital</span> para reestruturar o e-commerce, nos últimos anos, e <span>alavancar os resultados</span> de uma forma mais rápida na empresa, seguindo todos os desafios que a gente tinha na área.&quot',
-    video: {
-      horizontal: priscilaHorizontal,
-      vertical: priscilaVertical,
-    }
-  },
+  // {
+  //   name: 'Liliam Mantovani',
+  //   position: 'Gerente de Marketing da Keko',
+  //   image: liliamMantovani,
+  //   testimonial: '&quotEu mais do que aconselho a consultoria da Brava <span>com certeza foi um investimento acertado</span>.&quot',
+  //   video: {
+  //     horizontal: liliamDepoimento,
+  //     vertical: liliamDepoimento,
+  //   }
+  // },
+  // {
+  //   name: 'Felipe Farina',
+  //   position: 'Gerente de E-commerce da Carraro',
+  //   image: felipeFarina,
+  //   testimonial: '&quotA consultoria nos ajudou muito desde o princípio, quando eles fizeram uma <span>imersão na empresa</span>, para <span>mapear todas as áreas</span> e todos os pontos críticos. Até o pós GO Live do projeto.&quot',
+  //   video: {
+  //     horizontal: felipeHorizontal,
+  //     vertical: felipeVertical,
+  //   }
+  // },
+  // {
+  //   name: 'Priscila Baum',
+  //   position: 'Gerente de E-commerce da PICCADILLY',
+  //   image: priscilaBaum,
+  //   testimonial: '&quotA consultoria da Brava trouxe a <span>expertise de estratégias do digital</span> para reestruturar o e-commerce, nos últimos anos, e <span>alavancar os resultados</span> de uma forma mais rápida na empresa, seguindo todos os desafios que a gente tinha na área.&quot',
+  //   video: {
+  //     horizontal: priscilaHorizontal,
+  //     vertical: priscilaVertical,
+  //   }
+  // },
+  // {
+  //   name: 'Giuliano Bettanin',
+  //   position: 'Gestor dos Canais Digitais da InBetta',
+  //   image: giulianoBettanin,
+  //   testimonial: '&quotQuando a gente fala de e-commerce a primeira coisa que tem que andar em conjunto no projeto é a <span>cultura dos funcionários</span> com o canal digital. A Brava nos ajudou a desenvolver todo <span>o modelo de negócio e alinhar as expectativas</span> entre todas as áreas e colaboradores.&quot',
+  //   video: {
+  //     horizontal: giulianoHorizontal,
+  //     vertical: giulianoVertical,
+  //   }
+  // },
+  // {
+  //   name: 'Vinícius Martini',
+  //   position: 'Gerente de Marketing da Martiplast',
+  //   image: viniciusMartini,
+  //   testimonial: '&quotA gente foi atrás de uma consultoria para <span>nos apoiar a acelerar esse desenvolvimento</span>, tanto de conhecimento, tanto de <span>aculturar</span> um pouco mais a empresa. Não só no como implementar um e-commerce, mas os benefícios disso.&quot',
+  //   video: {
+  //     horizontal: viniciusHorizontal,
+  //     vertical: viniciusVertical,
+  //   }
+  // },
   {
     name: 'Giuliano Bettanin',
     position: 'Gestor dos Canais Digitais da InBetta',
     image: giulianoBettanin,
-    testimonial: '&quotQuando a gente fala de e-commerce a primeira coisa que tem que andar em conjunto no projeto é a <span>cultura dos funcionários</span> com o canal digital. A Brava nos ajudou a desenvolver todo <span>o modelo de negócio e alinhar as expectativas</span> entre todas as áreas e colaboradores.&quot',
+    testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
     video: {
       horizontal: giulianoHorizontal,
       vertical: giulianoVertical,
     }
   },
   {
-    name: 'Vinícius Martini',
-    position: 'Gerente de Marketing da Martiplast',
-    image: viniciusMartini,
-    testimonial: '&quotA gente foi atrás de uma consultoria para <span>nos apoiar a acelerar esse desenvolvimento</span>, tanto de conhecimento, tanto de <span>aculturar</span> um pouco mais a empresa. Não só no como implementar um e-commerce, mas os benefícios disso.&quot',
+    name: 'Ezequiel Fischer',
+    position: 'Coordenador de TI',
+    image: ezequielJbPhoto,
+    testimonial: '&quotA Wecode tem uma preocupação não só com a entrega do projeto, <span>mas com a empresa</span>.&quot',
     video: {
-      horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
+      horizontal: ezequielJb,
+      vertical: ezequielJb,
+    }
+  },
+  {
+    name: 'Alan Rosanelli',
+    position: 'Gerente de Omnicanalidade da Bibi',
+    image: alanRosanelli,
+    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
+    video: {
+      horizontal: alanBibi,
+      vertical: alanBibi,
     }
   },
   {
