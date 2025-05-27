@@ -1,68 +1,121 @@
 @import '@/app/styleGuide.scss';
 
-.nossos-clientes__container_desk {
-    display: flex;
-    padding: 10rem 0 5rem 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    align-self: stretch;
+.ourClients {
+    padding: 20px 0 40px;
+    background: $background;
 
-    .nossos-clientes__header {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    border-radius: 20px 20px 0 0;
 
-        .header__title1 {
-            @include title1;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
+    .ourClientsContainer {
+        margin-inline: 250px;
+
+        .tag {
             text-align: center;
-            max-width: 60%;
-            font-size: 2.5rem;
-        }
-
-        .header__title2 {
-            @include title2;
-            text-transform: uppercase;
-            font-size: 1rem;
-        }
-
-        .header__text1 {
-            @include padrao;
-            line-height: 1.5rem;
-            font-size: 1.25rem;
-            text-align: center;
-            max-width: 55%;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #353a42;
+            font-size: .75rem;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+            color: #8a8a8a;
+            margin-inline: 20px;
         }
     }
 
-    .nossos-clientes__body {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);;
-        grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 3.5rem;
-        grid-row-gap: .5rem;
-        justify-items: center;
-        margin: 0 18vw !important;
-        align-items: center;
-        justify-content: center;
+    .blockTitle {
+        line-height: normal;
+        font-weight: 300;
+        font-size: 2.5rem;
 
-        .logo__clientes {
-            display: flex;
-            height: 100%;
+        text-align: center;
+
+        .textHighlight {
+            font-style: normal;
+            line-height: 1.5;
+            color: #21594f;
+            font-weight: 500;
+        }
+    }
+}
+
+.clientList {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+
+    .blockTitle {
+        margin-block: 1.5rem 1rem;
+    }
+
+    .clientWrapper {
+        display: flex;
+        width: 100%;
+
+        div {
+            background-color: #f7f7f7;
+            border: none;
             width: 100%;
-            // width: auto;
-            padding: 0 1.5rem;
-            justify-content: center;
+            height: 82px;
+            display: flex;
             align-items: center;
-            // scale: 1.4; //olha a brisa do cara que escreveu isso
+            justify-content: center;
 
-            img {
-                height: 100%;
-                width: 100%;
+            &:first-child {
+                border-radius: 5px 0 0 5px;
             }
+
+            &:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+}
+
+.knowMoreLink {
+    cursor: pointer;
+    font-size: .75rem;
+    background: $green;
+    font-family: Montserrat;
+    width: fit-content;
+    display: flex;
+    padding: 12px 40px;
+    border: none;
+    color: $white;
+    gap: 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center !important;
+
+    transition: ease-in-out 0.6s;
+    animation: ease-in-out 0.6s;
+    
+    margin-inline: auto;
+
+    white-space: nowrap;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+        background: $greenhover;
+        // width: 210px;
+        .knowMoreArrow {
+            display: block;
+            width: fit-content;
+            transition: fadeIn ease-in-out 0.6s;
+            animation: fadeIn ease-in-out 0.6s;
+        }
+    }
+    .knowMoreArrow {
+        display: none;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
 }
