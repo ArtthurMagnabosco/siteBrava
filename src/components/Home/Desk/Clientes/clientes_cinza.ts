@@ -19,7 +19,7 @@ import ou from "../../../../../public/assets/imagens/logoClientes/neutro/logoou.
 import pituchinhus from "../../../../../public/assets/imagens/logoClientes/neutro/logopituchinhus.svg";
 import soprano from "../../../../../public/assets/imagens/logoClientes/neutro/logosoprano.svg";
 import stihl from "../../../../../public/assets/imagens/logoClientes/neutro/logostihl.svg";
-import roniChaves from "../../../../../public/assets/imagens/logoClientes/neutro/logoroniChaves.svg";
+import roniChaves from "../../../../../public/assets/imagens/logoClientes/neutro/logoronichaves.svg";
 import fabiolamolina from "../../../../../public/assets/imagens/logoClientes/neutro/logofabiolamolina.svg";
 import jorgebischoff from "../../../../../public/assets/imagens/logoClientes/neutro/logojorgebischoff.svg";
 import trestentos from "../../../../../public/assets/imagens/logoClientes/neutro/logo3tentos.svg";
