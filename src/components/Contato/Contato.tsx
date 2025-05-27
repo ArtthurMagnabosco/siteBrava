@@ -78,10 +78,7 @@ export default function Contato() {
           message: ''
         });
 
-        setTimeout(() => {
-          setIsButtonDisabled(false);
-          setResponse({ type: '', message: '' });
-        }, 3000);
+        setIsButtonDisabled(false);
       } else {
         setResponse({ type: 'error', message: json.message || 'Erro ao enviar' });
         setIsButtonDisabled(false);
