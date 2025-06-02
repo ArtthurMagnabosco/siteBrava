@@ -67,28 +67,28 @@ const HeaderDesk = () => {
             <Image src={LogoBravaVerde} alt="Logo Brava" />
           </Link>
           <div className="menu__body-desk">
-          <ul className="menu__body-nav">
-                <li>
-                  <Link className="menu__link-desk" href="/quem-somos">
-                    Quem Somos
-                  </Link>
-                </li>
-                <li>
-                  <Link className="menu__link-desk" href="/o-que-fazemos">
-                    O que fazemos
-                  </Link>
-                </li>
-                <li>
-                  <Link className="menu__link-desk" href="/nossos-clientes">
-                    Nossos clientes
-                  </Link>
-                </li>
-                <li>
-                  <Link className="menu__link-desk" href="/entre-em-contato">
-                    Entre em contato
-                  </Link>
-                </li>
-              </ul>
+            <ul className="menu__body-nav">
+              <li>
+                <Link className="menu__link-desk" href="/quem-somos">
+                  Quem Somos
+                </Link>
+              </li>
+              <li>
+                <Link className="menu__link-desk" href="/o-que-fazemos">
+                  O que fazemos
+                </Link>
+              </li>
+              <li>
+                <Link className="menu__link-desk" href="/nossos-clientes">
+                  Nossos clientes
+                </Link>
+              </li>
+              <li>
+                <Link className="menu__link-desk" href="/entre-em-contato">
+                  Entre em contato
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

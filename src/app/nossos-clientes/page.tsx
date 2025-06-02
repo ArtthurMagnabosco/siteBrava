@@ -12,7 +12,7 @@ const NossosClientes = () => {
         <>
             {isMobile ?
                 <NossosClientesMobile /> :
-                <NossosClientesDesk />}
+                <NossosClientesDesk Home={false}/>}
         </>
 
     )
