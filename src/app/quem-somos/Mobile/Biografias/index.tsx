@@ -10,7 +10,7 @@ const Biografias = () => {
     <div className="biografias__container">
       <h2 className="biografias__title">Nossos consultores</h2>
       <div className="biografias__body">
-        <Image src={FotoFelipe} alt="Foto Felipe" />
+        <Image className="biografias__img" src={FotoFelipe} alt="Foto Felipe" />
         <div className="biografias__body__desc">
           <p className="body__title">Felipe S. Soares</p>
           <p className="body__text">
@@ -23,7 +23,7 @@ const Biografias = () => {
         </div>
       </div>
       <div className="biografias__body">
-        <Image src={FotoBernardo} alt="Foto Felipe" />
+        <Image className="biografias__img" src={FotoBernardo} alt="Foto Felipe" />
         <div className="biografias__body__desc">
           <p className="body__title">Bernardo Finimundi</p>
           <p className="body__text">
@@ -37,7 +37,7 @@ const Biografias = () => {
         </div>
       </div>
       <div className="biografias__body">
-        <Image src={FotoAmanda} alt="Foto Felipe" />
+        <Image className="biografias__img" src={FotoAmanda} alt="Foto Felipe" />
         <div className="biografias__body__desc">
           <p className="body__title">Amanda Seimetz</p>
           <p className="body__text">

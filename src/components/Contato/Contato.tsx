@@ -91,7 +91,7 @@ export default function Contato() {
   };
 
   return (
-    <section id="contato" className={styles.contatoMain}>
+    <section id="contatoMobile" className={styles.contatoMain}>
       <div className={styles.contatoForm}>
 
         <div className={styles.contatoTexto}>

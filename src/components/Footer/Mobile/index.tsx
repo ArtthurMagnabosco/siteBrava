@@ -29,7 +29,7 @@ const FooterMobile = () => {
               </Link>
             </li>
             <li>
-              <Link className="footer__link" href="/entre-em-contato">
+              <Link className="footer__link" href="#contatoMobile" scroll={true}>
                 Entre em contato
               </Link>
             </li>
