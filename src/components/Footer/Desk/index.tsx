@@ -29,7 +29,7 @@ const FooterDesk = () => {
               </Link>
             </li>
             <li>
-              <Link className="footer__link" href="#contato">
+              <Link className="footer__link" href="/entre-em-contato">
                 Entre em contato
               </Link>
             </li>
