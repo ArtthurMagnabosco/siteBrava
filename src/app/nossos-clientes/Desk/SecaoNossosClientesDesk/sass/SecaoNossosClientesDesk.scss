@@ -1,5 +1,9 @@
 @import '@/app/styleGuide.scss';
 
+.home .ourClients .ourClientsContainer {
+    padding-block: 0;
+}
+
 .ourClients {
     padding: 20px 0 40px;
     background: $background;
@@ -8,6 +12,7 @@
 
     .ourClientsContainer {
         margin-inline: 250px;
+        padding-block: 11.5rem;
 
         .tag {
             text-align: center;
@@ -89,7 +94,7 @@
 
     transition: ease-in-out 0.6s;
     animation: ease-in-out 0.6s;
-    
+
     margin-inline: auto;
 
     white-space: nowrap;
@@ -99,6 +104,7 @@
 
     &:hover {
         background: $greenhover;
+
         // width: 210px;
         .knowMoreArrow {
             display: block;
@@ -107,13 +113,16 @@
             animation: fadeIn ease-in-out 0.6s;
         }
     }
+
     .knowMoreArrow {
         display: none;
     }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }

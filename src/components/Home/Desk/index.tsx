@@ -14,8 +14,8 @@ const HomeDesktop = () => {
   return (
     <div className="home">
       <Banner />
-      <Clientes />
-      <TestimonialSlider />
+      <Clientes Home={true}/>
+      <TestimonialSlider isMobile={false} />
       <SecaoOQueFazemos Home={true} />
       <Proposito />
       <ContatoDesk />

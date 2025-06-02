@@ -14,7 +14,7 @@ const HomeMobile = () => {
     <div className="home">
       <Banner />
       <Clientes />
-      <TestimonialSlider />
+      <TestimonialSlider isMobile={true} />
       <SecaoOQueFazemos Home={true} />
       <Proposito />
       <Contato />

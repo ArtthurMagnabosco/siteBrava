@@ -1,28 +1,15 @@
-'use client';
-
-import { useEffect, useState } from "react";
-import HomeMobile from "@/components/Home//Mobile";
+import { headers } from 'next/headers'
+import HomeMobile from "@/components/Home/Mobile";
 import HomeDesktop from "@/components/Home/Desk";
 
-const Home = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(true);
-
-  const handleWidth = () => {
-    window?.innerWidth >= 1024 ? setIsMobile(false) : setIsMobile(true);
-  };
-
-  useEffect(() => {
-    handleWidth();
-    window.addEventListener("resize", handleWidth);
-    return () => {
-      window.removeEventListener("resize", handleWidth);
-    };
-  }, []);
+export default function Home() {
+  const headersList = headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /mobile|iphone|ipod|android|blackberry|opera|mini|windows\sce|palm|smartphone|iemobile|ipad|android|android 3.0|xoom|sch-i800|playbook|tablet|kindle/i.test(userAgent);
 
   return (
     <>
-        {isMobile ? <HomeMobile /> : <HomeDesktop />}
+      {isMobile ? <HomeMobile /> : <HomeDesktop />}
     </>
-    );
-};
-export default Home;
+  );
+}
