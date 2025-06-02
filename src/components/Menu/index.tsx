@@ -51,7 +51,7 @@ const Menu = ({ closeMenu }) => {
           <Link
             onClick={() => closeMenu()}
             className="menu__body__link"
-            href="/entre-em-contato"
+            href="#contatoDesk"
           >
             Entre em contato
           </Link>

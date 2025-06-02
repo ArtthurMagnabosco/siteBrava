@@ -47,7 +47,7 @@ const HeaderDesk = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="menu__link-desk" href="/entre-em-contato">
+                  <Link className="menu__link-desk" href="#contato">
                     Entre em contato
                   </Link>
                 </li>
@@ -84,7 +84,7 @@ const HeaderDesk = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="menu__link-desk" href="/entre-em-contato">
+                  <Link className="menu__link-desk" href="#contato">
                     Entre em contato
                   </Link>
                 </li>
