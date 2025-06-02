@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -98,10 +100,10 @@ const testimonials = [
   },
 ];
 
-export const TestimonialSlider = () => {
+const TestimonialSlider = ({ isMobile }: { isMobile: boolean }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState('');
-  const [isMobile, setIsMobile] = useState(true);
+
 
   const openModal = (videoUrl) => {
     setVideoSrc(videoUrl);
@@ -114,19 +116,7 @@ export const TestimonialSlider = () => {
   }
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window?.innerWidth <= 1080) { 
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    
-    // Cleanup
     return () => {
-      window.removeEventListener('resize', handleResize);
       setVideoSrc(''); // limpa o estado ao desmontar
     };
   }, []);

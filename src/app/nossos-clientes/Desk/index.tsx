@@ -2,9 +2,9 @@
 
 import SecaoNossosClientesDesk from "./SecaoNossosClientesDesk"
 
-const NossosClientesDesk = () => {
+const NossosClientesDesk = ({ Home }: { Home: boolean }) => {
     return (
-        <SecaoNossosClientesDesk/>
+        <SecaoNossosClientesDesk Home={Home} />
     )
 }
 

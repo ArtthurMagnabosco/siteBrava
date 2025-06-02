@@ -1,27 +1,15 @@
-'use client';
-
-import React, { useEffect, useState } from "react";
+import { headers } from 'next/headers'
 import HeaderMobile from "./Mobile"
 import HeaderDesk from './Desk'
 
 const Header = () => {
+  const headersList = headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /mobile|iphone|ipod|android|blackberry|opera|mini|windows\sce|palm|smartphone|iemobile|ipad|android|android 3.0|xoom|sch-i800|playbook|tablet|kindle/i.test(userAgent);
 
-    const [isMobile, setIsMobile] = useState(true)
-    const handleWidth = () => {
-        window.innerWidth >= 1024 ?
-        setIsMobile(false) :
-        setIsMobile(true)
-    }
-    useEffect(() => {
-        handleWidth()
-        window.addEventListener("resize", handleWidth)
-    }, [])
-    
     return (
         <>
-        {isMobile ? 
-        <HeaderMobile/> :
-        <HeaderDesk/>}
+            {isMobile ? <HeaderMobile /> : <HeaderDesk />}
         </>
     )
     

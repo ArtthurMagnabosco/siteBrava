@@ -1,21 +1,12 @@
-'use client';
 
-import { useEffect, useState } from 'react';
+import { headers } from 'next/headers'
 import OqueFazemosMobile from './Mobile/index';
 import OqueFazemosDesk from './Desk/index';
 
 const OQueFazemos = () => {
-    const [isMobile, setIsMobile] = useState(true)
-    const handleWidth = () => {
-        window.innerWidth >= 1024 ?
-            setIsMobile(false) :
-            setIsMobile(true)
-    }
-    useEffect(() => {
-        handleWidth()
-        window.addEventListener("resize", handleWidth)
-    }, [])
-
+ const headersList = headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /mobile|iphone|ipod|android|blackberry|opera|mini|windows\sce|palm|smartphone|iemobile|ipad|android|android 3.0|xoom|sch-i800|playbook|tablet|kindle/i.test(userAgent);
     return (
         <>
             {isMobile ?
