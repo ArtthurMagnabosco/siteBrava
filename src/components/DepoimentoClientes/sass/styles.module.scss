@@ -546,12 +546,15 @@
   animation: none !important;
   display: flex !important;
   margin-inline: 0 auto !important;
-max-width: 200px !important;
+  max-width: 200px !important;
 
   span {
     margin-inline: auto !important;
   }
-  img{margin-right:auto;}
+
+  img {
+    margin-right: auto;
+  }
 
   @media (max-width:1008px) {
     width: 100% !important;
@@ -641,13 +644,12 @@ max-width: 200px !important;
     // position: relative;
     // height: 100% !important;
     // display: flex !important;
-    min-height: 1px !important;
+    // min-height: 480px !important;
     height: fit-content;
 
-    @media (max-width: 1008px) {
-      margin-inline: -20px;
-
-    }
+    // @media (max-width: 1008px) {
+    //   margin-inline: -20px;
+    // }
 
     // @media (min-width: 1008px) {
     //   min-height: 800px !important;
@@ -703,6 +705,28 @@ max-width: 200px !important;
     }
 
     // display: flex !important;
+    min-height: 480px !important;
+    height: fit-content;
+
+    @media (max-width: 1008px) {
+      margin-inline: -20px;
+    }
+
+    @media (min-width: 1008px) {
+      min-height: 800px !important;
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 680px !important;
+    }
+
+    @media (min-width: 1400px) {
+      min-height: 580px !important;
+    }
+
+    @media (min-width: 1600px) {
+      min-height: 480px !important;
+    }
   }
 
   :global(.slick-center) {
