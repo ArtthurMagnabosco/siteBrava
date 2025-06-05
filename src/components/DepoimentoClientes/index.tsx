@@ -194,7 +194,7 @@ const TestimonialSlider = ({ isMobile }: { isMobile: boolean }) => {
       {
         breakpoint: 768,
         settings: {
-          centerPadding: '60px',
+          centerPadding: '50px',
           slidesToShow: 1,
           centerMode: true,
           arrows: false
@@ -237,7 +237,7 @@ const TestimonialSlider = ({ isMobile }: { isMobile: boolean }) => {
                   </div>
                   <div className={styles.testimonialVideo}>
                     <button onClick={() => openModal(index)} className={styles.testimonialButtonVideo}>
-                      Assistir depoimento <Image src={playDepoimentos} className={styles.testimonialVideoArrow} alt="" />
+                      <span>Assistir depoimento</span> <Image src={playDepoimentos} className={styles.testimonialVideoArrow} alt="" />
                     </button>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const TestimonialSlider = ({ isMobile }: { isMobile: boolean }) => {
                   </div>
                   <div className={styles.testimonialVideo}>
                     <button onClick={() => openModal(index)} className={styles.testimonialButtonVideo}>
-                      Assistir depoimento <Image src={playDepoimentos} className={styles.testimonialVideoArrow} alt="" />
+                      <span>Assistir depoimento</span> <Image src={playDepoimentos} className={styles.testimonialVideoArrow} alt="" />
                     </button>
                   </div>
                 </div>
