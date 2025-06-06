@@ -2,7 +2,7 @@
 
 import "./sass/PaginaInicial.css";
 import Banner from "@/components/Home/Mobile/Banner";
-import Clientes from "@/components/Home/Mobile/Clientes";
+import Clientes from "../../../app/nossos-clientes/Desk/index";
 import SecaoOQueFazemos from "../../SecaoOQueFazemos/Mobile";
 import Proposito from "@/components/Home/Mobile/Proposito";
 import TestimonialSlider from "../../DepoimentoClientes";
@@ -13,7 +13,7 @@ const HomeMobile = () => {
   return (
     <div className="home">
       <Banner />
-      <Clientes />
+      <Clientes Home={true} />
       <TestimonialSlider isMobile={true} />
       <SecaoOQueFazemos Home={true} />
       <Proposito />

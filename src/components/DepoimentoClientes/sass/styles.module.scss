@@ -3,7 +3,7 @@
 .testimonyMainContainer {
   overflow: hidden;
   margin-inline: 0;
-  padding-inline: 20px;
+  padding-inline: 0;
   padding-bottom: 4rem;
   width: 100%;
   background: $white;
@@ -708,9 +708,9 @@
     min-height: 480px !important;
     height: fit-content;
 
-    @media (max-width: 1008px) {
-      margin-inline: -20px;
-    }
+    // @media (max-width: 1008px) {
+    //   margin-inline: -20px;
+    // }
 
     @media (min-width: 1008px) {
       min-height: 800px !important;
